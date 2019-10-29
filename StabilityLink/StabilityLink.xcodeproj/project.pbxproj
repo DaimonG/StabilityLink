@@ -13,17 +13,6 @@
 		74477E832367A70B00168D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E812367A70B00168D6F /* Main.storyboard */; };
 		74477E852367A71000168D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74477E842367A71000168D6F /* Assets.xcassets */; };
 		74477E882367A71000168D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E862367A71000168D6F /* LaunchScreen.storyboard */; };
-		74477E902367A81E00168D6F /* PhysioHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E8F2367A81E00168D6F /* PhysioHome.storyboard */; };
-		74477E922367A82B00168D6F /* PatientHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E912367A82B00168D6F /* PatientHome.storyboard */; };
-		74477E942367A8A700168D6F /* PhysioPatientSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E932367A8A700168D6F /* PhysioPatientSettings.storyboard */; };
-		74477E962367A92900168D6F /* PhysioRoutineEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E952367A92900168D6F /* PhysioRoutineEditor.storyboard */; };
-		74477E982367A99A00168D6F /* PhysioExerciseAdder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E972367A99A00168D6F /* PhysioExerciseAdder.storyboard */; };
-		74477E9A2367AA3900168D6F /* PatientRoutineInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E992367AA3900168D6F /* PatientRoutineInfo.storyboard */; };
-		74477E9C2367AA7300168D6F /* PatientExercise1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E9B2367AA7300168D6F /* PatientExercise1.storyboard */; };
-		74477E9E2367AA7F00168D6F /* PatientExercise2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E9D2367AA7F00168D6F /* PatientExercise2.storyboard */; };
-		74477EA02367AA8C00168D6F /* PatientExercise3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E9F2367AA8C00168D6F /* PatientExercise3.storyboard */; };
-		74477EA22367AABA00168D6F /* PatientExercise4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477EA12367AABA00168D6F /* PatientExercise4.storyboard */; };
-		74477EA42367AAC500168D6F /* PatientExercise5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477EA32367AAC500168D6F /* PatientExercise5.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +24,6 @@
 		74477E842367A71000168D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74477E872367A71000168D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74477E892367A71000168D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74477E8F2367A81E00168D6F /* PhysioHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhysioHome.storyboard; sourceTree = "<group>"; };
-		74477E912367A82B00168D6F /* PatientHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientHome.storyboard; sourceTree = "<group>"; };
-		74477E932367A8A700168D6F /* PhysioPatientSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhysioPatientSettings.storyboard; sourceTree = "<group>"; };
-		74477E952367A92900168D6F /* PhysioRoutineEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhysioRoutineEditor.storyboard; sourceTree = "<group>"; };
-		74477E972367A99A00168D6F /* PhysioExerciseAdder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhysioExerciseAdder.storyboard; sourceTree = "<group>"; };
-		74477E992367AA3900168D6F /* PatientRoutineInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientRoutineInfo.storyboard; sourceTree = "<group>"; };
-		74477E9B2367AA7300168D6F /* PatientExercise1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientExercise1.storyboard; sourceTree = "<group>"; };
-		74477E9D2367AA7F00168D6F /* PatientExercise2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientExercise2.storyboard; sourceTree = "<group>"; };
-		74477E9F2367AA8C00168D6F /* PatientExercise3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientExercise3.storyboard; sourceTree = "<group>"; };
-		74477EA12367AABA00168D6F /* PatientExercise4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientExercise4.storyboard; sourceTree = "<group>"; };
-		74477EA32367AAC500168D6F /* PatientExercise5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientExercise5.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +61,6 @@
 				74477E7F2367A70B00168D6F /* ViewController.swift */,
 				74477E862367A71000168D6F /* LaunchScreen.storyboard */,
 				74477E812367A70B00168D6F /* Main.storyboard */,
-				74477E8F2367A81E00168D6F /* PhysioHome.storyboard */,
-				74477E912367A82B00168D6F /* PatientHome.storyboard */,
-				74477E932367A8A700168D6F /* PhysioPatientSettings.storyboard */,
-				74477E952367A92900168D6F /* PhysioRoutineEditor.storyboard */,
-				74477E972367A99A00168D6F /* PhysioExerciseAdder.storyboard */,
-				74477E992367AA3900168D6F /* PatientRoutineInfo.storyboard */,
-				74477E9B2367AA7300168D6F /* PatientExercise1.storyboard */,
-				74477E9D2367AA7F00168D6F /* PatientExercise2.storyboard */,
-				74477E9F2367AA8C00168D6F /* PatientExercise3.storyboard */,
-				74477EA12367AABA00168D6F /* PatientExercise4.storyboard */,
-				74477EA32367AAC500168D6F /* PatientExercise5.storyboard */,
 				74477E842367A71000168D6F /* Assets.xcassets */,
 				74477E892367A71000168D6F /* Info.plist */,
 			);
@@ -158,19 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74477E9E2367AA7F00168D6F /* PatientExercise2.storyboard in Resources */,
-				74477E942367A8A700168D6F /* PhysioPatientSettings.storyboard in Resources */,
-				74477EA22367AABA00168D6F /* PatientExercise4.storyboard in Resources */,
-				74477EA02367AA8C00168D6F /* PatientExercise3.storyboard in Resources */,
-				74477E982367A99A00168D6F /* PhysioExerciseAdder.storyboard in Resources */,
-				74477E9C2367AA7300168D6F /* PatientExercise1.storyboard in Resources */,
 				74477E882367A71000168D6F /* LaunchScreen.storyboard in Resources */,
-				74477E962367A92900168D6F /* PhysioRoutineEditor.storyboard in Resources */,
-				74477EA42367AAC500168D6F /* PatientExercise5.storyboard in Resources */,
-				74477E902367A81E00168D6F /* PhysioHome.storyboard in Resources */,
 				74477E852367A71000168D6F /* Assets.xcassets in Resources */,
-				74477E922367A82B00168D6F /* PatientHome.storyboard in Resources */,
-				74477E9A2367AA3900168D6F /* PatientRoutineInfo.storyboard in Resources */,
 				74477E832367A70B00168D6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
