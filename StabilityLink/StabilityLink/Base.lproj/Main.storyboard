@@ -637,46 +637,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Physio Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPX-tx-dWY">
-                                <rect key="frame" x="217" y="369" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPX-tx-dWY">
+                                <rect key="frame" x="131.66666666666666" y="249" width="112" height="17"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-3k-jmx">
-                                <rect key="frame" x="199" y="487" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Patient 1"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-3k-jmx">
+                                <rect key="frame" x="79.666666666666686" y="331" width="216" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="LDO-yD-h3K"/>
+                                    <constraint firstAttribute="width" constant="216" id="rni-tX-TpL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Patient 1" backgroundImage="Blue Round Rectangle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="8z4-kQ-WN7" kind="show" id="199-CL-1E3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMI-RF-4Ff">
-                                <rect key="frame" x="165" y="554" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add New Patient"/>
-                                <connections>
-                                    <segue destination="Z9g-cc-ogK" kind="show" id="IaG-RT-1Hf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-BJ-Voc">
-                                <rect key="frame" x="190" y="220" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-BJ-Voc">
+                                <rect key="frame" x="16" y="20" width="19" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gep-9n-Mtk"/>
+                                    <constraint firstAttribute="width" constant="19" id="idf-b3-6sR"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="Blue Back Button"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="D2V-1L-SWE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Physio Headshot" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-mP-GDZ">
+                                <rect key="frame" x="107.66666666666669" y="20" width="160" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="3Vk-3O-gJR"/>
+                                    <constraint firstAttribute="width" constant="160" id="lc6-zc-ZHt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMI-RF-4Ff">
+                                <rect key="frame" x="172.66666666666666" y="555" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DcD-1Z-zD4"/>
+                                    <constraint firstAttribute="height" constant="30" id="Fh4-kZ-6B1"/>
+                                </constraints>
+                                <state key="normal" title="Add New Patient" image="Blue Add Button"/>
+                                <connections>
+                                    <segue destination="Z9g-cc-ogK" kind="show" id="IaG-RT-1Hf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lMI-RF-4Ff" firstAttribute="centerX" secondItem="S0g-Ba-u4E" secondAttribute="centerX" id="4zs-Hr-zfv"/>
+                            <constraint firstItem="jvz-3k-jmx" firstAttribute="top" secondItem="TPX-tx-dWY" secondAttribute="bottom" constant="65" id="76o-sF-Bcc"/>
+                            <constraint firstItem="lMI-RF-4Ff" firstAttribute="top" secondItem="jvz-3k-jmx" secondAttribute="bottom" constant="175" id="9Wd-6h-x8Z"/>
+                            <constraint firstItem="uWP-mP-GDZ" firstAttribute="centerX" secondItem="S0g-Ba-u4E" secondAttribute="centerX" id="IpC-pl-43u"/>
+                            <constraint firstItem="OoZ-BJ-Voc" firstAttribute="top" secondItem="sD4-oB-7Lt" secondAttribute="top" constant="20" id="Iuv-OT-IFm"/>
+                            <constraint firstItem="uWP-mP-GDZ" firstAttribute="top" secondItem="sD4-oB-7Lt" secondAttribute="top" constant="20" id="REw-DP-9VC"/>
+                            <constraint firstItem="TPX-tx-dWY" firstAttribute="top" secondItem="uWP-mP-GDZ" secondAttribute="bottom" constant="10" id="WrO-nm-9WX"/>
+                            <constraint firstItem="jvz-3k-jmx" firstAttribute="centerX" secondItem="S0g-Ba-u4E" secondAttribute="centerX" id="f06-0v-mbY"/>
+                            <constraint firstItem="jvz-3k-jmx" firstAttribute="centerX" secondItem="S0g-Ba-u4E" secondAttribute="centerX" id="iDy-US-DgN"/>
+                            <constraint firstItem="OoZ-BJ-Voc" firstAttribute="leading" secondItem="sD4-oB-7Lt" secondAttribute="leading" constant="16" id="ltm-Cv-9fR"/>
+                            <constraint firstItem="TPX-tx-dWY" firstAttribute="centerX" secondItem="S0g-Ba-u4E" secondAttribute="centerX" id="rBR-un-QYS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sD4-oB-7Lt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oqx-6K-SDY"/>
+                    <navigationItem key="navigationItem" title="Back" id="k4n-a4-NI2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWO-aO-Znk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="508"/>
+            <point key="canvasLocation" x="2120.8000000000002" y="507.63546798029557"/>
         </scene>
         <!--Physio Add Patient-->
         <scene sceneID="XOX-0Y-6Co">
@@ -713,6 +744,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Blue Add Button" width="400" height="400"/>
+        <image name="Blue Back Button" width="220" height="400"/>
+        <image name="Blue Physio Headshot" width="400" height="400"/>
+        <image name="Blue Round Rectangle" width="400" height="135"/>
         <image name="man-running-cartoon-vector-15515885" width="806" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
@@ -721,8 +756,8 @@
         <segue reference="zk5-7G-8rz"/>
         <segue reference="dUC-RJ-qfM"/>
         <segue reference="9jQ-7I-yhu"/>
-        <segue reference="CDz-Sb-2Uv"/>
+        <segue reference="199-CL-1E3"/>
         <segue reference="bG2-t4-6z0"/>
-        <segue reference="S2X-qK-mza"/>
+        <segue reference="D2V-1L-SWE"/>
     </inferredMetricsTieBreakers>
 </document>
