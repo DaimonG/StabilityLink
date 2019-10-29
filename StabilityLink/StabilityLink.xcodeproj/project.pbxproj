@@ -13,6 +13,20 @@
 		74477E832367A70B00168D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E812367A70B00168D6F /* Main.storyboard */; };
 		74477E852367A71000168D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74477E842367A71000168D6F /* Assets.xcassets */; };
 		74477E882367A71000168D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74477E862367A71000168D6F /* LaunchScreen.storyboard */; };
+		74477EAA2367DBD300168D6F /* PatientHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EA92367DBD300168D6F /* PatientHomeScreen.swift */; };
+		74477EAC2367DC3100168D6F /* PatientInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EAB2367DC3100168D6F /* PatientInfoScreen.swift */; };
+		74477EAE2367DC7B00168D6F /* PhysioPatientRoutines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EAD2367DC7B00168D6F /* PhysioPatientRoutines.swift */; };
+		74477EB02367DCB600168D6F /* PatientRoutinesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EAF2367DCB600168D6F /* PatientRoutinesScreen.swift */; };
+		74477EB22367DCEB00168D6F /* PatientSingleRoutineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EB12367DCEB00168D6F /* PatientSingleRoutineScreen.swift */; };
+		74477EB42367DD4F00168D6F /* PhysioPatientRoutine1Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EB32367DD4F00168D6F /* PhysioPatientRoutine1Screen.swift */; };
+		74477EB62367DD7900168D6F /* PatientExercise3Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EB52367DD7900168D6F /* PatientExercise3Screen.swift */; };
+		74477EB82367DD9E00168D6F /* PatientExercise5Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EB72367DD9E00168D6F /* PatientExercise5Screen.swift */; };
+		74477EBA2367DDB700168D6F /* PatientExercise1Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EB92367DDB700168D6F /* PatientExercise1Screen.swift */; };
+		74477EBC2367DDD000168D6F /* PatientExercise2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EBB2367DDD000168D6F /* PatientExercise2Screen.swift */; };
+		74477EBE2367DDE200168D6F /* PatientExercise4Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EBD2367DDE200168D6F /* PatientExercise4Screen.swift */; };
+		74477EC02367DE1D00168D6F /* PhysioAddingExerciseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EBF2367DE1D00168D6F /* PhysioAddingExerciseScreen.swift */; };
+		74477EC22367DE4500168D6F /* PhysioHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EC12367DE4500168D6F /* PhysioHomeScreen.swift */; };
+		74477EC42367DE6900168D6F /* PhysioAddNewPatientScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EC32367DE6900168D6F /* PhysioAddNewPatientScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		74477E842367A71000168D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74477E872367A71000168D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74477E892367A71000168D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74477EA92367DBD300168D6F /* PatientHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeScreen.swift; sourceTree = "<group>"; };
+		74477EAB2367DC3100168D6F /* PatientInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfoScreen.swift; sourceTree = "<group>"; };
+		74477EAD2367DC7B00168D6F /* PhysioPatientRoutines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioPatientRoutines.swift; sourceTree = "<group>"; };
+		74477EAF2367DCB600168D6F /* PatientRoutinesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutinesScreen.swift; sourceTree = "<group>"; };
+		74477EB12367DCEB00168D6F /* PatientSingleRoutineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSingleRoutineScreen.swift; sourceTree = "<group>"; };
+		74477EB32367DD4F00168D6F /* PhysioPatientRoutine1Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioPatientRoutine1Screen.swift; sourceTree = "<group>"; };
+		74477EB52367DD7900168D6F /* PatientExercise3Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExercise3Screen.swift; sourceTree = "<group>"; };
+		74477EB72367DD9E00168D6F /* PatientExercise5Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExercise5Screen.swift; sourceTree = "<group>"; };
+		74477EB92367DDB700168D6F /* PatientExercise1Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExercise1Screen.swift; sourceTree = "<group>"; };
+		74477EBB2367DDD000168D6F /* PatientExercise2Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExercise2Screen.swift; sourceTree = "<group>"; };
+		74477EBD2367DDE200168D6F /* PatientExercise4Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExercise4Screen.swift; sourceTree = "<group>"; };
+		74477EBF2367DE1D00168D6F /* PhysioAddingExerciseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddingExerciseScreen.swift; sourceTree = "<group>"; };
+		74477EC12367DE4500168D6F /* PhysioHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioHomeScreen.swift; sourceTree = "<group>"; };
+		74477EC32367DE6900168D6F /* PhysioAddNewPatientScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddNewPatientScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +89,20 @@
 				74477E7F2367A70B00168D6F /* ViewController.swift */,
 				74477E862367A71000168D6F /* LaunchScreen.storyboard */,
 				74477E812367A70B00168D6F /* Main.storyboard */,
+				74477EC32367DE6900168D6F /* PhysioAddNewPatientScreen.swift */,
+				74477EBF2367DE1D00168D6F /* PhysioAddingExerciseScreen.swift */,
+				74477EBB2367DDD000168D6F /* PatientExercise2Screen.swift */,
+				74477EBD2367DDE200168D6F /* PatientExercise4Screen.swift */,
+				74477EB92367DDB700168D6F /* PatientExercise1Screen.swift */,
+				74477EB72367DD9E00168D6F /* PatientExercise5Screen.swift */,
+				74477EB52367DD7900168D6F /* PatientExercise3Screen.swift */,
+				74477EB32367DD4F00168D6F /* PhysioPatientRoutine1Screen.swift */,
+				74477EB12367DCEB00168D6F /* PatientSingleRoutineScreen.swift */,
+				74477EAF2367DCB600168D6F /* PatientRoutinesScreen.swift */,
+				74477EAD2367DC7B00168D6F /* PhysioPatientRoutines.swift */,
+				74477EAB2367DC3100168D6F /* PatientInfoScreen.swift */,
+				74477EA92367DBD300168D6F /* PatientHomeScreen.swift */,
+				74477EC12367DE4500168D6F /* PhysioHomeScreen.swift */,
 				74477E842367A71000168D6F /* Assets.xcassets */,
 				74477E892367A71000168D6F /* Info.plist */,
 			);
@@ -138,8 +180,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74477EB22367DCEB00168D6F /* PatientSingleRoutineScreen.swift in Sources */,
+				74477EBA2367DDB700168D6F /* PatientExercise1Screen.swift in Sources */,
+				74477EAA2367DBD300168D6F /* PatientHomeScreen.swift in Sources */,
+				74477EBC2367DDD000168D6F /* PatientExercise2Screen.swift in Sources */,
+				74477EB42367DD4F00168D6F /* PhysioPatientRoutine1Screen.swift in Sources */,
+				74477EB62367DD7900168D6F /* PatientExercise3Screen.swift in Sources */,
+				74477EC22367DE4500168D6F /* PhysioHomeScreen.swift in Sources */,
 				74477E802367A70B00168D6F /* ViewController.swift in Sources */,
+				74477EAC2367DC3100168D6F /* PatientInfoScreen.swift in Sources */,
+				74477EBE2367DDE200168D6F /* PatientExercise4Screen.swift in Sources */,
+				74477EB02367DCB600168D6F /* PatientRoutinesScreen.swift in Sources */,
 				74477E7C2367A70B00168D6F /* AppDelegate.swift in Sources */,
+				74477EAE2367DC7B00168D6F /* PhysioPatientRoutines.swift in Sources */,
+				74477EC02367DE1D00168D6F /* PhysioAddingExerciseScreen.swift in Sources */,
+				74477EC42367DE6900168D6F /* PhysioAddNewPatientScreen.swift in Sources */,
+				74477EB82367DD9E00168D6F /* PatientExercise5Screen.swift in Sources */,
 				74477E7E2367A70B00168D6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
