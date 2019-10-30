@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,14 @@
 		34FFC3292369FCE20083351D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC3272369FCE20083351D /* Main.storyboard */; };
 		34FFC32B2369FCE30083351D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC32A2369FCE30083351D /* Assets.xcassets */; };
 		34FFC32E2369FCE30083351D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC32C2369FCE30083351D /* LaunchScreen.storyboard */; };
+		34FFC336236A127D0083351D /* PatientHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC335236A127D0083351D /* PatientHome.swift */; };
+		34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC337236A13E40083351D /* PatientRoutine.swift */; };
+		34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC339236A14710083351D /* PatientRoutine1.swift */; };
+		34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC33B236A22490083351D /* PatientRoutineEx1.swift */; };
+		34FFC33E236A225E0083351D /* PatientRoutineEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC33D236A225E0083351D /* PatientRoutineEx2.swift */; };
+		34FFC340236A227F0083351D /* PatientRoutineEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC33F236A227F0083351D /* PatientRoutineEx3.swift */; };
+		34FFC342236A22940083351D /* PatientRoutineEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC341236A22940083351D /* PatientRoutineEx4.swift */; };
+		34FFC344236A22A90083351D /* PatientRoutineEx5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC343236A22A90083351D /* PatientRoutineEx5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		34FFC32A2369FCE30083351D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FFC32D2369FCE30083351D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34FFC32F2369FCE30083351D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FFC335236A127D0083351D /* PatientHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHome.swift; sourceTree = "<group>"; };
+		34FFC337236A13E40083351D /* PatientRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine.swift; sourceTree = "<group>"; };
+		34FFC339236A14710083351D /* PatientRoutine1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine1.swift; sourceTree = "<group>"; };
+		34FFC33B236A22490083351D /* PatientRoutineEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineEx1.swift; sourceTree = "<group>"; };
+		34FFC33D236A225E0083351D /* PatientRoutineEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineEx2.swift; sourceTree = "<group>"; };
+		34FFC33F236A227F0083351D /* PatientRoutineEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineEx3.swift; sourceTree = "<group>"; };
+		34FFC341236A22940083351D /* PatientRoutineEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineEx4.swift; sourceTree = "<group>"; };
+		34FFC343236A22A90083351D /* PatientRoutineEx5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineEx5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,14 @@
 				34FFC3212369FCE20083351D /* AppDelegate.swift */,
 				34FFC3252369FCE20083351D /* ViewController.swift */,
 				34FFC3272369FCE20083351D /* Main.storyboard */,
+				34FFC33B236A22490083351D /* PatientRoutineEx1.swift */,
+				34FFC33D236A225E0083351D /* PatientRoutineEx2.swift */,
+				34FFC33F236A227F0083351D /* PatientRoutineEx3.swift */,
+				34FFC341236A22940083351D /* PatientRoutineEx4.swift */,
+				34FFC343236A22A90083351D /* PatientRoutineEx5.swift */,
+				34FFC339236A14710083351D /* PatientRoutine1.swift */,
+				34FFC337236A13E40083351D /* PatientRoutine.swift */,
+				34FFC335236A127D0083351D /* PatientHome.swift */,
 				34FFC32A2369FCE30083351D /* Assets.xcassets */,
 				34FFC32C2369FCE30083351D /* LaunchScreen.storyboard */,
 				34FFC32F2369FCE30083351D /* Info.plist */,
@@ -100,7 +124,7 @@
 				};
 			};
 			buildConfigurationList = 34FFC3192369FCE20083351D /* Build configuration list for PBXProject "StabilityLink12" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,7 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FFC336236A127D0083351D /* PatientHome.swift in Sources */,
+				34FFC342236A22940083351D /* PatientRoutineEx4.swift in Sources */,
+				34FFC33E236A225E0083351D /* PatientRoutineEx2.swift in Sources */,
+				34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */,
 				34FFC3262369FCE20083351D /* ViewController.swift in Sources */,
+				34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */,
+				34FFC340236A227F0083351D /* PatientRoutineEx3.swift in Sources */,
+				34FFC344236A22A90083351D /* PatientRoutineEx5.swift in Sources */,
+				34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */,
 				34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
