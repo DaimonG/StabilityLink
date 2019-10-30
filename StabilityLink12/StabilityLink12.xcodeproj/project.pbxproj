@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3212369FCE20083351D /* AppDelegate.swift */; };
-		34FFC3242369FCE20083351D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3232369FCE20083351D /* SceneDelegate.swift */; };
 		34FFC3262369FCE20083351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3252369FCE20083351D /* ViewController.swift */; };
 		34FFC3292369FCE20083351D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC3272369FCE20083351D /* Main.storyboard */; };
 		34FFC32B2369FCE30083351D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC32A2369FCE30083351D /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		34FFC31E2369FCE20083351D /* StabilityLink12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StabilityLink12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC3212369FCE20083351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34FFC3232369FCE20083351D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		34FFC3252369FCE20083351D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34FFC3282369FCE20083351D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FFC32A2369FCE30083351D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				34FFC3212369FCE20083351D /* AppDelegate.swift */,
-				34FFC3232369FCE20083351D /* SceneDelegate.swift */,
 				34FFC3252369FCE20083351D /* ViewController.swift */,
 				34FFC3272369FCE20083351D /* Main.storyboard */,
 				34FFC32A2369FCE30083351D /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				34FFC3262369FCE20083351D /* ViewController.swift in Sources */,
 				34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */,
-				34FFC3242369FCE20083351D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +282,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
