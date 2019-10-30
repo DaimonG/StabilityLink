@@ -185,11 +185,19 @@
                                     <segue destination="Vap-Ck-FDV" kind="show" id="M6X-JJ-kbp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-Gb-e2b">
+                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nC7-ms-Dds" firstAttribute="top" secondItem="jXt-76-F4Q" secondAttribute="top" constant="20" id="5nD-Jp-haI"/>
                             <constraint firstItem="nC7-ms-Dds" firstAttribute="leading" secondItem="jXt-76-F4Q" secondAttribute="leading" constant="20" id="Z4J-Fd-JL4"/>
+                            <constraint firstItem="4hg-Gb-e2b" firstAttribute="top" secondItem="jXt-76-F4Q" secondAttribute="top" constant="40" id="iAb-Ua-AAJ"/>
+                            <constraint firstItem="4hg-Gb-e2b" firstAttribute="centerX" secondItem="3ZY-7Z-H31" secondAttribute="centerX" id="khD-6m-JLp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jXt-76-F4Q"/>
                     </view>
@@ -218,11 +226,19 @@
                                     <segue destination="Vap-Ck-FDV" kind="show" id="wiV-WZ-ezZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-xo-OAi">
+                                <rect key="frame" x="109" y="40" width="196" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="oZI-IQ-Xi5" firstAttribute="top" secondItem="08r-yL-Rd3" secondAttribute="top" constant="20" id="9ld-QS-Ki7"/>
+                            <constraint firstItem="70Q-xo-OAi" firstAttribute="top" secondItem="08r-yL-Rd3" secondAttribute="top" constant="40" id="Ptz-MN-F8w"/>
                             <constraint firstItem="oZI-IQ-Xi5" firstAttribute="leading" secondItem="08r-yL-Rd3" secondAttribute="leading" constant="20" id="aFy-Vi-iy6"/>
+                            <constraint firstItem="70Q-xo-OAi" firstAttribute="centerX" secondItem="jlH-3Q-4r7" secondAttribute="centerX" id="o66-hx-cuJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="08r-yL-Rd3"/>
                     </view>
@@ -251,9 +267,17 @@
                                     <segue destination="Vap-Ck-FDV" kind="show" id="9tg-Zo-R4H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-mu-hZS">
+                                <rect key="frame" x="108.5" y="40" width="197" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Jck-mu-hZS" firstAttribute="centerX" secondItem="fxE-Qw-Xqr" secondAttribute="centerX" id="8VW-82-Dbl"/>
+                            <constraint firstItem="Jck-mu-hZS" firstAttribute="top" secondItem="fni-vh-xYG" secondAttribute="top" constant="40" id="I1c-Iz-nch"/>
                             <constraint firstItem="eZJ-IZ-4gg" firstAttribute="top" secondItem="fni-vh-xYG" secondAttribute="top" constant="20" id="N0W-U6-HWh"/>
                             <constraint firstItem="eZJ-IZ-4gg" firstAttribute="leading" secondItem="fni-vh-xYG" secondAttribute="leading" constant="20" id="Qqd-iE-ZFd"/>
                         </constraints>
@@ -284,11 +308,19 @@
                                     <segue destination="Vap-Ck-FDV" kind="show" id="2zk-bU-Xim"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-U4-Wfd">
+                                <rect key="frame" x="108" y="40" width="198" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ive-Q8-dQw" firstAttribute="leading" secondItem="3ER-Uz-kkM" secondAttribute="leading" constant="20" id="JWv-Ty-lVi"/>
+                            <constraint firstItem="iF3-U4-Wfd" firstAttribute="centerX" secondItem="wh2-DF-RfB" secondAttribute="centerX" id="PID-eU-G9f"/>
                             <constraint firstItem="Ive-Q8-dQw" firstAttribute="top" secondItem="3ER-Uz-kkM" secondAttribute="top" constant="20" id="ndi-sD-q7A"/>
+                            <constraint firstItem="iF3-U4-Wfd" firstAttribute="top" secondItem="3ER-Uz-kkM" secondAttribute="top" constant="40" id="qw6-Le-Ryl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3ER-Uz-kkM"/>
                     </view>
@@ -317,9 +349,17 @@
                                     <segue destination="Vap-Ck-FDV" kind="show" id="e8M-OM-8gL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-77-y6W">
+                                <rect key="frame" x="108.5" y="40" width="197" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="m5f-77-y6W" firstAttribute="centerX" secondItem="c0j-sS-RPe" secondAttribute="centerX" id="3Uu-St-csV"/>
+                            <constraint firstItem="m5f-77-y6W" firstAttribute="top" secondItem="JR9-UK-1u7" secondAttribute="top" constant="40" id="OUq-S8-5v3"/>
                             <constraint firstItem="R3s-fa-JCw" firstAttribute="top" secondItem="JR9-UK-1u7" secondAttribute="top" constant="20" id="TH8-sI-yOW"/>
                             <constraint firstItem="R3s-fa-JCw" firstAttribute="leading" secondItem="JR9-UK-1u7" secondAttribute="leading" constant="20" id="mqS-rd-wUQ"/>
                         </constraints>
@@ -422,7 +462,7 @@
         <image name="back_button" width="218" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M6X-JJ-kbp"/>
+        <segue reference="2zk-bU-Xim"/>
         <segue reference="SGK-qs-xiV"/>
         <segue reference="gIM-Aa-QjQ"/>
     </inferredMetricsTieBreakers>
