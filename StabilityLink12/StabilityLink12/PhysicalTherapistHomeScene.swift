@@ -71,6 +71,18 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
            print("You tapped cell number \(indexPath.row).")
        }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath ) {
+        if editingStyle == .delete{
+            patients.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
+    }
     
     // If it is the done segue, we add the new item
     // First we must extract values from the other view controller

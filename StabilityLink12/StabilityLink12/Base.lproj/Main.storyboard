@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,9 +69,9 @@
             <objects>
                 <viewController title="PatientHome" id="tLi-wZ-40K" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4nf-yW-sl8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="P1A-yF-arJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="ib3-VF-gaP"/>
@@ -81,7 +83,7 @@
         <!--PhysicalTherapistHome-->
         <scene sceneID="1Ol-wJ-lHa">
             <objects>
-                <viewController title="PhysicalTherapistHome" modalPresentationStyle="fullScreen" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PhysicalTherapistHome" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-rK-54p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +91,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-6g-ZzW">
                                 <rect key="frame" x="184" y="159" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="oDR-qK-kMS" kind="presentation" id="hLc-Wv-rXO"/>
@@ -97,10 +99,10 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n6T-dz-Wsb">
                                 <rect key="frame" x="0.0" y="397" width="414" height="355"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="oTo-Nb-fZG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTo-Nb-fZG" id="mHq-E4-Pjz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -117,7 +119,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n6T-dz-Wsb" firstAttribute="top" secondItem="RKo-6g-ZzW" secondAttribute="bottom" constant="208" id="51Q-Tc-1YF"/>
                             <constraint firstItem="n6T-dz-Wsb" firstAttribute="leading" secondItem="GZf-nN-akt" secondAttribute="leading" id="7kg-R5-zTz"/>
@@ -143,7 +145,7 @@
         <!--Physio Patient Info-->
         <scene sceneID="4bo-KE-WuC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3w-12-vCU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +174,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GgI-qv-I7p"/>
                     </view>
                 </viewController>
@@ -183,7 +185,7 @@
         <!--Physio Patient Routines-->
         <scene sceneID="eJX-V4-vfg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="y7c-LI-lue" customClass="PhysioPatientRoutines" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y7c-LI-lue" customClass="PhysioPatientRoutines" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSn-68-ZJA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +222,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HmJ-eE-Ngx"/>
                     </view>
                 </viewController>
@@ -231,7 +233,7 @@
         <!--Physio Patient Routine1-->
         <scene sceneID="bed-Wx-oOa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8qM-D1-WE9" customClass="PhysioPatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8qM-D1-WE9" customClass="PhysioPatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PJd-l1-nXF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +278,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k1W-yw-Mb0"/>
                     </view>
                 </viewController>
@@ -287,7 +289,7 @@
         <!--Physio Exercise3-->
         <scene sceneID="AWl-ze-24y">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="td0-Oe-tdK" customClass="PhysioExercise3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="td0-Oe-tdK" customClass="PhysioExercise3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6aM-S1-W42">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +303,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c3F-Ry-bNh"/>
                     </view>
                 </viewController>
@@ -312,7 +314,7 @@
         <!--Physio Add Routine-->
         <scene sceneID="1gq-hg-XKR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="2uT-pK-8zQ" customClass="PhysioAddRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2uT-pK-8zQ" customClass="PhysioAddRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ke-bD-JaR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,7 +343,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nOP-17-CYF"/>
                     </view>
                 </viewController>
@@ -352,7 +354,7 @@
         <!--Physio Exercise1-->
         <scene sceneID="1O9-zC-nFu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7Tp-hg-iBe" customClass="PhysioExercise1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Tp-hg-iBe" customClass="PhysioExercise1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l20-QD-Itc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,7 +368,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jOV-xU-idw"/>
                     </view>
                 </viewController>
@@ -377,7 +379,7 @@
         <!--Physio Exercise2-->
         <scene sceneID="Duz-Wo-BtJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="pe6-Oa-o3f" customClass="PhysioExercise2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pe6-Oa-o3f" customClass="PhysioExercise2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Re7-3z-BVH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,7 +393,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qCS-sg-rNG"/>
                     </view>
                 </viewController>
@@ -402,7 +404,7 @@
         <!--Physio Add New Exercise-->
         <scene sceneID="vV5-z6-QDP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uwf-Ur-xiQ" customClass="PhysioAddNewExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uwf-Ur-xiQ" customClass="PhysioAddNewExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xeu-cA-vov">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,7 +425,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cnj-r2-uMO"/>
                     </view>
                 </viewController>
@@ -434,7 +436,7 @@
         <!--Physio Add Patient Scene-->
         <scene sceneID="ZiU-pw-LbG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BYi-MD-Jbz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,33 +458,33 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CO-68-z76">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CO-68-z76">
                                 <rect key="frame" x="100" y="507" width="214" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="214" id="XqB-Ft-ws9"/>
                                     <constraint firstAttribute="height" constant="34" id="aev-XG-7hS"/>
                                 </constraints>
-                                <color key="textColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-qI-7NN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-qI-7NN">
                                 <rect key="frame" x="100" y="581" width="214" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="214" id="YMq-Ei-hpQ"/>
                                     <constraint firstAttribute="height" constant="34" id="v0h-pb-k6H"/>
                                 </constraints>
-                                <color key="textColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Age" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-2o-cZi">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-2o-cZi">
                                 <rect key="frame" x="100" y="655" width="214" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Kgk-Rm-lJV"/>
                                     <constraint firstAttribute="width" constant="214" id="kCa-ia-GjQ"/>
                                 </constraints>
-                                <color key="textColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -500,7 +502,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="R1q-DX-M66" firstAttribute="centerX" secondItem="BYi-MD-Jbz" secondAttribute="centerX" id="1Rn-hQ-QeF"/>
                             <constraint firstItem="Sh1-2o-cZi" firstAttribute="top" secondItem="Sve-qI-7NN" secondAttribute="bottom" constant="40" id="AEj-Uw-Ede"/>
@@ -539,7 +541,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="55t-as-YA5"/>
-        <segue reference="LEi-iE-6xn"/>
+        <segue reference="s07-pB-48N"/>
         <segue reference="A4a-cO-djm"/>
         <segue reference="hLc-Wv-rXO"/>
         <segue reference="Lqq-N0-YcH"/>
