@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,7 +69,7 @@
             <objects>
                 <viewController title="PatientRoutine" id="q16-sJ-aJr" customClass="PatientRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QX6-Mm-vLP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Routines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvY-EL-LKv">
@@ -87,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jr-eo-RqT">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="hW2-R7-Xwa"/>
                                     <constraint firstAttribute="height" constant="94" id="vKr-A4-0oW"/>
@@ -116,17 +118,17 @@
             <objects>
                 <viewController title="PatientHome" id="tLi-wZ-40K" customClass="PatientHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4nf-yW-sl8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu9-iT-wUW">
-                                <rect key="frame" x="149" y="40" width="116" height="54"/>
+                                <rect key="frame" x="149" y="84" width="116" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3y-Ru-sGp">
-                                <rect key="frame" x="96" y="344" width="222" height="84"/>
+                                <rect key="frame" x="96" y="388" width="222" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Routines"/>
                                 <connections>
@@ -155,7 +157,7 @@
             <objects>
                 <viewController title="PhysicalTherapistHome" id="W1g-k7-jlC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-rK-54p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GZf-nN-akt"/>
@@ -171,11 +173,11 @@
             <objects>
                 <viewController title="PatientRoutineEx1" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZY-7Z-H31">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC7-ms-Dds">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="UIT-lX-7yI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="caL-aJ-kYc"/>
@@ -188,7 +190,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-Gb-e2b">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="KYB-vf-mvE"/>
                                     <constraint firstAttribute="width" constant="190" id="Tks-3z-vKQ"/>
@@ -198,7 +200,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burpee" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-kf-Jw4">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4oV-cl-8kw"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Ay6-9t-zQ0"/>
@@ -210,7 +212,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Leg Lifts" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-F3-KTq">
-                                <rect key="frame" x="112" y="387" width="190" height="34"/>
+                                <rect key="frame" x="112" y="431" width="190" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="Lbr-zJ-pG1"/>
                                     <constraint firstAttribute="height" constant="34" id="Vz3-0m-IYP"/>
@@ -218,9 +220,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYk-Gp-V5N">
-                                <rect key="frame" x="66" y="443" width="283" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYk-Gp-V5N">
+                                <rect key="frame" x="72" y="483" width="283" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="R9x-sI-J5W"/>
+                                    <constraint firstAttribute="width" constant="283" id="SUv-JV-FEA"/>
+                                </constraints>
                                 <string key="text">Description:  1. Sit in a chair.  2. Slowly straighten out one leg, hold and lower.  3. Repeat with other leg.  4. To increase your strength,
 add a small weight around your ankle.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -230,15 +235,19 @@ add a small weight around your ankle.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SYk-Gp-V5N" firstAttribute="top" secondItem="Z4f-F3-KTq" secondAttribute="bottom" constant="18" id="0YE-Ib-Mz8"/>
                             <constraint firstItem="Hzt-kf-Jw4" firstAttribute="top" secondItem="4hg-Gb-e2b" secondAttribute="bottom" constant="75" id="0uC-2Q-5AC"/>
                             <constraint firstItem="Z4f-F3-KTq" firstAttribute="top" secondItem="Hzt-kf-Jw4" secondAttribute="bottom" constant="18" id="8od-13-8Ks"/>
                             <constraint firstItem="4hg-Gb-e2b" firstAttribute="leading" secondItem="nC7-ms-Dds" secondAttribute="trailing" constant="24" id="AE3-R7-6rA"/>
+                            <constraint firstItem="jXt-76-F4Q" firstAttribute="bottom" secondItem="SYk-Gp-V5N" secondAttribute="bottom" constant="200" id="C8U-L5-kLv"/>
+                            <constraint firstItem="jXt-76-F4Q" firstAttribute="trailing" secondItem="SYk-Gp-V5N" secondAttribute="trailing" constant="59" id="E8e-hY-Zj4"/>
                             <constraint firstItem="Z4f-F3-KTq" firstAttribute="top" secondItem="Hzt-kf-Jw4" secondAttribute="bottom" constant="18" id="LYX-ZV-a7W"/>
                             <constraint firstItem="4hg-Gb-e2b" firstAttribute="leading" secondItem="nC7-ms-Dds" secondAttribute="trailing" constant="24" id="PcK-dg-C2B"/>
                             <constraint firstItem="nC7-ms-Dds" firstAttribute="top" secondItem="jXt-76-F4Q" secondAttribute="top" constant="20" id="VPG-ZE-ysx"/>
                             <constraint firstItem="jXt-76-F4Q" firstAttribute="trailing" secondItem="Hzt-kf-Jw4" secondAttribute="trailing" constant="50" id="aty-nU-b6j"/>
                             <constraint firstItem="jXt-76-F4Q" firstAttribute="trailing" secondItem="Z4f-F3-KTq" secondAttribute="trailing" constant="112" id="crb-J4-wGw"/>
                             <constraint firstItem="4hg-Gb-e2b" firstAttribute="top" secondItem="jXt-76-F4Q" secondAttribute="top" constant="40" id="cuW-RO-QIB"/>
+                            <constraint firstItem="SYk-Gp-V5N" firstAttribute="leading" secondItem="jXt-76-F4Q" secondAttribute="leading" constant="72" id="diY-pK-Kuh"/>
                             <constraint firstItem="Hzt-kf-Jw4" firstAttribute="top" secondItem="4hg-Gb-e2b" secondAttribute="bottom" constant="75" id="f86-Lk-uLG"/>
                             <constraint firstItem="Hzt-kf-Jw4" firstAttribute="top" secondItem="nC7-ms-Dds" secondAttribute="bottom" constant="55" id="ffF-Ey-uN7"/>
                             <constraint firstItem="Hzt-kf-Jw4" firstAttribute="leading" secondItem="jXt-76-F4Q" secondAttribute="leading" constant="50" id="iF4-2j-g1s"/>
@@ -259,11 +268,11 @@ add a small weight around your ankle.</string>
             <objects>
                 <viewController title="PatientRoutineEx2" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlH-3Q-4r7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-IQ-Xi5">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68.5" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="94" id="eI7-TA-Llj"/>
                                     <constraint firstAttribute="height" constant="94" id="gx8-eR-kAy"/>
@@ -278,7 +287,7 @@ add a small weight around your ankle.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-xo-OAi">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112.5" y="84" width="360.5" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="66a-60-wNC"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="190" id="OYi-55-RQA"/>
@@ -292,7 +301,7 @@ add a small weight around your ankle.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Knee Bends" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dIf-yX-Yt8">
-                                <rect key="frame" x="112" y="387" width="190" height="34"/>
+                                <rect key="frame" x="112.5" y="431" width="360.5" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Bbn-Ny-Kxx"/>
                                     <constraint firstAttribute="width" constant="190" id="GuI-G5-eHq"/>
@@ -301,17 +310,16 @@ add a small weight around your ankle.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burpee" translatesAutoresizingMaskIntoConstraints="NO" id="475-Ui-UnJ">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314.5" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="OZj-9E-2E6"/>
                                     <constraint firstAttribute="width" constant="314" id="aXH-tu-2cm"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="ud2-bQ-Ro3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-wY-JgL">
-                                <rect key="frame" x="35" y="449" width="344" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Description:  1. Stand tall with feet apart.  2. Rest hands on a chair back for support if necessary.  3. Slowly do small knee bends. Concentrate on squeezing the muscles in your buttocks when you straighten.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-wY-JgL">
+                                <rect key="frame" x="53" y="483" width="479" height="190"/>
+                                <string key="text">Description:  1. Stand tall with feet apart.  2. Rest hands on a chair back for support if necessary.  3. Slowly do small knee bends. Concentrate on squeezing the   muscles in your buttocks when you straighten.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -324,12 +332,16 @@ add a small weight around your ankle.</string>
                             <constraint firstItem="oZI-IQ-Xi5" firstAttribute="leading" secondItem="08r-yL-Rd3" secondAttribute="leading" constant="20" id="51Z-kL-oWn"/>
                             <constraint firstItem="dIf-yX-Yt8" firstAttribute="leading" secondItem="08r-yL-Rd3" secondAttribute="leading" constant="112" id="B9u-CK-0yx"/>
                             <constraint firstItem="475-Ui-UnJ" firstAttribute="top" secondItem="70Q-xo-OAi" secondAttribute="bottom" constant="75" id="CNE-gz-6JJ"/>
+                            <constraint firstItem="u8z-wY-JgL" firstAttribute="leading" secondItem="08r-yL-Rd3" secondAttribute="leading" constant="53" id="MTN-RO-ddh"/>
                             <constraint firstItem="08r-yL-Rd3" firstAttribute="trailing" secondItem="dIf-yX-Yt8" secondAttribute="trailing" constant="112" id="OHD-Fk-IBP"/>
                             <constraint firstItem="70Q-xo-OAi" firstAttribute="leading" secondItem="oZI-IQ-Xi5" secondAttribute="trailing" constant="24" id="PAF-0Z-Vw3"/>
                             <constraint firstItem="70Q-xo-OAi" firstAttribute="leading" secondItem="oZI-IQ-Xi5" secondAttribute="trailing" constant="24" id="RJb-wn-FlT"/>
                             <constraint firstItem="475-Ui-UnJ" firstAttribute="leading" secondItem="08r-yL-Rd3" secondAttribute="leading" constant="50" id="Rym-q3-IuI"/>
+                            <constraint firstItem="u8z-wY-JgL" firstAttribute="top" secondItem="dIf-yX-Yt8" secondAttribute="bottom" constant="18" id="S3W-w2-rKq"/>
+                            <constraint firstItem="08r-yL-Rd3" firstAttribute="bottom" secondItem="u8z-wY-JgL" secondAttribute="bottom" constant="189" id="gCk-LD-Asn"/>
                             <constraint firstItem="dIf-yX-Yt8" firstAttribute="top" secondItem="475-Ui-UnJ" secondAttribute="bottom" constant="18" id="k1V-VB-eLj"/>
                             <constraint firstItem="dIf-yX-Yt8" firstAttribute="top" secondItem="475-Ui-UnJ" secondAttribute="bottom" constant="18" id="o26-Ia-uWl"/>
+                            <constraint firstItem="08r-yL-Rd3" firstAttribute="trailing" secondItem="u8z-wY-JgL" secondAttribute="trailing" constant="53" id="wGB-FJ-3Ri"/>
                             <constraint firstItem="70Q-xo-OAi" firstAttribute="top" secondItem="08r-yL-Rd3" secondAttribute="top" constant="40" id="wdi-cY-WDS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="08r-yL-Rd3"/>
@@ -345,11 +357,11 @@ add a small weight around your ankle.</string>
             <objects>
                 <viewController title="PatientRoutineEx3" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxE-Qw-Xqr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZJ-IZ-4gg">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="Ia3-sb-xSf"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="RCb-cS-Szx"/>
@@ -364,7 +376,7 @@ add a small weight around your ankle.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-mu-hZS">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="0yz-6Y-4za"/>
                                     <constraint firstAttribute="height" constant="54" id="ZcV-NS-3HZ"/>
@@ -374,7 +386,7 @@ add a small weight around your ankle.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burpee" translatesAutoresizingMaskIntoConstraints="NO" id="812-8a-dqq">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Lwa-zt-pvC"/>
                                     <constraint firstAttribute="width" constant="314" id="eZG-Qu-qVu"/>
@@ -382,7 +394,7 @@ add a small weight around your ankle.</string>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calf Raises" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpA-4X-pJx">
-                                <rect key="frame" x="112" y="387" width="190" height="34"/>
+                                <rect key="frame" x="112" y="431" width="190" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="09A-bs-zwj"/>
                                     <constraint firstAttribute="height" constant="34" id="W4a-ga-oc0"/>
@@ -390,9 +402,8 @@ add a small weight around your ankle.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-KC-dQB">
-                                <rect key="frame" x="50" y="465" width="292" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-KC-dQB">
+                                <rect key="frame" x="50" y="483" width="292" height="122"/>
                                 <string key="text">Description:  1. Stand behind a chair.  2. If necessary, rest your hands on the back for support.  3. Go up on your toes and come down flat.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -402,16 +413,20 @@ add a small weight around your ankle.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Jck-mu-hZS" firstAttribute="leading" secondItem="eZJ-IZ-4gg" secondAttribute="trailing" constant="24" id="5H9-ov-99r"/>
+                            <constraint firstItem="fni-vh-xYG" firstAttribute="trailing" secondItem="Ftd-KC-dQB" secondAttribute="trailing" constant="72" id="5bu-nD-JgM"/>
                             <constraint firstItem="Jck-mu-hZS" firstAttribute="leading" secondItem="eZJ-IZ-4gg" secondAttribute="trailing" constant="24" id="5f0-KR-o2H"/>
                             <constraint firstItem="HpA-4X-pJx" firstAttribute="top" secondItem="812-8a-dqq" secondAttribute="bottom" constant="18" id="6Ck-WO-eSs"/>
                             <constraint firstItem="eZJ-IZ-4gg" firstAttribute="leading" secondItem="fni-vh-xYG" secondAttribute="leading" constant="20" id="Amo-Z6-cqx"/>
                             <constraint firstItem="HpA-4X-pJx" firstAttribute="top" secondItem="812-8a-dqq" secondAttribute="bottom" constant="18" id="CgR-Jg-14g"/>
+                            <constraint firstItem="Ftd-KC-dQB" firstAttribute="top" secondItem="HpA-4X-pJx" secondAttribute="bottom" constant="18" id="E5O-7c-853"/>
                             <constraint firstItem="eZJ-IZ-4gg" firstAttribute="top" secondItem="fni-vh-xYG" secondAttribute="top" constant="20" id="HbR-ho-7bS"/>
+                            <constraint firstItem="fni-vh-xYG" firstAttribute="bottom" secondItem="Ftd-KC-dQB" secondAttribute="bottom" constant="257" id="RPx-pt-gcm"/>
                             <constraint firstItem="Jck-mu-hZS" firstAttribute="top" secondItem="fni-vh-xYG" secondAttribute="top" constant="40" id="Uaj-2T-ol6"/>
                             <constraint firstItem="HpA-4X-pJx" firstAttribute="leading" secondItem="fni-vh-xYG" secondAttribute="leading" constant="112" id="dzW-S6-vOg"/>
                             <constraint firstItem="fni-vh-xYG" firstAttribute="trailing" secondItem="Jck-mu-hZS" secondAttribute="trailing" constant="112" id="gEW-cY-ah5"/>
                             <constraint firstItem="812-8a-dqq" firstAttribute="leading" secondItem="fni-vh-xYG" secondAttribute="leading" constant="50" id="gH3-A4-iZw"/>
                             <constraint firstItem="812-8a-dqq" firstAttribute="top" secondItem="Jck-mu-hZS" secondAttribute="bottom" constant="75" id="ivF-NV-TxP"/>
+                            <constraint firstItem="Ftd-KC-dQB" firstAttribute="leading" secondItem="fni-vh-xYG" secondAttribute="leading" constant="50" id="lzg-EF-YB5"/>
                             <constraint firstItem="fni-vh-xYG" firstAttribute="trailing" secondItem="HpA-4X-pJx" secondAttribute="trailing" constant="112" id="pJ6-cP-7Lf"/>
                             <constraint firstItem="fni-vh-xYG" firstAttribute="trailing" secondItem="812-8a-dqq" secondAttribute="trailing" constant="50" id="rdR-N5-YpF"/>
                             <constraint firstItem="812-8a-dqq" firstAttribute="top" secondItem="Jck-mu-hZS" secondAttribute="bottom" constant="75" id="v9o-na-AEv"/>
@@ -430,11 +445,11 @@ add a small weight around your ankle.</string>
             <objects>
                 <viewController title="PatientRoutineEx4" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wh2-DF-RfB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ive-Q8-dQw">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="94" id="7Jl-gw-7iz"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="68" id="8mw-ZN-04q"/>
@@ -451,7 +466,7 @@ add a small weight around your ankle.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burpee" translatesAutoresizingMaskIntoConstraints="NO" id="AUd-1r-9dH">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="C4N-LM-iiz"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="dam-3Q-4wV"/>
@@ -459,7 +474,7 @@ add a small weight around your ankle.</string>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shoulder Squeeze" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-Hg-huY">
-                                <rect key="frame" x="112" y="387" width="190" height="34"/>
+                                <rect key="frame" x="112" y="431" width="190" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ZIF-bi-y55"/>
                                     <constraint firstAttribute="width" constant="190" id="rZu-1V-nQm"/>
@@ -468,7 +483,7 @@ add a small weight around your ankle.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-U4-Wfd">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="1QG-8d-Aa2"/>
                                     <constraint firstAttribute="width" constant="190" id="Ojp-eJ-QsI"/>
@@ -479,9 +494,8 @@ add a small weight around your ankle.</string>
                                 <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:  1. Sit or stand tall.  2. Keep elbows at ninety degrees.  3. Pull shoulder blades together in back." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-eA-GXW">
-                                <rect key="frame" x="60" y="493" width="242" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:  1. Sit or stand tall.  2. Keep elbows at ninety degrees.  3. Pull shoulder blades together in back." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-eA-GXW">
+                                <rect key="frame" x="60" y="483" width="307" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -495,14 +509,21 @@ add a small weight around your ankle.</string>
                             <constraint firstItem="3ER-Uz-kkM" firstAttribute="trailing" secondItem="iF3-U4-Wfd" secondAttribute="trailing" constant="112" id="4yC-aR-OoI"/>
                             <constraint firstItem="AUd-1r-9dH" firstAttribute="top" secondItem="iF3-U4-Wfd" secondAttribute="bottom" constant="75" id="4zG-4l-eg9"/>
                             <constraint firstItem="AUd-1r-9dH" firstAttribute="top" secondItem="iF3-U4-Wfd" secondAttribute="bottom" constant="75" id="7Gn-YY-m8A"/>
+                            <constraint firstItem="Y2s-eA-GXW" firstAttribute="leading" secondItem="3ER-Uz-kkM" secondAttribute="leading" constant="60" id="ISx-WP-Vs5"/>
+                            <constraint firstItem="Y2s-eA-GXW" firstAttribute="top" secondItem="AbF-Hg-huY" secondAttribute="bottom" constant="18" id="IWN-Lb-Ret"/>
                             <constraint firstItem="Ive-Q8-dQw" firstAttribute="leading" secondItem="3ER-Uz-kkM" secondAttribute="leading" constant="20" id="Ih3-5s-xx6"/>
+                            <constraint firstItem="3ER-Uz-kkM" firstAttribute="trailing" secondItem="Y2s-eA-GXW" secondAttribute="trailing" constant="47" id="KTh-on-cTi"/>
                             <constraint firstItem="AbF-Hg-huY" firstAttribute="top" secondItem="AUd-1r-9dH" secondAttribute="bottom" constant="18" id="MJu-hA-9qR"/>
                             <constraint firstItem="AUd-1r-9dH" firstAttribute="leading" secondItem="3ER-Uz-kkM" secondAttribute="leading" constant="50" id="NAY-en-iPw"/>
+                            <constraint firstItem="Y2s-eA-GXW" firstAttribute="leading" secondItem="3ER-Uz-kkM" secondAttribute="leading" constant="60" id="ODS-Hr-VGB"/>
+                            <constraint firstItem="Y2s-eA-GXW" firstAttribute="top" secondItem="AbF-Hg-huY" secondAttribute="bottom" constant="18" id="T99-PL-dFQ"/>
                             <constraint firstItem="Ive-Q8-dQw" firstAttribute="top" secondItem="3ER-Uz-kkM" secondAttribute="top" constant="20" id="a6A-pe-sUn"/>
                             <constraint firstItem="AbF-Hg-huY" firstAttribute="top" secondItem="AUd-1r-9dH" secondAttribute="bottom" constant="18" id="fnY-4M-Yhy"/>
                             <constraint firstItem="AUd-1r-9dH" firstAttribute="top" secondItem="Ive-Q8-dQw" secondAttribute="bottom" constant="55" id="lg3-lR-GGk"/>
+                            <constraint firstItem="Y2s-eA-GXW" firstAttribute="top" secondItem="AbF-Hg-huY" secondAttribute="bottom" constant="18" id="mug-OX-wTU"/>
                             <constraint firstItem="3ER-Uz-kkM" firstAttribute="trailing" secondItem="AUd-1r-9dH" secondAttribute="trailing" constant="50" id="pYw-Rc-H6G"/>
                             <constraint firstItem="iF3-U4-Wfd" firstAttribute="top" secondItem="3ER-Uz-kkM" secondAttribute="top" constant="40" id="t0Z-sB-nyZ"/>
+                            <constraint firstItem="3ER-Uz-kkM" firstAttribute="bottom" secondItem="Y2s-eA-GXW" secondAttribute="bottom" constant="297.5" id="yHM-WT-blC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3ER-Uz-kkM"/>
                     </view>
@@ -517,11 +538,11 @@ add a small weight around your ankle.</string>
             <objects>
                 <viewController title="PatientRoutineEx5" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0j-sS-RPe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-fa-JCw">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="XdY-e0-yW0"/>
                                     <constraint firstAttribute="height" constant="94" id="ou2-oU-U9c"/>
@@ -534,7 +555,7 @@ add a small weight around your ankle.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-77-y6W">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="PWM-37-2Cr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="TaZ-L5-cWe"/>
@@ -546,7 +567,7 @@ add a small weight around your ankle.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burpee" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-yf-g4B">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Q8U-kj-ZaW"/>
                                     <constraint firstAttribute="width" constant="314" id="XDu-Zx-w6v"/>
@@ -554,7 +575,7 @@ add a small weight around your ankle.</string>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Arm Raises" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uc-9V-N50">
-                                <rect key="frame" x="112" y="387" width="190" height="34"/>
+                                <rect key="frame" x="112" y="431" width="190" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="6gC-Ak-gS5"/>
                                     <constraint firstAttribute="height" constant="34" id="wdA-5J-kUd"/>
@@ -562,9 +583,8 @@ add a small weight around your ankle.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lre-Cq-rzV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lre-Cq-rzV">
                                 <rect key="frame" x="50" y="483" width="287" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Description:  1. Sit or stand. 2. Hold a can of soup or any small weight in each hand.  3. Push one hand towards the ceiling and lower.  4. Repeat with other hand.  5. Try to push as high as possible with each hand.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -578,14 +598,18 @@ add a small weight around your ankle.</string>
                             <constraint firstItem="JR9-UK-1u7" firstAttribute="trailing" secondItem="m5f-77-y6W" secondAttribute="trailing" constant="112" id="4Gk-Ko-uAJ"/>
                             <constraint firstItem="JR9-UK-1u7" firstAttribute="trailing" secondItem="bKX-yf-g4B" secondAttribute="trailing" constant="50" id="5n2-Qh-zBm"/>
                             <constraint firstItem="bKX-yf-g4B" firstAttribute="leading" secondItem="JR9-UK-1u7" secondAttribute="leading" constant="50" id="6jJ-dG-evP"/>
+                            <constraint firstItem="lre-Cq-rzV" firstAttribute="leading" secondItem="JR9-UK-1u7" secondAttribute="leading" constant="50" id="6kg-fl-fAE"/>
                             <constraint firstItem="bKX-yf-g4B" firstAttribute="top" secondItem="R3s-fa-JCw" secondAttribute="bottom" constant="55" id="7Zg-mb-ZV4"/>
+                            <constraint firstItem="JR9-UK-1u7" firstAttribute="trailing" secondItem="lre-Cq-rzV" secondAttribute="trailing" constant="77" id="BhA-u7-bSE"/>
                             <constraint firstItem="9uc-9V-N50" firstAttribute="leading" secondItem="JR9-UK-1u7" secondAttribute="leading" constant="112" id="Hl1-Yh-o7D"/>
                             <constraint firstAttribute="trailing" secondItem="bKX-yf-g4B" secondAttribute="trailing" constant="50" id="K0s-uf-eIU"/>
                             <constraint firstItem="m5f-77-y6W" firstAttribute="leading" secondItem="R3s-fa-JCw" secondAttribute="trailing" constant="24" id="Lam-xa-Qqv"/>
                             <constraint firstItem="JR9-UK-1u7" firstAttribute="trailing" secondItem="9uc-9V-N50" secondAttribute="trailing" constant="112" id="YaX-1H-PcY"/>
                             <constraint firstItem="bKX-yf-g4B" firstAttribute="top" secondItem="m5f-77-y6W" secondAttribute="bottom" constant="75" id="aAV-hi-NGc"/>
                             <constraint firstItem="m5f-77-y6W" firstAttribute="top" secondItem="JR9-UK-1u7" secondAttribute="top" constant="40" id="fII-ob-hCX"/>
+                            <constraint firstItem="lre-Cq-rzV" firstAttribute="top" secondItem="9uc-9V-N50" secondAttribute="bottom" constant="18" id="prr-qR-LM4"/>
                             <constraint firstItem="bKX-yf-g4B" firstAttribute="top" secondItem="m5f-77-y6W" secondAttribute="bottom" constant="75" id="qJA-Cx-VIa"/>
+                            <constraint firstItem="JR9-UK-1u7" firstAttribute="bottom" secondItem="lre-Cq-rzV" secondAttribute="bottom" constant="177" id="uSy-zw-Vw0"/>
                             <constraint firstItem="R3s-fa-JCw" firstAttribute="leading" secondItem="JR9-UK-1u7" secondAttribute="leading" constant="20" id="w87-FN-ec5"/>
                             <constraint firstItem="9uc-9V-N50" firstAttribute="top" secondItem="bKX-yf-g4B" secondAttribute="bottom" constant="18" id="wfz-PB-86g"/>
                             <constraint firstItem="m5f-77-y6W" firstAttribute="leading" secondItem="R3s-fa-JCw" secondAttribute="trailing" constant="24" id="xfc-JM-tbr"/>
@@ -603,11 +627,11 @@ add a small weight around your ankle.</string>
             <objects>
                 <viewController title="PatientRoutine1" id="Vap-Ck-FDV" customClass="PatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfI-Kq-a4h">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="vKs-gL-5T8">
-                                <rect key="frame" x="76.5" y="125" width="261" height="616"/>
+                                <rect key="frame" x="76.5" y="169" width="261" height="600"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C9-B4-zeJ">
                                         <rect key="frame" x="0.0" y="0.0" width="261" height="84"/>
@@ -642,7 +666,7 @@ add a small weight around your ankle.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88h-or-Yvb">
-                                        <rect key="frame" x="0.0" y="532" width="261" height="84"/>
+                                        <rect key="frame" x="0.0" y="532" width="261" height="68"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Exercise 5"/>
                                         <connections>
@@ -658,7 +682,7 @@ add a small weight around your ankle.</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0J-PG-KN6">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="P1D-eA-At0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="ZQq-q8-26F"/>
@@ -671,7 +695,7 @@ add a small weight around your ankle.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkX-NI-0vX">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="LQm-3q-uew"/>
                                     <constraint firstAttribute="height" constant="54" id="fHz-JN-6ZE"/>
@@ -709,7 +733,7 @@ add a small weight around your ankle.</string>
         <image name="burpee" width="640" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e8M-OM-8gL"/>
+        <segue reference="2zk-bU-Xim"/>
         <segue reference="SGK-qs-xiV"/>
         <segue reference="gIM-Aa-QjQ"/>
     </inferredMetricsTieBreakers>
