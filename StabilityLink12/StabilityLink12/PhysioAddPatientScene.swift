@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhysioAddPatientScene: UIViewController {
+class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
 
     var firstName:String = ""
     var lastName:String = ""
@@ -24,10 +24,15 @@ class PhysioAddPatientScene: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fName.delegate = self
+        lName.delegate = self
+        age.delegate = self
 
         // Do any additional setup after loading the view.
     }
     
+    // Load Screen Function
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "doneSegue" {
             firstName = fName.text!
@@ -36,7 +41,11 @@ class PhysioAddPatientScene: UIViewController {
         }
     }
     
-
+    // Hide Keyboard Function
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           self.view.endEditing(true)
+           return true
+       }
     /*
     // MARK: - Navigation
 
