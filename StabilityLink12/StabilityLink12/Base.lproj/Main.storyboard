@@ -1415,7 +1415,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArmRaiseTxt" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-aO-7cX">
-                                <rect key="frame" x="50" y="514" width="314.00000000000006" height="200"/>
+                                <rect key="frame" x="50" y="514" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="CIh-MS-HWC"/>
                                     <constraint firstAttribute="height" constant="200" id="HRf-HD-Uf5"/>
