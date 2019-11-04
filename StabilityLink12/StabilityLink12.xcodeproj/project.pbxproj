@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347DE127236FA00B003F33EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DE126236FA00B003F33EF /* CheckBox.swift */; };
 		34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3212369FCE20083351D /* AppDelegate.swift */; };
 		34FFC3262369FCE20083351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3252369FCE20083351D /* ViewController.swift */; };
 		34FFC3292369FCE20083351D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC3272369FCE20083351D /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		347DE126236FA00B003F33EF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		34FFC31E2369FCE20083351D /* StabilityLink12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StabilityLink12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC3212369FCE20083351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FFC3252369FCE20083351D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				34FFC3212369FCE20083351D /* AppDelegate.swift */,
 				34FFC3252369FCE20083351D /* ViewController.swift */,
 				34FFC3272369FCE20083351D /* Main.storyboard */,
+				347DE126236FA00B003F33EF /* CheckBox.swift */,
 				34FFC33B236A22490083351D /* PatientRoutineEx1.swift */,
 				34FFC33D236A225E0083351D /* PatientRoutineEx2.swift */,
 				34FFC33F236A227F0083351D /* PatientRoutineEx3.swift */,
@@ -206,6 +209,7 @@
 				748CFB84236A184D00CC7068 /* PhysioExercise2.swift in Sources */,
 				748CFB86236A185800CC7068 /* PhysioExercise3.swift in Sources */,
 				748CFB80236A17AE00CC7068 /* PhysioPatientRoutine1.swift in Sources */,
+				347DE127236FA00B003F33EF /* CheckBox.swift in Sources */,
 				748CFB82236A184000CC7068 /* PhysioExercise1.swift in Sources */,
 				748CFB7A236A164800CC7068 /* PhysioPatientRoutines.swift in Sources */,
 				34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */,
