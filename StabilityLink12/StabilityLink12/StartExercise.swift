@@ -1,44 +1,34 @@
 //
-//  PhysioAddRoutine.swift
+//  StartExercise.swift
 //  StabilityLink12
 //
-//  Created by Bin Xiong on 2019-11-03.
+//  Created by Bin Xiong on 11/3/19.
 //  Copyright © 2019 Matthew Chute. All rights reserved.
 //
 
 import UIKit
 
-class PhysioAddRoutine: UIViewController {
-
-    var Routines:String = ""
-  
+class StartExercise: UIViewController {
     
-    // Linking 3 Text Fields
-    
-    @IBOutlet weak var RoutineName: UITextField!
-    
-
+    @IBOutlet weak var repsnumber: UILabel!
+    @IBOutlet weak var setnumber: UILabel!
+    @IBOutlet weak var Despart: UILabel!
+    @IBOutlet weak var Imagepart: UIImageView!
+    var StartExerciseList : ExerciseListTable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        repsnumber.text = StartExerciseList?.reps
+        setnumber.text = StartExerciseList?.sets
+        Despart.text = StartExerciseList?.describution
         
+        Imagepart.image = UIImage(named: (StartExerciseList!.name + ".png"))
         
         
         // Do any additional setup after loading the view.
     }
     
-    // Load Screen Function
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "doneSegue" {
-            
-        }
-    }
     
-    // Hide Keyboard Function
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return true
-    }
     /*
      // MARK: - Navigation
      
@@ -48,5 +38,5 @@ class PhysioAddRoutine: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-
+    
 }
