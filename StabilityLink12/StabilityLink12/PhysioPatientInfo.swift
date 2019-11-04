@@ -13,7 +13,7 @@ class RoutinesNameList {
    
 }
 var RoutinesArray:[RoutinesNameList] = []
-
+var desserts:[String] = []
 class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     // Connecting UI Elements
@@ -33,7 +33,10 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     // Patient Object that is optional
     var tPatient: Patients?
     
+    
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         PatientFirstName.text = tPatient?.firstName
         PatientLastName.text = tPatient?.lastName
@@ -89,7 +92,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        myIndex = indexPath.row
+        
         performSegue(withIdentifier: "ToExerciseHome", sender: self)
     }
     

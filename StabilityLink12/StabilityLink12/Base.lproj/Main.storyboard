@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -494,10 +494,10 @@
                         <viewLayoutGuide key="safeArea" id="zz5-9C-tJz"/>
                     </view>
                     <connections>
-                        <outlet property="Despart" destination="ZFT-Nk-OPL" id="MOL-vu-Pyw"/>
-                        <outlet property="Imagepart" destination="K5Q-Wn-0gb" id="lfK-E8-FcC"/>
-                        <outlet property="repsnumber" destination="xgO-YY-Cwx" id="H8K-JE-lj1"/>
-                        <outlet property="setnumber" destination="jJe-RC-A38" id="juj-vu-tW6"/>
+                        <outlet property="Despart" destination="ZFT-Nk-OPL" id="1F5-qe-aic"/>
+                        <outlet property="Imagepart" destination="K5Q-Wn-0gb" id="MEU-rT-DlR"/>
+                        <outlet property="repsnumber" destination="xgO-YY-Cwx" id="w7Y-aJ-XRP"/>
+                        <outlet property="setnumber" destination="jJe-RC-A38" id="sfp-e2-d1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsX-bZ-S3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -629,7 +629,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="SetMinus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="5eR-Zj-TPp"/>
+                                    <action selector="SetMinus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="rLs-Tb-Zam"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5L-ct-JGc">
@@ -637,7 +637,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="SetsPlus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="bXm-EA-wZ0"/>
+                                    <action selector="SetsPlus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="3q7-lQ-ez8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAH-Zy-3n8">
@@ -645,7 +645,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="RepsMinus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="IsA-We-G2T"/>
+                                    <action selector="RepsMinus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="04d-Xw-6Ul"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feu-cA-ywX">
@@ -653,7 +653,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="RepsPlus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="coY-UE-w5U"/>
+                                    <action selector="RepsPlus:" destination="lO2-A0-eJv" eventType="touchUpInside" id="tH0-Be-99H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -661,10 +661,10 @@
                         <viewLayoutGuide key="safeArea" id="t1J-pc-mQG"/>
                     </view>
                     <connections>
-                        <outlet property="ExerciseDescribution" destination="HPZ-Pl-hK6" id="IrF-Mg-QDF"/>
-                        <outlet property="ExerciseImage" destination="T2X-8Z-jMz" id="gBT-QM-wcE"/>
-                        <outlet property="ExerciseReps" destination="6H6-Vg-sgf" id="0IV-iC-uke"/>
-                        <outlet property="ExerciseSetNumber" destination="H2n-v9-qfu" id="SYd-jy-4iT"/>
+                        <outlet property="ExerciseDescribution" destination="HPZ-Pl-hK6" id="K27-ty-JYv"/>
+                        <outlet property="ExerciseImage" destination="T2X-8Z-jMz" id="QfF-hX-4iB"/>
+                        <outlet property="ExerciseReps" destination="6H6-Vg-sgf" id="7Ub-N4-5zt"/>
+                        <outlet property="ExerciseSetNumber" destination="H2n-v9-qfu" id="fDh-fi-PWU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psH-cN-Ars" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -835,7 +835,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LegRaise" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-kf-Jw4">
-                                <rect key="frame" x="50" y="213" width="314" height="211"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4oV-cl-8kw"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Ay6-9t-zQ0"/>
@@ -847,7 +847,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Leg Lifts" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-F3-KTq">
-                                <rect key="frame" x="112" y="442" width="190" height="34"/>
+                                <rect key="frame" x="112" y="431" width="190" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="Lbr-zJ-pG1"/>
                                     <constraint firstAttribute="height" constant="34" id="Vz3-0m-IYP"/>
@@ -856,7 +856,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYk-Gp-V5N">
-                                <rect key="frame" x="50" y="494" width="305" height="168"/>
+                                <rect key="frame" x="50" y="483" width="305" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="R9x-sI-J5W"/>
                                     <constraint firstAttribute="width" constant="283" id="SUv-JV-FEA"/>
@@ -1371,8 +1371,9 @@ add a small weight around your ankle.</string>
         <image name="back_button" width="218" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="lMK-bR-GCA"/>
         <segue reference="e8M-OM-8gL"/>
-        <segue reference="mar-GD-Ufs"/>
+        <segue reference="Myg-kc-UAL"/>
         <segue reference="EwE-1d-o0F"/>
         <segue reference="phZ-Kl-euV"/>
         <segue reference="HAY-BK-Sie"/>
