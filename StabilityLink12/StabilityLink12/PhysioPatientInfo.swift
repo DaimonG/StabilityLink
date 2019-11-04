@@ -2,11 +2,17 @@
 //  PhysioPatientInfo.swift
 //  StabilityLink12
 //
-//  Created by Daimon Gill on 2019-10-30.
+//  Created by Bin Xiong on 2019-11-2.
 //  Copyright © 2019 Matthew Chute. All rights reserved.
 //
 
 import UIKit
+
+class RoutinesNameList {
+    var ClassRoutiensName = ""
+   
+}
+var RoutinesArray:[RoutinesNameList] = []
 
 class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
@@ -19,7 +25,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var RoutinesTable: UITableView!
     
-    var cellReuseIdentifier = "cell"
+
     var totalRoutines = 0
     
     var patientRoutines:[String]? = []
@@ -35,7 +41,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         
         patientRoutines = tPatient?.routines
         
-        self.RoutinesTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        self.RoutinesTable.register(UITableViewCell.self, forCellReuseIdentifier: "RoutineCell")
         
         // (optional) include this line if you want to remove the extra empty cell divider lines
         self.RoutinesTable.tableFooterView = UIView()
@@ -46,57 +52,57 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         // Do any additional setup after loading the view.
     }
     
-    /*
-     * Function to count the number of routines that a patient has
-     */
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        // CHANGE VALUE OF TOTAL ROUTINES
-        return 0 // The number of routines
-    }
-   
-    /*
-     * Function to create cells for table view
-     */
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell
-    {
-        // create a new cell if needed or reuse an old one
-        let cell:UITableViewCell = self.RoutinesTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
-
-        // gets the text of patient objects
-         /*
-        cell.textLabel?.text = allPatients[indexPath.row].firstName + allPatients[indexPath.row].lastName
-        */
-           return cell
+    @IBAction func AddNewRoutine(_ sender: Any) {
+        let alert = UIAlertController(title: "Add New Routine", message: nil, preferredStyle: .alert)
+        alert.addTextField {(dessertTF) in dessertTF.placeholder = "Enter Name"
+            
+            
+        }
+        
+        let action = UIAlertAction(title: "Add", style: .default){
+            (_) in guard let dessert = alert.textFields? .first? .text else { return }
+            desserts.append(dessert)
+            self.RoutinesTable.reloadData()
+            
+        }
+        
+        alert.addAction(action)
+        present(alert, animated:true)
+        
     }
     
-    /*
-     * Function for when the Cell is Tapped
-     */
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        // This is the patient that has been selected
-        // tappedPatient = allPatients[indexPath.row]
-        // We do the segue to
-        // NEED TO CHANGE SEGUE HERE
-        performSegue(withIdentifier: "ToPatientInfo", sender: self)
-        // print("You tapped cell number \(indexPath.row).")
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return desserts.count
     }
     
-    /*
-     * Mandatory Table View Function
-     */
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier:"RoutineCell", for: indexPath)
+        let dessert = desserts[indexPath.row]
+        cell.textLabel?.text = dessert
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "ToExerciseHome", sender: self)
+    }
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
         return true
     }
-    
     /*
      * Delete Table Cell Function
      */
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath )
     {
         if editingStyle == .delete{
-            allPatients.remove(at: indexPath.row)
+            RoutinesArray.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
