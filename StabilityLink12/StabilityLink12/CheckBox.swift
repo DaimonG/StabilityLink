@@ -23,7 +23,6 @@ class CheckBox: UIButton {
             //If the CheckBox IS NOT checked, set image of button to uncheckedImg
             if checked == false {
                 self.setImage(uncheckedImg, for: UIControl.State.normal)
-                self.setImage(checkedImg, for: UIControl.State.normal)
             }
                 
             //Else, the CheckBox IS checked, set image of button to checkedImg
