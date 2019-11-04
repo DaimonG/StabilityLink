@@ -19,7 +19,7 @@ class TempExerciseDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         repsnumber.text = temReps[check_index]
-        setnumber.text = temReps[check_index]
+        setnumber.text = TemSets[check_index]
         Despart.text = TemDescribution[check_index]
         
         Imagepart.image = UIImage(named: (TemName[check_index] + ".png"))
