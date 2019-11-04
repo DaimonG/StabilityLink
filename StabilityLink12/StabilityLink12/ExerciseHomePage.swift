@@ -29,17 +29,24 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
 {
     
     var size = 0
+    var count = 0
     var ExerciseArray:[ExerciseListTable] = []
-    var RoutineName = "July"
+    var RoutineName = "Month"
+    
+    var RoutineNameList:[String] = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    
     @IBOutlet weak var ExerciseTable: UITableView!
     
     @IBOutlet weak var RoutinesName: UITextField!
     
     
+    @IBOutlet weak var Month: UILabel!
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        Month.text = RoutineName
         self.ExerciseTable.tableFooterView = UIView() // was commented
         
         
@@ -48,6 +55,36 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
+    @IBAction func Mouthplus(_ sender: Any) {
+        if count == 12 {
+            count = 0
+            RoutineName = RoutineNameList[count]
+            Month.text = RoutineName
+            count = count + 1
+        }
+        else {
+            RoutineName = RoutineNameList[count]
+            Month.text = RoutineName
+            count = count + 1
+        }
+    }
+    
+    @IBAction func MouthMinus(_ sender: Any) {
+        if count == 0
+        {
+            count = 0
+            RoutineName = RoutineNameList[count]
+            Month.text = RoutineName
+        }
+        else
+        {
+            RoutineName = RoutineNameList[count]
+            Month.text = RoutineName
+            count = count - 1
+        }
+        
+        
+    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
