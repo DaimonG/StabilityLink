@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PS-mY-gbx">
-                                <rect key="frame" x="66.5" y="426" width="281" height="156"/>
+                                <rect key="frame" x="66.5" y="189" width="281" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="C2L-XF-ZRM"/>
                                     <constraint firstAttribute="width" constant="281" id="j97-NR-vxA"/>
@@ -30,10 +30,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_and_title" translatesAutoresizingMaskIntoConstraints="NO" id="x09-Wd-gu7">
-                                <rect key="frame" x="87" y="71" width="240" height="253.00000000000006"/>
+                                <rect key="frame" x="87" y="71" width="240" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03q-yE-cbb">
-                                <rect key="frame" x="66.5" y="610" width="281" height="156"/>
+                                <rect key="frame" x="66.5" y="373" width="281" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="281" id="Io7-0u-AYo"/>
                                     <constraint firstAttribute="height" constant="156" id="LBY-pg-d75"/>
@@ -157,15 +157,15 @@
             <objects>
                 <viewController title="PhysicalTherapistHome" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-rK-54p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n6T-dz-Wsb">
-                                <rect key="frame" x="0.0" y="353" width="414" height="345"/>
+                                <rect key="frame" x="0.0" y="397" width="414" height="355"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="oTo-Nb-fZG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTo-Nb-fZG" id="mHq-E4-Pjz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -175,20 +175,20 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basic Headshot" translatesAutoresizingMaskIntoConstraints="NO" id="d75-tH-Jte">
-                                <rect key="frame" x="7" y="45" width="400" height="162"/>
+                                <rect key="frame" x="7" y="89" width="400" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="Zmq-u8-hCS"/>
                                     <constraint firstAttribute="height" constant="162" id="pey-gg-Azq"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Example Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTI-aY-oFt">
-                                <rect key="frame" x="136.5" y="233" width="141" height="21"/>
+                                <rect key="frame" x="136.5" y="277" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a43-Xh-4Ey">
-                                <rect key="frame" x="178" y="717" width="58" height="53"/>
+                                <rect key="frame" x="178" y="771" width="58" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="Fs7-sI-sYG"/>
                                     <constraint firstAttribute="width" constant="58" id="OVn-qe-e2s"/>
@@ -1579,12 +1579,11 @@
         <image name="LegRaise" width="234" height="198"/>
         <image name="ShoulderSqueeze" width="181" height="208"/>
         <image name="ShoulderSqueezeTxt" width="179" height="84"/>
-	<image name="back_button" width="218" height="400"/>
+        <image name="add_button" width="400" height="400"/>
+        <image name="back_button" width="218" height="400"/>
+        <image name="logo_and_title" width="400" height="253"/>
         <image name="patient" width="400" height="224"/>
         <image name="physical_therapist" width="400" height="224"/>
-	<image name="logo_and_title" width="400" height="253"/>
-	<image name="add_button" width="400" height="400"/>
-        <image name="Button" width="400" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="e8M-OM-8gL"/>
