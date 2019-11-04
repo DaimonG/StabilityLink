@@ -28,6 +28,10 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
         fName.delegate = self
         lName.delegate = self
         age.delegate = self
+        
+        // Functionality to move keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
         // Do any additional setup after loading the view.
     }
@@ -46,6 +50,29 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
            self.view.endEditing(true)
            return true
        }
+    
+    /*
+       * A function that shows the keyboard
+       * Apart of functionality to not hide text fields when keyboard is shown
+       */
+    @objc func keyboardWillShow(notification: NSNotification) {
+          if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+              if self.view.frame.origin.y == 0 {
+                  self.view.frame.origin.y -= keyboardSize.height
+              }
+          }
+      }
+      
+      /*
+       * A function that hides the keyboard
+       * Apart of functionality to not hide text fields when keyboard is shown
+       */
+      @objc func keyboardWillHide(notification: NSNotification) {
+          if self.view.frame.origin.y != 0 {
+              self.view.frame.origin.y = 0
+          }
+      }
+    
     /*
     // MARK: - Navigation
 

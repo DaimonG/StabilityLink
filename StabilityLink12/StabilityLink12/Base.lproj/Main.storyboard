@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PS-mY-gbx">
-                                <rect key="frame" x="66.5" y="189" width="281" height="156"/>
+                                <rect key="frame" x="66.5" y="679" width="281" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="C2L-XF-ZRM"/>
                                     <constraint firstAttribute="width" constant="281" id="j97-NR-vxA"/>
@@ -30,10 +28,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_and_title" translatesAutoresizingMaskIntoConstraints="NO" id="x09-Wd-gu7">
-                                <rect key="frame" x="87" y="71" width="240" height="16"/>
+                                <rect key="frame" x="87" y="71" width="240" height="506"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03q-yE-cbb">
-                                <rect key="frame" x="66.5" y="373" width="281" height="156"/>
+                                <rect key="frame" x="66.5" y="863" width="281" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="281" id="Io7-0u-AYo"/>
                                     <constraint firstAttribute="height" constant="156" id="LBY-pg-d75"/>
@@ -67,7 +65,7 @@
         <!--PatientRoutine-->
         <scene sceneID="UYm-qh-rCr">
             <objects>
-                <viewController title="PatientRoutine" id="q16-sJ-aJr" customClass="PatientRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutine" modalPresentationStyle="fullScreen" id="q16-sJ-aJr" customClass="PatientRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QX6-Mm-vLP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +114,7 @@
         <!--PatientHome-->
         <scene sceneID="VUn-cO-x03">
             <objects>
-                <viewController title="PatientHome" id="tLi-wZ-40K" customClass="PatientHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientHome" modalPresentationStyle="fullScreen" id="tLi-wZ-40K" customClass="PatientHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4nf-yW-sl8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +153,7 @@
         <!--PhysicalTherapistHome-->
         <scene sceneID="1Ol-wJ-lHa">
             <objects>
-                <viewController title="PhysicalTherapistHome" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PhysicalTherapistHome" modalPresentationStyle="fullScreen" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-rK-54p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +163,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="oTo-Nb-fZG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTo-Nb-fZG" id="mHq-E4-Pjz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -228,7 +226,7 @@
         <!--Title-->
         <scene sceneID="4bo-KE-WuC">
             <objects>
-                <viewController id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3w-12-vCU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,54 +307,53 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N76-uY-7EW">
-                                <rect key="frame" x="0.0" y="432" width="414" height="363"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoutineCell" id="fEp-KV-CBx">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fEp-KV-CBx" id="tTa-oM-OrN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jCP-Q1-ISo">
+                                <rect key="frame" x="0.0" y="482" width="414" height="224"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="bIK-yl-auV"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="oDR-qK-kMS" id="J3C-g3-ucG"/>
-                                    <outlet property="delegate" destination="oDR-qK-kMS" id="AV6-16-Gdd"/>
+                                    <outlet property="dataSource" destination="oDR-qK-kMS" id="KQK-FW-NHT"/>
+                                    <outlet property="delegate" destination="oDR-qK-kMS" id="3P8-Hy-V1D"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-j4-Baa">
-                                <rect key="frame" x="164" y="826" width="86" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Routines"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-Qn-x2u">
+                                <rect key="frame" x="67" y="734" width="280" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="32Z-ke-zr0"/>
+                                    <constraint firstAttribute="width" constant="280" id="sjO-TH-DcK"/>
+                                </constraints>
+                                <state key="normal" title="Add Patient Routine" backgroundImage="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <segue destination="uye-ab-hP9" kind="presentation" id="ZxP-9t-9FU"/>
+                                    <segue destination="uye-ab-hP9" kind="presentation" id="ye1-CQ-xv6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GgI-qv-I7p" firstAttribute="bottom" secondItem="N76-uY-7EW" secondAttribute="bottom" constant="67" id="6qf-zH-TDS"/>
-                            <constraint firstItem="N76-uY-7EW" firstAttribute="leading" secondItem="GgI-qv-I7p" secondAttribute="leading" id="6tC-Ch-xhQ"/>
                             <constraint firstItem="aJg-dA-HSs" firstAttribute="top" secondItem="TYm-tN-8QF" secondAttribute="bottom" constant="33" id="90O-Eu-3Lg"/>
+                            <constraint firstItem="jCP-Q1-ISo" firstAttribute="leading" secondItem="GgI-qv-I7p" secondAttribute="leading" id="AHL-o7-swm"/>
                             <constraint firstItem="DKn-a2-t7h" firstAttribute="leading" secondItem="GgI-qv-I7p" secondAttribute="leading" constant="127" id="Ayg-Zm-Zfj"/>
                             <constraint firstItem="rcC-Cf-bQR" firstAttribute="top" secondItem="AmA-IU-dAB" secondAttribute="bottom" constant="8" id="DPG-DB-TUD"/>
                             <constraint firstItem="TYm-tN-8QF" firstAttribute="top" secondItem="GgI-qv-I7p" secondAttribute="top" constant="5" id="GhO-e4-Ea6"/>
+                            <constraint firstItem="jCP-Q1-ISo" firstAttribute="top" secondItem="DKn-a2-t7h" secondAttribute="bottom" constant="141" id="I5j-tF-91H"/>
                             <constraint firstItem="A2x-ez-A6p" firstAttribute="leading" secondItem="rcC-Cf-bQR" secondAttribute="trailing" constant="22" id="JAU-1n-DTr"/>
+                            <constraint firstItem="ORV-Qn-x2u" firstAttribute="centerX" secondItem="P3w-12-vCU" secondAttribute="centerX" id="Mif-Lt-zQP"/>
                             <constraint firstItem="NR5-dv-Tti" firstAttribute="top" secondItem="A2x-ez-A6p" secondAttribute="bottom" constant="8" id="TEI-vu-PXe"/>
                             <constraint firstItem="rcC-Cf-bQR" firstAttribute="leading" secondItem="GgI-qv-I7p" secondAttribute="leading" constant="100" id="ULG-DQ-Gr5"/>
-                            <constraint firstItem="N76-uY-7EW" firstAttribute="top" secondItem="NR5-dv-Tti" secondAttribute="bottom" constant="90" id="WWr-TB-gXN"/>
+                            <constraint firstItem="jCP-Q1-ISo" firstAttribute="centerX" secondItem="P3w-12-vCU" secondAttribute="centerX" id="Zm6-t5-uLT"/>
                             <constraint firstItem="NR5-dv-Tti" firstAttribute="top" secondItem="A2x-ez-A6p" secondAttribute="bottom" constant="8" id="ciQ-xo-t9j"/>
                             <constraint firstItem="7Ri-eU-4qT" firstAttribute="top" secondItem="aJg-dA-HSs" secondAttribute="bottom" constant="9" id="dRP-NE-Rlu"/>
                             <constraint firstItem="NR5-dv-Tti" firstAttribute="leading" secondItem="DKn-a2-t7h" secondAttribute="trailing" constant="51" id="hUs-Ra-e4X"/>
                             <constraint firstItem="rcC-Cf-bQR" firstAttribute="top" secondItem="AmA-IU-dAB" secondAttribute="bottom" constant="8" id="j90-66-7Qz"/>
                             <constraint firstItem="DKn-a2-t7h" firstAttribute="top" secondItem="rcC-Cf-bQR" secondAttribute="bottom" constant="7" id="k8B-qI-DZ0"/>
-                            <constraint firstItem="GgI-qv-I7p" firstAttribute="trailing" secondItem="N76-uY-7EW" secondAttribute="trailing" id="kAX-LO-Vq6"/>
                             <constraint firstItem="7Ri-eU-4qT" firstAttribute="leading" secondItem="AmA-IU-dAB" secondAttribute="trailing" constant="25" id="kMY-Tg-I1y"/>
-                            <constraint firstItem="N76-uY-7EW" firstAttribute="centerX" secondItem="P3w-12-vCU" secondAttribute="centerX" id="kxY-jm-l9g"/>
+                            <constraint firstItem="GgI-qv-I7p" firstAttribute="bottom" secondItem="ORV-Qn-x2u" secondAttribute="bottom" constant="50" id="ls8-KS-qBs"/>
                             <constraint firstItem="A2x-ez-A6p" firstAttribute="top" secondItem="7Ri-eU-4qT" secondAttribute="bottom" constant="8" id="max-VD-46O"/>
+                            <constraint firstItem="GgI-qv-I7p" firstAttribute="trailing" secondItem="jCP-Q1-ISo" secondAttribute="trailing" id="nsB-SM-bkw"/>
                             <constraint firstItem="A2x-ez-A6p" firstAttribute="top" secondItem="7Ri-eU-4qT" secondAttribute="bottom" constant="8" id="udY-Xg-bhh"/>
                             <constraint firstItem="AmA-IU-dAB" firstAttribute="leading" secondItem="GgI-qv-I7p" secondAttribute="leading" constant="100" id="wED-dw-kUj"/>
                             <constraint firstItem="aJg-dA-HSs" firstAttribute="centerX" secondItem="P3w-12-vCU" secondAttribute="centerX" id="x2X-se-2UX"/>
@@ -369,8 +366,8 @@
                         <outlet property="PatientAge" destination="NR5-dv-Tti" id="0XC-k1-Xzd"/>
                         <outlet property="PatientFirstName" destination="7Ri-eU-4qT" id="I9j-HK-XY3"/>
                         <outlet property="PatientLastName" destination="A2x-ez-A6p" id="CZs-65-jVq"/>
-                        <outlet property="RoutinesTable" destination="N76-uY-7EW" id="FJR-yG-kkB"/>
-                        <segue destination="7fC-8v-7G8" kind="presentation" identifier="ToTempExercise" id="ZpP-Rx-Vlq"/>
+                        <outlet property="RoutinesTable" destination="jCP-Q1-ISo" id="nRP-My-epH"/>
+                        <segue destination="7fC-8v-7G8" kind="presentation" identifier="ToTempExercise" id="wKe-NC-KvX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvK-0R-tJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -380,7 +377,7 @@
         <!--Temp Exercise-->
         <scene sceneID="mKu-sR-EcN">
             <objects>
-                <viewController id="7fC-8v-7G8" customClass="TempExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7fC-8v-7G8" customClass="TempExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WjI-YL-bX1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +391,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="77s-ru-bb4" id="Sad-KG-Lai">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -405,29 +402,31 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-bS-7EZ">
-                                <rect key="frame" x="26" y="64" width="34" height="30"/>
+                                <rect key="frame" x="20" y="44" width="34" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="oDR-qK-kMS" kind="presentation" id="ro6-j1-ws1"/>
+                                    <segue destination="Am0-zM-8sM" kind="unwind" unwindAction="TemExerciseToInforPageWithSegue:" id="gPv-Ei-a3T"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4rn-du-C0Q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oRi-pd-5s2"/>
                     <connections>
                         <segue destination="DM3-Yj-piV" kind="presentation" identifier="ToExerciseDetail" id="936-Q1-bsT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5B-aQ-2zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Am0-zM-8sM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1502.8985507246377" y="1929.9107142857142"/>
         </scene>
         <!--Title-->
         <scene sceneID="Xhj-0n-FwS">
             <objects>
-                <viewController id="uye-ab-hP9" customClass="ExerciseHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uye-ab-hP9" customClass="ExerciseHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vjx-gn-uin">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,7 +438,7 @@
                                     <navigationItem title="Exercise" id="NYb-fH-r1L">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="6Hk-9L-fpT">
                                             <connections>
-                                                <segue destination="oDR-qK-kMS" kind="presentation" id="EwE-1d-o0F"/>
+                                                <segue destination="I9e-qd-F20" kind="unwind" unwindAction="exitInfoPageWithSegue:" id="BYl-Lh-eyi"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="List" id="fHX-Eg-kIS">
@@ -459,7 +458,7 @@
                                         <rect key="frame" x="0.0" y="28" width="330" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e2U-FL-NT5" id="pQH-ez-CLD">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -528,7 +527,7 @@
         <!--Temp Exercise Detail-->
         <scene sceneID="KMg-mv-5wk">
             <objects>
-                <viewController id="DM3-Yj-piV" customClass="TempExerciseDetail" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DM3-Yj-piV" customClass="TempExerciseDetail" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bh-Ck-Lg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -598,7 +597,7 @@
         <!--Start Exercise-->
         <scene sceneID="EOS-aD-9Fc">
             <objects>
-                <viewController id="9BM-SR-ahi" customClass="StartExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9BM-SR-ahi" customClass="StartExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCV-Qp-eIU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,7 +668,7 @@
         <!--Exercise Name List-->
         <scene sceneID="RiV-HM-cfH">
             <objects>
-                <viewController id="d5X-SM-7ab" customClass="ExerciseNameList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="d5X-SM-7ab" customClass="ExerciseNameList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zsy-fV-swH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -683,7 +682,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AcD-b6-FEz" id="a3X-bW-6eq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -723,7 +722,7 @@
         <!--Exercise List-->
         <scene sceneID="tmr-lb-Lse">
             <objects>
-                <viewController id="lO2-A0-eJv" customClass="ExerciseList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lO2-A0-eJv" customClass="ExerciseList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4BT-9W-kVh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -833,39 +832,10 @@
             </objects>
             <point key="canvasLocation" x="4686.9565217391309" y="1342.6339285714284"/>
         </scene>
-        <!--Physio Add New Exercise-->
-        <scene sceneID="vV5-z6-QDP">
-            <objects>
-                <viewController id="uwf-Ur-xiQ" customClass="PhysioAddNewExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xeu-cA-vov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-8C-czt">
-                                <rect key="frame" x="186" y="149" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRg-lB-4tf">
-                                <rect key="frame" x="192" y="294" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="cnj-r2-uMO"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7QD-LW-6sS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="664" y="3595"/>
-        </scene>
         <!--Physio Add Patient Scene-->
         <scene sceneID="ZiU-pw-LbG">
             <objects>
-                <viewController id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BYi-MD-Jbz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -967,7 +937,7 @@
         <!--PatientRoutineEx1-->
         <scene sceneID="SsZ-oc-OXY">
             <objects>
-                <viewController title="PatientRoutineEx1" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx1" modalPresentationStyle="fullScreen" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZY-7Z-H31">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1071,7 +1041,7 @@
         <!--PatientRoutineEx2-->
         <scene sceneID="yQt-kH-Avr">
             <objects>
-                <viewController title="PatientRoutineEx2" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx2" modalPresentationStyle="fullScreen" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlH-3Q-4r7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1166,7 +1136,7 @@
         <!--PatientRoutineEx3-->
         <scene sceneID="cuG-Q9-gzV">
             <objects>
-                <viewController title="PatientRoutineEx3" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx3" modalPresentationStyle="fullScreen" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxE-Qw-Xqr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1262,7 +1232,7 @@
         <!--PatientRoutineEx4-->
         <scene sceneID="a4e-MK-t1D">
             <objects>
-                <viewController title="PatientRoutineEx4" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx4" modalPresentationStyle="fullScreen" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wh2-DF-RfB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1363,7 +1333,7 @@
         <!--PatientRoutineEx5-->
         <scene sceneID="Orc-VP-4eH">
             <objects>
-                <viewController title="PatientRoutineEx5" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx5" modalPresentationStyle="fullScreen" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0j-sS-RPe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1464,7 +1434,7 @@
         <!--PatientRoutine1-->
         <scene sceneID="E1u-lh-4TV">
             <objects>
-                <viewController title="PatientRoutine1" id="Vap-Ck-FDV" customClass="PatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutine1" modalPresentationStyle="fullScreen" id="Vap-Ck-FDV" customClass="PatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfI-Kq-a4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1569,16 +1539,17 @@
     </scenes>
     <resources>
         <image name="ArmRaise" width="300" height="234"/>
-        <image name="ArmRaiseTxt" width="206" height="121"/>
+        <image name="ArmRaiseTxt" width="266" height="164"/>
         <image name="Basic Headshot" width="400" height="400"/>
+        <image name="Button" width="400" height="100"/>
         <image name="CalfRaise" width="155" height="195"/>
-        <image name="CalfRaiseTxt" width="218" height="83"/>
+        <image name="CalfRaiseTxt" width="267" height="124"/>
         <image name="KneeBend" width="170" height="224"/>
-        <image name="KneeBendTxt" width="220" height="113"/>
-        <image name="LegLiftTxt" width="220" height="113"/>
+        <image name="KneeBendTxt" width="287" height="135"/>
+        <image name="LegLiftTxt" width="277" height="138"/>
         <image name="LegRaise" width="234" height="198"/>
         <image name="ShoulderSqueeze" width="181" height="208"/>
-        <image name="ShoulderSqueezeTxt" width="179" height="84"/>
+        <image name="ShoulderSqueezeTxt" width="260" height="109"/>
         <image name="add_button" width="400" height="400"/>
         <image name="back_button" width="218" height="400"/>
         <image name="logo_and_title" width="400" height="253"/>
@@ -1588,10 +1559,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="e8M-OM-8gL"/>
         <segue reference="mar-GD-Ufs"/>
-        <segue reference="ZpP-Rx-Vlq"/>
-        <segue reference="EwE-1d-o0F"/>
-        <segue reference="Lqq-N0-YcH"/>
-        <segue reference="HAY-BK-Sie"/>
+        <segue reference="wKe-NC-KvX"/>
+        <segue reference="phZ-Kl-euV"/>
+        <segue reference="SGK-qs-xiV"/>
         <segue reference="gIM-Aa-QjQ"/>
     </inferredMetricsTieBreakers>
 </document>

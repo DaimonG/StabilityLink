@@ -5,7 +5,6 @@
 //  Created by Bin Xiong on 2019-11-2.
 //  Copyright © 2019 Matthew Chute. All rights reserved.
 //
-
 import UIKit
 class TempExerciseListTable {
     var reps = ""
@@ -37,6 +36,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var PatientAge: UILabel!
     
+    
     @IBOutlet weak var RoutinesTable: UITableView!
     
 
@@ -67,6 +67,14 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         RoutinesTable.delegate = self
         RoutinesTable.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    @IBAction func exitInfoPage(segue:UIStoryboardSegue)
+    {
+        
+    }
+    @IBAction func TemExerciseToInforPage(segue:UIStoryboardSegue)
+    {
+        
     }
     @IBAction func saveAllexercise(segue:UIStoryboardSegue) {
         // Extracts data from the add patient screen
@@ -138,21 +146,4 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
             tableView.endUpdates()
         }
     }
-    
-    // Might need to add done and cancel segues???
-    
-    
-    //(segue:UIStoryboardSegue)
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
