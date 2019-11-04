@@ -19,7 +19,7 @@ class ExerciseListTable {
     
 }
 
-var pop_index = 0
+
 
 
 
@@ -28,8 +28,9 @@ var pop_index = 0
 class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate
 {
     
+    var size = 0
     var ExerciseArray:[ExerciseListTable] = []
-    var RoutineName = ""
+    var RoutineName = "July"
     @IBOutlet weak var ExerciseTable: UITableView!
     
     @IBOutlet weak var RoutinesName: UITextField!
@@ -51,6 +52,8 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        size = ExerciseArray.count
+        print(size)
         return ExerciseArray.count
     }
     
@@ -60,7 +63,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         let cell:UITableViewCell = self.ExerciseTable.dequeueReusableCell(withIdentifier: "ExerciseCell") as UITableViewCell!
         
-        print(ExerciseArray[indexPath.row].name + "hello")
+    
         cell.textLabel?.text = ExerciseArray[indexPath.row].name
         
         return cell
@@ -134,6 +137,8 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         ExerciseArray.append(newExercise)
+        
+        
         
         
         

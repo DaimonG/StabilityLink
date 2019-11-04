@@ -33,6 +33,8 @@
 		EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D21236FFA5200065ACA /* StartExercise.swift */; };
 		EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */; };
 		EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D25236FFB6100065ACA /* ExerciseList.swift */; };
+		EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2723700F5200065ACA /* TempExercise.swift */; };
+		EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		EDD35D21236FFA5200065ACA /* StartExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExercise.swift; sourceTree = "<group>"; };
 		EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHomePage.swift; sourceTree = "<group>"; };
 		EDD35D25236FFB6100065ACA /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
+		EDD35D2723700F5200065ACA /* TempExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExercise.swift; sourceTree = "<group>"; };
+		EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExerciseDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				EDD35D21236FFA5200065ACA /* StartExercise.swift */,
 				EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */,
 				EDD35D25236FFB6100065ACA /* ExerciseList.swift */,
+				EDD35D2723700F5200065ACA /* TempExercise.swift */,
+				EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */,
 			);
 			path = StabilityLink12;
 			sourceTree = "<group>";
@@ -211,10 +217,12 @@
 				34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */,
 				EDAFE935236FA3A900A7AA2B /* ExerciseNameList.swift in Sources */,
 				34FFC3262369FCE20083351D /* ViewController.swift in Sources */,
+				EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */,
 				34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */,
 				34FFC340236A227F0083351D /* PatientRoutineEx3.swift in Sources */,
 				34FFC344236A22A90083351D /* PatientRoutineEx5.swift in Sources */,
 				34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */,
+				EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */,
 				748CFB78236A155E00CC7068 /* PhysioPatientInfo.swift in Sources */,
 				748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */,
 				EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */,
