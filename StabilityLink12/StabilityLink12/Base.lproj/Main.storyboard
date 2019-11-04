@@ -960,11 +960,11 @@
             <objects>
                 <viewController title="PatientRoutineEx1" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZY-7Z-H31">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC7-ms-Dds">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="UIT-lX-7yI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="caL-aJ-kYc"/>
@@ -977,7 +977,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-Gb-e2b">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="KYB-vf-mvE"/>
                                     <constraint firstAttribute="width" constant="190" id="Tks-3z-vKQ"/>
@@ -987,7 +987,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LegRaise" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-kf-Jw4">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4oV-cl-8kw"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Ay6-9t-zQ0"/>
@@ -999,7 +999,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leg Lifts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-5y-S2P">
-                                <rect key="frame" x="112" y="394" width="190" height="54"/>
+                                <rect key="frame" x="112" y="438" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="PbT-Je-YkW"/>
                                     <constraint firstAttribute="height" constant="54" id="gpo-0E-ayd"/>
@@ -1009,7 +1009,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-2i-quI" customClass="CheckBox" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="289" y="683" width="75" height="75"/>
+                                <rect key="frame" x="289" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="h3l-I3-6FR"/>
                                     <constraint firstAttribute="height" constant="75" id="jMu-gN-W1g"/>
@@ -1017,7 +1017,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LegLiftTxt" translatesAutoresizingMaskIntoConstraints="NO" id="9Ei-zF-uEs">
-                                <rect key="frame" x="50" y="473" width="314" height="200"/>
+                                <rect key="frame" x="50" y="517" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="314" id="BLj-Wb-3Xc"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="KSH-ok-NfJ"/>
@@ -1064,11 +1064,11 @@
             <objects>
                 <viewController title="PatientRoutineEx2" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlH-3Q-4r7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-IQ-Xi5">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="94" id="eI7-TA-Llj"/>
                                     <constraint firstAttribute="height" constant="94" id="gx8-eR-kAy"/>
@@ -1083,7 +1083,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-xo-OAi">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="66a-60-wNC"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="190" id="OYi-55-RQA"/>
@@ -1097,7 +1097,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KneeBend" translatesAutoresizingMaskIntoConstraints="NO" id="475-Ui-UnJ">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="OZj-9E-2E6"/>
                                     <constraint firstAttribute="width" constant="314" id="aXH-tu-2cm"/>
@@ -1105,13 +1105,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knee Bends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ie-wl-bvh">
-                                <rect key="frame" x="99.5" y="394" width="215.5" height="50.5"/>
+                                <rect key="frame" x="99.5" y="438" width="215.5" height="50.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnv-iS-79q" customClass="CheckBox" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="289" y="683" width="75" height="75"/>
+                                <rect key="frame" x="289" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="azZ-8v-bMf"/>
                                     <constraint firstAttribute="width" constant="75" id="dxs-s2-Qi9"/>
@@ -1121,7 +1121,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KneeBendTxt" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-0a-dhp">
-                                <rect key="frame" x="50" y="469.5" width="314" height="200"/>
+                                <rect key="frame" x="50" y="513.5" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="GxI-FB-Pby"/>
                                     <constraint firstAttribute="width" constant="314" id="Qqc-Qb-rap"/>
@@ -1159,11 +1159,11 @@
             <objects>
                 <viewController title="PatientRoutineEx3" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxE-Qw-Xqr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZJ-IZ-4gg">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="Ia3-sb-xSf"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="RCb-cS-Szx"/>
@@ -1178,7 +1178,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-mu-hZS">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="0yz-6Y-4za"/>
                                     <constraint firstAttribute="height" constant="54" id="ZcV-NS-3HZ"/>
@@ -1188,7 +1188,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalfRaise" translatesAutoresizingMaskIntoConstraints="NO" id="812-8a-dqq">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Lwa-zt-pvC"/>
                                     <constraint firstAttribute="width" constant="314" id="eZG-Qu-qVu"/>
@@ -1196,13 +1196,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calf Raises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-ot-Knq">
-                                <rect key="frame" x="107.5" y="394" width="199.5" height="50.5"/>
+                                <rect key="frame" x="107.5" y="438" width="199.5" height="50.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-2O-QdG" customClass="CheckBox" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="289" y="683" width="75" height="75"/>
+                                <rect key="frame" x="289" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="B9L-aY-CM6"/>
                                     <constraint firstAttribute="height" constant="75" id="DZV-zi-2q3"/>
@@ -1214,7 +1214,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalfRaiseTxt" translatesAutoresizingMaskIntoConstraints="NO" id="WHG-I5-lva">
-                                <rect key="frame" x="50" y="469.5" width="314" height="200"/>
+                                <rect key="frame" x="50" y="513.5" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="5rD-X5-na2"/>
                                     <constraint firstAttribute="width" constant="314" id="bDP-ug-bq7"/>
@@ -1255,11 +1255,11 @@
             <objects>
                 <viewController title="PatientRoutineEx4" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wh2-DF-RfB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ive-Q8-dQw">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="94" id="7Jl-gw-7iz"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="68" id="8mw-ZN-04q"/>
@@ -1276,7 +1276,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShoulderSqueeze" translatesAutoresizingMaskIntoConstraints="NO" id="AUd-1r-9dH">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="C4N-LM-iiz"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="dam-3Q-4wV"/>
@@ -1284,7 +1284,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-U4-Wfd">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="1QG-8d-Aa2"/>
                                     <constraint firstAttribute="width" constant="190" id="Ojp-eJ-QsI"/>
@@ -1296,13 +1296,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoulder Squeeze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmo-ew-O3Y">
-                                <rect key="frame" x="43.5" y="394" width="327" height="51"/>
+                                <rect key="frame" x="43.5" y="438" width="327" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ2-1I-BC8" customClass="CheckBox" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="289" y="683" width="75" height="75"/>
+                                <rect key="frame" x="289" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="333-9P-GWY"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="AG3-Nk-kwh"/>
@@ -1316,7 +1316,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShoulderSqueezeTxt" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-cG-gG8">
-                                <rect key="frame" x="50" y="470" width="314" height="200"/>
+                                <rect key="frame" x="50" y="514" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="P96-wi-ucF"/>
                                     <constraint firstAttribute="width" constant="314" id="UMm-2F-87g"/>
@@ -1356,11 +1356,11 @@
             <objects>
                 <viewController title="PatientRoutineEx5" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0j-sS-RPe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-fa-JCw">
-                                <rect key="frame" x="20" y="20" width="68" height="94"/>
+                                <rect key="frame" x="20" y="64" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="XdY-e0-yW0"/>
                                     <constraint firstAttribute="height" constant="94" id="ou2-oU-U9c"/>
@@ -1373,7 +1373,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-77-y6W">
-                                <rect key="frame" x="112" y="40" width="190" height="54"/>
+                                <rect key="frame" x="112" y="84" width="190" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="PWM-37-2Cr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="TaZ-L5-cWe"/>
@@ -1385,7 +1385,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArmRaise" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-yf-g4B">
-                                <rect key="frame" x="50" y="169" width="314" height="200"/>
+                                <rect key="frame" x="50" y="213" width="314" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Q8U-kj-ZaW"/>
                                     <constraint firstAttribute="width" constant="314" id="XDu-Zx-w6v"/>
@@ -1393,13 +1393,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arm Raise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0K-Sa-Hbd">
-                                <rect key="frame" x="116.5" y="394" width="181" height="51"/>
+                                <rect key="frame" x="116.5" y="438" width="181" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-Qc-Kw5" customClass="CheckBox" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="289" y="683" width="75" height="75"/>
+                                <rect key="frame" x="289" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="2g3-57-Zt5"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="A0r-uL-Z4g"/>
@@ -1415,7 +1415,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArmRaiseTxt" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-aO-7cX">
-                                <rect key="frame" x="50" y="470" width="314" height="200"/>
+                                <rect key="frame" x="50" y="514" width="314.00000000000006" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="CIh-MS-HWC"/>
                                     <constraint firstAttribute="height" constant="200" id="HRf-HD-Uf5"/>
@@ -1560,11 +1560,16 @@
     </scenes>
     <resources>
         <image name="ArmRaise" width="300" height="234"/>
+        <image name="ArmRaiseTxt" width="206" height="121"/>
         <image name="Basic Headshot" width="400" height="400"/>
         <image name="CalfRaise" width="155" height="195"/>
+        <image name="CalfRaiseTxt" width="218" height="83"/>
         <image name="KneeBend" width="170" height="224"/>
+        <image name="KneeBendTxt" width="220" height="113"/>
+        <image name="LegLiftTxt" width="220" height="113"/>
         <image name="LegRaise" width="234" height="198"/>
         <image name="ShoulderSqueeze" width="181" height="208"/>
+        <image name="ShoulderSqueezeTxt" width="179" height="84"/>
         <image name="back_button" width="218" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
@@ -1572,7 +1577,7 @@
         <segue reference="mar-GD-Ufs"/>
         <segue reference="ZpP-Rx-Vlq"/>
         <segue reference="EwE-1d-o0F"/>
-        <segue reference="phZ-Kl-euV"/>
+        <segue reference="Lqq-N0-YcH"/>
         <segue reference="HAY-BK-Sie"/>
         <segue reference="gIM-Aa-QjQ"/>
     </inferredMetricsTieBreakers>
