@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var Description=["ArmRaise","ShoulderSqueeze","CalfRaise","LegRaise","KneeBend"]
+var Description=["OldArmRaiseTxt","OldShoulderSqueezeTxt","OldCalfRaiseTxt","OldLegLiftTxt","OldKneeBendTxt"]
 var nameofexercise=["ArmRaise","ShoulderSqueeze","CalfRaise","LegRaise","KneeBend"]
 var ExerciseIndex=0
 

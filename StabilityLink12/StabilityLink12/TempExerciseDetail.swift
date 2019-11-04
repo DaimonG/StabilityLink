@@ -12,7 +12,7 @@ class TempExerciseDetail: UIViewController {
 
     @IBOutlet weak var repsnumber: UILabel!
     @IBOutlet weak var setnumber: UILabel!
-    @IBOutlet weak var Despart: UILabel!
+    @IBOutlet weak var Despart: UIImageView!
     @IBOutlet weak var Imagepart: UIImageView!
     var StartExerciseList : ExerciseListTable?
     
@@ -20,9 +20,10 @@ class TempExerciseDetail: UIViewController {
         super.viewDidLoad()
         repsnumber.text = temReps[check_index]
         setnumber.text = TemSets[check_index]
-        Despart.text = TemDescribution[check_index]
+    
         
         Imagepart.image = UIImage(named: (TemName[check_index] + ".png"))
+        Despart.image = UIImage(named: (TemDescribution[check_index] + ".png"))
        
         
         // Do any additional setup after loading the view.
