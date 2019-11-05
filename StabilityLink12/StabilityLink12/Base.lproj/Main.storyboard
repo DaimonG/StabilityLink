@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,7 +72,7 @@
         <!--PatientRoutine-->
         <scene sceneID="UYm-qh-rCr">
             <objects>
-                <viewController title="PatientRoutine" id="q16-sJ-aJr" customClass="PatientRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutine" modalPresentationStyle="fullScreen" id="q16-sJ-aJr" customClass="PatientRoutine" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QX6-Mm-vLP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +121,7 @@
         <!--PatientHome-->
         <scene sceneID="VUn-cO-x03">
             <objects>
-                <viewController title="PatientHome" id="tLi-wZ-40K" customClass="PatientHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientHome" modalPresentationStyle="fullScreen" id="tLi-wZ-40K" customClass="PatientHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4nf-yW-sl8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,7 +160,7 @@
         <!--PhysicalTherapistHome-->
         <scene sceneID="1Ol-wJ-lHa">
             <objects>
-                <viewController title="PhysicalTherapistHome" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PhysicalTherapistHome" modalPresentationStyle="fullScreen" id="W1g-k7-jlC" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-rK-54p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +170,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="oTo-Nb-fZG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTo-Nb-fZG" id="mHq-E4-Pjz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -235,7 +233,7 @@
         <!--Title-->
         <scene sceneID="4bo-KE-WuC">
             <objects>
-                <viewController id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="oDR-qK-kMS" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3w-12-vCU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,7 +384,7 @@
         <!--Temp Exercise-->
         <scene sceneID="mKu-sR-EcN">
             <objects>
-                <viewController id="7fC-8v-7G8" customClass="TempExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7fC-8v-7G8" customClass="TempExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WjI-YL-bX1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,7 +398,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="77s-ru-bb4" id="Sad-KG-Lai">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -435,7 +433,7 @@
         <!--Title-->
         <scene sceneID="Xhj-0n-FwS">
             <objects>
-                <viewController id="uye-ab-hP9" customClass="ExerciseHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uye-ab-hP9" customClass="ExerciseHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vjx-gn-uin">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,7 +465,7 @@
                                         <rect key="frame" x="0.0" y="28" width="330" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e2U-FL-NT5" id="pQH-ez-CLD">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -563,7 +561,7 @@
         <!--Temp Exercise Detail-->
         <scene sceneID="KMg-mv-5wk">
             <objects>
-                <viewController id="DM3-Yj-piV" customClass="TempExerciseDetail" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DM3-Yj-piV" customClass="TempExerciseDetail" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bh-Ck-Lg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -667,7 +665,7 @@
         <!--Start Exercise-->
         <scene sceneID="EOS-aD-9Fc">
             <objects>
-                <viewController id="9BM-SR-ahi" customClass="StartExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9BM-SR-ahi" customClass="StartExercise" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCV-Qp-eIU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -772,7 +770,7 @@
         <!--Exercise Name List-->
         <scene sceneID="RiV-HM-cfH">
             <objects>
-                <viewController id="d5X-SM-7ab" customClass="ExerciseNameList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="d5X-SM-7ab" customClass="ExerciseNameList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zsy-fV-swH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -786,7 +784,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AcD-b6-FEz" id="a3X-bW-6eq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -826,7 +824,7 @@
         <!--Exercise List-->
         <scene sceneID="tmr-lb-Lse">
             <objects>
-                <viewController id="lO2-A0-eJv" customClass="ExerciseList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lO2-A0-eJv" customClass="ExerciseList" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4BT-9W-kVh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -996,7 +994,7 @@
         <!--Physio Add Patient Scene-->
         <scene sceneID="ZiU-pw-LbG">
             <objects>
-                <viewController id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="WGN-vh-d0b" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BYi-MD-Jbz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1095,7 +1093,7 @@
         <!--PatientRoutineEx1-->
         <scene sceneID="SsZ-oc-OXY">
             <objects>
-                <viewController title="PatientRoutineEx1" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx1" modalPresentationStyle="fullScreen" id="wu8-QO-gYC" customClass="PatientRoutineEx1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZY-7Z-H31">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1193,7 +1191,7 @@
         <!--PatientRoutineEx2-->
         <scene sceneID="yQt-kH-Avr">
             <objects>
-                <viewController title="PatientRoutineEx2" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx2" modalPresentationStyle="fullScreen" id="G2U-g4-hiP" customClass="PatientRoutineEx2" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlH-3Q-4r7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1284,7 +1282,7 @@
         <!--PatientRoutineEx3-->
         <scene sceneID="cuG-Q9-gzV">
             <objects>
-                <viewController title="PatientRoutineEx3" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx3" modalPresentationStyle="fullScreen" id="GnL-Gz-bg2" customClass="PatientRoutineEx3" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxE-Qw-Xqr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1378,7 +1376,7 @@
         <!--PatientRoutineEx4-->
         <scene sceneID="a4e-MK-t1D">
             <objects>
-                <viewController title="PatientRoutineEx4" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx4" modalPresentationStyle="fullScreen" id="ALz-Sh-EFc" customClass="PatientRoutineEx4" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wh2-DF-RfB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1461,7 +1459,7 @@
         <!--PatientRoutineEx5-->
         <scene sceneID="Orc-VP-4eH">
             <objects>
-                <viewController title="PatientRoutineEx5" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutineEx5" modalPresentationStyle="fullScreen" id="4Eg-iF-weU" customClass="PatientRoutineEx5" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0j-sS-RPe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1547,7 +1545,7 @@
         <!--PatientRoutine1-->
         <scene sceneID="E1u-lh-4TV">
             <objects>
-                <viewController title="PatientRoutine1" id="Vap-Ck-FDV" customClass="PatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatientRoutine1" modalPresentationStyle="fullScreen" id="Vap-Ck-FDV" customClass="PatientRoutine1" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfI-Kq-a4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1665,11 +1663,11 @@
         <image name="physical_therapist" width="400" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M6X-JJ-kbp"/>
+        <segue reference="e8M-OM-8gL"/>
         <segue reference="Myg-kc-UAL"/>
         <segue reference="be6-AL-r8d"/>
         <segue reference="phZ-Kl-euV"/>
-        <segue reference="HAY-BK-Sie"/>
+        <segue reference="SGK-qs-xiV"/>
         <segue reference="gIM-Aa-QjQ"/>
     </inferredMetricsTieBreakers>
 </document>
