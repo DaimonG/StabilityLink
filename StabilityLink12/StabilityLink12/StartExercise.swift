@@ -12,7 +12,7 @@ class StartExercise: UIViewController {
     
     @IBOutlet weak var repsnumber: UILabel!
     @IBOutlet weak var setnumber: UILabel!
-    @IBOutlet weak var Despart: UILabel!
+    @IBOutlet weak var Despart: UIImageView!
     @IBOutlet weak var Imagepart: UIImageView!
     var StartExerciseList : ExerciseListTable?
     
@@ -20,7 +20,8 @@ class StartExercise: UIViewController {
         super.viewDidLoad()
         repsnumber.text = StartExerciseList?.reps
         setnumber.text = StartExerciseList?.sets
-        Despart.text = StartExerciseList?.describution
+    
+        Despart.image = UIImage(named: (StartExerciseList!.describution + ".png"))
         
         Imagepart.image = UIImage(named: (StartExerciseList!.name + ".png"))
         

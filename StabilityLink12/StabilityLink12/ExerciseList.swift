@@ -23,9 +23,8 @@ class ExerciseList: UIViewController {
         super.viewDidLoad()
         
         // Uncomment the following line to preserve selection between presentations
-        ExerciseDescribution.text = Description[ExerciseIndex]
         ExerciseImage.image = UIImage(named: (nameofexercise[ExerciseIndex] + ".png") )
-        
+        ExerciseDescribution.image = UIImage(named: (Description[ExerciseIndex] + ".png") )
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -39,7 +38,7 @@ class ExerciseList: UIViewController {
     }
     
     @IBOutlet weak var ExerciseImage: UIImageView!
-    @IBOutlet weak var ExerciseDescribution: UILabel!
+    @IBOutlet weak var ExerciseDescribution: UIImageView!
     
     @IBOutlet weak var ExerciseSetNumber: UILabel!
     @IBOutlet weak var ExerciseReps: UILabel!

@@ -78,7 +78,7 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
         let cell:UITableViewCell = self.PatientsTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
 
         // gets the text of patient objects
-        cell.textLabel?.text = allPatients[indexPath.row].firstName + allPatients[indexPath.row].lastName
+        cell.textLabel?.text = allPatients[indexPath.row].firstName + " " + allPatients[indexPath.row].lastName
 
            return cell
     }
