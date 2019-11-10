@@ -36,6 +36,19 @@
 		EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D25236FFB6100065ACA /* ExerciseList.swift */; };
 		EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2723700F5200065ACA /* TempExercise.swift */; };
 		EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */; };
+		FD88ED112378BA2B005F3B34 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED102378BA2B005F3B34 /* onboarding.storyboard */; };
+		FD88ED132378BA49005F3B34 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED122378BA49005F3B34 /* login.storyboard */; };
+		FD88ED152378BA5E005F3B34 /* patientHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED142378BA5E005F3B34 /* patientHome.storyboard */; };
+		FD88ED172378BA6F005F3B34 /* physioHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED162378BA6F005F3B34 /* physioHome.storyboard */; };
+		FD88ED192378BAB6005F3B34 /* physioAddPatient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED182378BAB6005F3B34 /* physioAddPatient.storyboard */; };
+		FD88ED1D2378BB2E005F3B34 /* physioCreateRoutine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */; };
+		FD88ED1F2378BB49005F3B34 /* physioViewData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED1E2378BB49005F3B34 /* physioViewData.storyboard */; };
+		FD88ED212378BB62005F3B34 /* patientExecuteRoutine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */; };
+		FD88ED232378BB76005F3B34 /* patientViewData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED222378BB76005F3B34 /* patientViewData.storyboard */; };
+		FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED292378C394005F3B34 /* Constants.swift */; };
+		FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */; };
+		FD88ED332378CE48005F3B34 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED322378CE48005F3B34 /* home.storyboard */; };
+		FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED342378D91B005F3B34 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +83,19 @@
 		EDD35D25236FFB6100065ACA /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
 		EDD35D2723700F5200065ACA /* TempExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExercise.swift; sourceTree = "<group>"; };
 		EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExerciseDetail.swift; sourceTree = "<group>"; };
+		FD88ED102378BA2B005F3B34 /* onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = onboarding.storyboard; sourceTree = "<group>"; };
+		FD88ED122378BA49005F3B34 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		FD88ED142378BA5E005F3B34 /* patientHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientHome.storyboard; sourceTree = "<group>"; };
+		FD88ED162378BA6F005F3B34 /* physioHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioHome.storyboard; sourceTree = "<group>"; };
+		FD88ED182378BAB6005F3B34 /* physioAddPatient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioAddPatient.storyboard; sourceTree = "<group>"; };
+		FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioCreateRoutine.storyboard; sourceTree = "<group>"; };
+		FD88ED1E2378BB49005F3B34 /* physioViewData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioViewData.storyboard; sourceTree = "<group>"; };
+		FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientExecuteRoutine.storyboard; sourceTree = "<group>"; };
+		FD88ED222378BB76005F3B34 /* patientViewData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientViewData.storyboard; sourceTree = "<group>"; };
+		FD88ED292378C394005F3B34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreen.swift; sourceTree = "<group>"; };
+		FD88ED322378CE48005F3B34 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		FD88ED342378D91B005F3B34 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +128,20 @@
 		34FFC3202369FCE20083351D /* StabilityLink12 */ = {
 			isa = PBXGroup;
 			children = (
+				FD88ED2D2378C471005F3B34 /* Stability Link Subclasses */,
+				FD88ED2C2378C45C005F3B34 /* Model */,
+				FD88ED2B2378C444005F3B34 /* Managers */,
+				FD88ED282378C35C005F3B34 /* Cells */,
+				FD88ED272378C349005F3B34 /* Fonts */,
+				FD88ED262378C317005F3B34 /* Images */,
+				FD88ED252378C0F8005F3B34 /* Utilities */,
+				FD88ED242378C0E3005F3B34 /* CustomViews */,
+				FD88ED0F2378BA00005F3B34 /* Storyboards */,
+				FD88ED2E2378C635005F3B34 /* Screens */,
 				EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */,
 				EDAFE941236FC32A00A7AA2B /* PhysioAddRoutine.swift */,
 				34FFC3212369FCE20083351D /* AppDelegate.swift */,
 				34FFC3252369FCE20083351D /* ViewController.swift */,
-				34FFC3272369FCE20083351D /* Main.storyboard */,
 				347DE126236FA00B003F33EF /* CheckBox.swift */,
 				34FFC33B236A22490083351D /* PatientRoutineEx1.swift */,
 				34FFC33D236A225E0083351D /* PatientRoutineEx2.swift */,
@@ -134,6 +169,98 @@
 				EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */,
 			);
 			path = StabilityLink12;
+			sourceTree = "<group>";
+		};
+		FD88ED0F2378BA00005F3B34 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34FFC3272369FCE20083351D /* Main.storyboard */,
+				FD88ED102378BA2B005F3B34 /* onboarding.storyboard */,
+				FD88ED122378BA49005F3B34 /* login.storyboard */,
+				FD88ED142378BA5E005F3B34 /* patientHome.storyboard */,
+				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
+				FD88ED222378BB76005F3B34 /* patientViewData.storyboard */,
+				FD88ED162378BA6F005F3B34 /* physioHome.storyboard */,
+				FD88ED182378BAB6005F3B34 /* physioAddPatient.storyboard */,
+				FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */,
+				FD88ED1E2378BB49005F3B34 /* physioViewData.storyboard */,
+				FD88ED322378CE48005F3B34 /* home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FD88ED242378C0E3005F3B34 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FD88ED252378C0F8005F3B34 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FD88ED292378C394005F3B34 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FD88ED262378C317005F3B34 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FD88ED272378C349005F3B34 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD88ED282378C35C005F3B34 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD88ED2B2378C444005F3B34 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FD88ED2C2378C45C005F3B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD88ED2D2378C471005F3B34 /* Stability Link Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Stability Link Subclasses";
+			sourceTree = "<group>";
+		};
+		FD88ED2E2378C635005F3B34 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FD88ED2F2378CA8E005F3B34 /* Authorization */,
+				FD88ED342378D91B005F3B34 /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FD88ED2F2378CA8E005F3B34 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,14 +321,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD88ED1F2378BB49005F3B34 /* physioViewData.storyboard in Resources */,
 				EDAFE93D236FA5DB00A7AA2B /* ShoulderSqueeze.png in Resources */,
 				EDAFE93E236FA5DB00A7AA2B /* KneeBend.png in Resources */,
 				EDAFE93F236FA5DB00A7AA2B /* CalfRaise.png in Resources */,
 				EDAFE93C236FA5DB00A7AA2B /* ArmRaise.png in Resources */,
+				FD88ED232378BB76005F3B34 /* patientViewData.storyboard in Resources */,
+				FD88ED192378BAB6005F3B34 /* physioAddPatient.storyboard in Resources */,
 				34FFC32E2369FCE30083351D /* LaunchScreen.storyboard in Resources */,
 				34FFC32B2369FCE30083351D /* Assets.xcassets in Resources */,
+				FD88ED1D2378BB2E005F3B34 /* physioCreateRoutine.storyboard in Resources */,
 				34FFC3292369FCE20083351D /* Main.storyboard in Resources */,
+				FD88ED212378BB62005F3B34 /* patientExecuteRoutine.storyboard in Resources */,
 				EDAFE93B236FA5DB00A7AA2B /* LegRaise.png in Resources */,
+				FD88ED332378CE48005F3B34 /* home.storyboard in Resources */,
+				FD88ED152378BA5E005F3B34 /* patientHome.storyboard in Resources */,
+				FD88ED172378BA6F005F3B34 /* physioHome.storyboard in Resources */,
+				FD88ED132378BA49005F3B34 /* login.storyboard in Resources */,
+				FD88ED112378BA2B005F3B34 /* onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34FFC336236A127D0083351D /* PatientHome.swift in Sources */,
+				FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */,
 				34FFC342236A22940083351D /* PatientRoutineEx4.swift in Sources */,
+				FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */,
 				34FFC33E236A225E0083351D /* PatientRoutineEx2.swift in Sources */,
+				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
 				EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */,
 				34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */,
@@ -231,12 +371,7 @@
 				EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */,
 				EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */,
 				748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */,
-				748CFB84236A184D00CC7068 /* PhysioExercise2.swift in Sources */,
-				748CFB86236A185800CC7068 /* PhysioExercise3.swift in Sources */,
-				748CFB80236A17AE00CC7068 /* PhysioPatientRoutine1.swift in Sources */,
 				347DE127236FA00B003F33EF /* CheckBox.swift in Sources */,
-				748CFB82236A184000CC7068 /* PhysioExercise1.swift in Sources */,
-				748CFB7A236A164800CC7068 /* PhysioPatientRoutines.swift in Sources */,
 				34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
