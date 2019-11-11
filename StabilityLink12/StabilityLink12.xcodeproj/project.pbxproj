@@ -49,6 +49,8 @@
 		FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */; };
 		FD88ED332378CE48005F3B34 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED322378CE48005F3B34 /* home.storyboard */; };
 		FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED342378D91B005F3B34 /* LoginScreen.swift */; };
+		FD88ED372379DFA2005F3B34 /* PatientRoutineTableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */; };
+		FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED382379E3AE005F3B34 /* PatientRoutineCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreen.swift; sourceTree = "<group>"; };
 		FD88ED322378CE48005F3B34 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		FD88ED342378D91B005F3B34 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineTableScreen.swift; sourceTree = "<group>"; };
+		FD88ED382379E3AE005F3B34 /* PatientRoutineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 		FD88ED282378C35C005F3B34 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FD88ED382379E3AE005F3B34 /* PatientRoutineCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			children = (
 				FD88ED2F2378CA8E005F3B34 /* Authorization */,
 				FD88ED342378D91B005F3B34 /* LoginScreen.swift */,
+				FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */,
 				34FFC33E236A225E0083351D /* PatientRoutineEx2.swift in Sources */,
 				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
+				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
 				EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */,
 				34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */,
@@ -371,6 +378,7 @@
 				EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */,
 				EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */,
 				748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */,
+				FD88ED372379DFA2005F3B34 /* PatientRoutineTableScreen.swift in Sources */,
 				347DE127236FA00B003F33EF /* CheckBox.swift in Sources */,
 				34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */,
 			);
