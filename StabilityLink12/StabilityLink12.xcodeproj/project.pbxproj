@@ -51,6 +51,7 @@
 		FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED342378D91B005F3B34 /* LoginScreen.swift */; };
 		FD88ED372379DFA2005F3B34 /* PatientRoutineTableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */; };
 		FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED382379E3AE005F3B34 /* PatientRoutineCell.swift */; };
+		FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED3A237A3165005F3B34 /* PatientExecuteRoutineScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		FD88ED342378D91B005F3B34 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineTableScreen.swift; sourceTree = "<group>"; };
 		FD88ED382379E3AE005F3B34 /* PatientRoutineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutineCell.swift; sourceTree = "<group>"; };
+		FD88ED3A237A3165005F3B34 /* PatientExecuteRoutineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientExecuteRoutineScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				FD88ED2F2378CA8E005F3B34 /* Authorization */,
 				FD88ED342378D91B005F3B34 /* LoginScreen.swift */,
 				FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */,
+				FD88ED3A237A3165005F3B34 /* PatientExecuteRoutineScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				34FFC33E236A225E0083351D /* PatientRoutineEx2.swift in Sources */,
 				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
 				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
+				FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
 				EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */,
 				34FFC33C236A22490083351D /* PatientRoutineEx1.swift in Sources */,
