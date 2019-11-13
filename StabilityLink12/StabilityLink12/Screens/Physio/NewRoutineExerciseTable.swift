@@ -1,14 +1,14 @@
 //
-//  PatientRoutineEx1.swift
+//  NewRoutineExerciseTable.swift
 //  StabilityLink12
 //
-//  Created by Matthew Chute on 2019-10-30.
+//  Created by Alex Makasoff on 2019-11-11.
 //  Copyright © 2019 Matthew Chute. All rights reserved.
 //
 
 import UIKit
 
-class PatientRoutineEx1: UIViewController {
+class NewRoutineExerciseTable: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

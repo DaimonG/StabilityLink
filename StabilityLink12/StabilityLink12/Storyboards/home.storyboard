@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="Pt8-qp-o1F">
             <objects>
-                <viewController id="bLW-8b-S2b" customClass="ViewController" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bLW-8b-S2b" customClass="BaseViewController" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="acc-LE-r6c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="250" id="iQx-oQ-VRk"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="596-9d-wpU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="596-9d-wpU" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
                                 <rect key="frame" x="50" y="517" width="275" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="G44-EC-f2p"/>
@@ -35,7 +35,7 @@
                                     <segue destination="Z4F-DL-UPG" kind="presentation" id="gry-su-m52"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-7y-tvm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-7y-tvm" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
                                 <rect key="frame" x="50" y="417" width="275" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yrL-Lw-gMq"/>
