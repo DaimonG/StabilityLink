@@ -250,6 +250,7 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nQe-md-KF6"/>
         <segue reference="roS-TG-HxB"/>
     </inferredMetricsTieBreakers>
 </document>

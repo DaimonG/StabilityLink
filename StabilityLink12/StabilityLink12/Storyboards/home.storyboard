@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_and_title" translatesAutoresizingMaskIntoConstraints="NO" id="AQb-QQ-CGZ">
-                                <rect key="frame" x="62.5" y="47" width="250" height="250"/>
+                                <rect key="frame" x="62.5" y="47" width="250" height="250.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="2p1-X9-PCE"/>
                                     <constraint firstAttribute="width" constant="250" id="iQx-oQ-VRk"/>
@@ -59,9 +59,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ysA-kG-6t0"/>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="acc-LE-r6c" id="JCx-mg-VFj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dnj-pU-lqs" sceneMemberID="firstResponder"/>
             </objects>

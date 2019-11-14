@@ -8,11 +8,10 @@
 
 import UIKit
 
-class LoginScreen: BaseViewController {
+class LoginScreen: BaseViewController{
     
-    @IBOutlet weak var CreateAccount: SLButton!
-    @IBOutlet weak var Password: SLTextField!
     @IBOutlet weak var Username: SLTextField!
+    @IBOutlet weak var Password: SLTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

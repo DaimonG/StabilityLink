@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet var button: UIView!
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("Button Pressed")
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
