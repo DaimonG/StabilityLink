@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5XB-Bm-YvX">
             <objects>
-                <navigationController id="vfp-JS-ME1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PatientHome" id="vfp-JS-ME1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6H-Xk-e9L">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

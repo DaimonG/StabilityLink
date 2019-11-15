@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298307B1DA2521627FC3BB28 /* Pods_StabilityLink12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64FDA609B662FE7C58B156E /* Pods_StabilityLink12.framework */; };
 		347DE127236FA00B003F33EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DE126236FA00B003F33EF /* CheckBox.swift */; };
 		34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3212369FCE20083351D /* AppDelegate.swift */; };
 		34FFC3262369FCE20083351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3252369FCE20083351D /* ViewController.swift */; };
@@ -19,6 +20,11 @@
 		748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */; };
 		748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */; };
 		748CFB78236A155E00CC7068 /* PhysioPatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB77236A155E00CC7068 /* PhysioPatientInfo.swift */; };
+		ED77CB94237F352D008F6615 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77CB90237F3529008F6615 /* Utilities.swift */; };
+		ED77CB95237F352D008F6615 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77CB91237F352A008F6615 /* HomePage.swift */; };
+		ED77CB96237F352D008F6615 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77CB92237F352C008F6615 /* SignUpPage.swift */; };
+		ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77CB93237F352D008F6615 /* LoginPage.swift */; };
+		ED77CB99237F3DC4008F6615 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED77CB98237F3DC4008F6615 /* GoogleService-Info.plist */; };
 		EDAFE935236FA3A900A7AA2B /* ExerciseNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */; };
 		EDAFE93B236FA5DB00A7AA2B /* LegRaise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE936236FA5DA00A7AA2B /* LegRaise.png */; };
 		EDAFE93C236FA5DB00A7AA2B /* ArmRaise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE937236FA5DA00A7AA2B /* ArmRaise.png */; };
@@ -70,6 +76,13 @@
 		748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTherapistHomeScene.swift; sourceTree = "<group>"; };
 		748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddPatientScene.swift; sourceTree = "<group>"; };
 		748CFB77236A155E00CC7068 /* PhysioPatientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioPatientInfo.swift; sourceTree = "<group>"; };
+		D1C93C378BDD45D373C997D6 /* Pods-StabilityLink12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StabilityLink12.debug.xcconfig"; path = "Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12.debug.xcconfig"; sourceTree = "<group>"; };
+		D64FDA609B662FE7C58B156E /* Pods_StabilityLink12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StabilityLink12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED77CB90237F3529008F6615 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		ED77CB91237F352A008F6615 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		ED77CB92237F352C008F6615 /* SignUpPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		ED77CB93237F352D008F6615 /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		ED77CB98237F3DC4008F6615 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "StabilityLink12/googlefile/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseNameList.swift; sourceTree = "<group>"; };
 		EDAFE936236FA5DA00A7AA2B /* LegRaise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LegRaise.png; sourceTree = "<group>"; };
 		EDAFE937236FA5DA00A7AA2B /* ArmRaise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArmRaise.png; sourceTree = "<group>"; };
@@ -82,6 +95,7 @@
 		EDD35D25236FFB6100065ACA /* ExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
 		EDD35D2723700F5200065ACA /* TempExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExercise.swift; sourceTree = "<group>"; };
 		EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExerciseDetail.swift; sourceTree = "<group>"; };
+		F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StabilityLink12.release.xcconfig"; path = "Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12.release.xcconfig"; sourceTree = "<group>"; };
 		FD88ED102378BA2B005F3B34 /* onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = onboarding.storyboard; sourceTree = "<group>"; };
 		FD88ED122378BA49005F3B34 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		FD88ED142378BA5E005F3B34 /* patientHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientHome.storyboard; sourceTree = "<group>"; };
@@ -111,17 +125,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298307B1DA2521627FC3BB28 /* Pods_StabilityLink12.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32FE33F74C53DE9BCD64BEB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1C93C378BDD45D373C997D6 /* Pods-StabilityLink12.debug.xcconfig */,
+				F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		34FFC3152369FCE20083351D = {
 			isa = PBXGroup;
 			children = (
 				34FFC3202369FCE20083351D /* StabilityLink12 */,
 				34FFC31F2369FCE20083351D /* Products */,
+				32FE33F74C53DE9BCD64BEB1 /* Pods */,
+				ABB6B61F424496E71580F3AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +162,7 @@
 		34FFC3202369FCE20083351D /* StabilityLink12 */ = {
 			isa = PBXGroup;
 			children = (
+				ED77CB8F237F3482008F6615 /* Login */,
 				FD88ED2D2378C471005F3B34 /* Stability Link Subclasses */,
 				FD88ED2C2378C45C005F3B34 /* Model */,
 				FD88ED2B2378C444005F3B34 /* Managers */,
@@ -172,6 +199,26 @@
 				EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */,
 			);
 			path = StabilityLink12;
+			sourceTree = "<group>";
+		};
+		ABB6B61F424496E71580F3AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D64FDA609B662FE7C58B156E /* Pods_StabilityLink12.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED77CB8F237F3482008F6615 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED77CB91237F352A008F6615 /* HomePage.swift */,
+				ED77CB93237F352D008F6615 /* LoginPage.swift */,
+				ED77CB92237F352C008F6615 /* SignUpPage.swift */,
+				ED77CB98237F3DC4008F6615 /* GoogleService-Info.plist */,
+				ED77CB90237F3529008F6615 /* Utilities.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		FD88ED0F2378BA00005F3B34 /* Storyboards */ = {
@@ -298,9 +345,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34FFC3322369FCE30083351D /* Build configuration list for PBXNativeTarget "StabilityLink12" */;
 			buildPhases = (
+				0522CF306345280289F7D440 /* [CP] Check Pods Manifest.lock */,
 				34FFC31A2369FCE20083351D /* Sources */,
 				34FFC31B2369FCE20083351D /* Frameworks */,
 				34FFC31C2369FCE20083351D /* Resources */,
+				16C0214FB2F126819A934D14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +409,7 @@
 				34FFC32B2369FCE30083351D /* Assets.xcassets in Resources */,
 				FD88ED1D2378BB2E005F3B34 /* physioCreateRoutine.storyboard in Resources */,
 				34FFC3292369FCE20083351D /* Main.storyboard in Resources */,
+				ED77CB99237F3DC4008F6615 /* GoogleService-Info.plist in Resources */,
 				FD88ED212378BB62005F3B34 /* patientExecuteRoutine.storyboard in Resources */,
 				EDAFE93B236FA5DB00A7AA2B /* LegRaise.png in Resources */,
 				FD88ED332378CE48005F3B34 /* home.storyboard in Resources */,
@@ -372,11 +422,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0522CF306345280289F7D440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StabilityLink12-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16C0214FB2F126819A934D14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34FFC31A2369FCE20083351D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */,
 				FD88ED3F237A49E3005F3B34 /* NewRoutineExerciseTable.swift in Sources */,
 				34FFC336236A127D0083351D /* PatientHome.swift in Sources */,
 				FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */,
@@ -390,17 +483,20 @@
 				EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */,
 				EDAFE935236FA3A900A7AA2B /* ExerciseNameList.swift in Sources */,
 				34FFC3262369FCE20083351D /* ViewController.swift in Sources */,
+				ED77CB94237F352D008F6615 /* Utilities.swift in Sources */,
 				EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */,
 				34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */,
 				FDD224A2237B7BDD003B404D /* BaseViewController.swift in Sources */,
 				34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */,
 				EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */,
+				ED77CB96237F352D008F6615 /* SignUpPage.swift in Sources */,
 				748CFB78236A155E00CC7068 /* PhysioPatientInfo.swift in Sources */,
 				748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */,
 				FD88ED45237A4ABB005F3B34 /* PhysioRoutineCell.swift in Sources */,
 				EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */,
 				FD88ED43237A4A9D005F3B34 /* PhysioExerciseCell.swift in Sources */,
 				EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */,
+				ED77CB95237F352D008F6615 /* HomePage.swift in Sources */,
 				748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */,
 				FD88ED372379DFA2005F3B34 /* PatientRoutineTableScreen.swift in Sources */,
 				347DE127236FA00B003F33EF /* CheckBox.swift in Sources */,
@@ -546,6 +642,7 @@
 		};
 		34FFC3332369FCE30083351D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C93C378BDD45D373C997D6 /* Pods-StabilityLink12.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -567,6 +664,7 @@
 		};
 		34FFC3342369FCE30083351D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

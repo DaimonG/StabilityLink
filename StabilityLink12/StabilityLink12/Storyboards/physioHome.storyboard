@@ -13,7 +13,8 @@
         <!--Navigation Controller-->
         <scene sceneID="tHL-BA-aBK">
             <objects>
-                <navigationController id="X9L-en-YDG" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjR-Pa-hP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="PhysicalTherapistHome" id="X9L-en-YDG" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x9D-zM-VSa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,9 +23,8 @@
                         <segue destination="ut0-92-MH8" kind="relationship" relationship="rootViewController" id="RhD-7c-cdZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CjR-Pa-hP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241" y="600"/>
+            <point key="canvasLocation" x="-244" y="599"/>
         </scene>
         <!--PhysicalTherapistHome-->
         <scene sceneID="2P6-pp-8nc">
@@ -250,7 +250,6 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nQe-md-KF6"/>
-        <segue reference="roS-TG-HxB"/>
+        <segue reference="RhD-7c-cdZ"/>
     </inferredMetricsTieBreakers>
 </document>
