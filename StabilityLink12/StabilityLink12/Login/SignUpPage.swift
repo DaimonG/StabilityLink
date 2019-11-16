@@ -138,7 +138,7 @@ class SignUpPage: UIViewController {
                     // user was created successfully, now store the first name,last name, age
                     let db = Firestore.firestore()
                     unique_email_id = result!.user.uid
-                    db.collection("users").addDocument(data: ["uid" : result!.user.uid, "email": email,"firstname" : firstname, "lastname" : lastname,"role" : self.current_role, "age" : age , "username" : username], completion: { (error) in
+                    db.collection("users").addDocument(data: ["uid" : result!.user.uid, "email": email,"firstname" : firstname, "lastname" : lastname,"role" : self.current_role, "age" : age , "username" : username, "data" : [:]], completion: { (error) in
                         if error != nil {
                             //show message
                             self.showError("User data couldn't be saved into database")

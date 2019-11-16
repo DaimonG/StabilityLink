@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore// GLOBAL VARIABLES
 
-// GLOBAL VARIABLES
 // Patients Class
 class Patients {
     var firstName = ""
     var lastName = ""
     var age = ""
+    var UID = ""
     var routines:[String] = []
 }
 
@@ -41,6 +44,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     // Connect to StoryBoard Element
     @IBOutlet weak var PatientsTable: UITableView!
     
+    @IBOutlet weak var headerLabel: UILabel!
+    
     var cellReuseIdentifier = "cell"
     
    
@@ -49,7 +54,7 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        headerLabel.text = "All Patients:"
         // Register the table view cell class and its reuse id
         self.PatientsTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
 
@@ -61,6 +66,47 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
         PatientsTable.dataSource = self
     }
 
+    @IBAction func loadData(_ sender: Any) {
+        // start by emptying the array
+        allPatients = []
+        print("ENTER LOAD DATA")
+        print(allPatients)
+        // now copy all contents from the database back to the array
+        
+        // reference database
+        let db = Firestore.firestore() // reference database as a firestore
+        let users = db.collection("users") // reference users collection
+        
+        // get the current user id
+        let currentid = (Auth.auth().currentUser?.uid)!
+        users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
+            if let error = error {
+                print("Unable to get current UID: \(error)")
+            }
+            else{
+                for document in snapshot!.documents{
+                    let currentPatients = document.get("data") as! NSDictionary // get the data map from the document
+                    print(currentPatients)
+                    // loop through the map and extract each entry and also create a new object and append to the array
+                    for (key, value) in currentPatients {
+                        print("LOOP")
+                        var firstname = key as! String
+                        var uid = value as! String
+                        
+                        let newPatient = Patients()
+                        
+                        newPatient.firstName = firstname
+                        newPatient.UID = uid
+                        
+                        allPatients.append(newPatient)
+                        print(allPatients)
+                    } // end for loop
+                } // end document extraction
+            }// end else
+        }
+        
+        PatientsTable.reloadData()
+    }
     /*
      * Function to count how many patients the physiotherapist has in total
      */
@@ -127,26 +173,16 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     // If it is the done segue, we add the new item
     // First we must extract values from the other view controller
      @IBAction func done(segue:UIStoryboardSegue) {
-        
-        // Extracts data from the add patient screen
-        let newPatientInfo = segue.source as! PhysioAddPatientScene
-        
-        // Create new Patient Object and assign it values from values passed through new patient screen
-        let newPatient = Patients()
-        newPatient.firstName = newPatientInfo.firstName
-        newPatient.lastName = newPatientInfo.lastName
-        newPatient.age = newPatientInfo.patientAge
-        
-        // Add the new patient to allPatients array
-        allPatients.append(newPatient)
-        
         // Reload the table
         PatientsTable.reloadData()
+        print("HERE")
     }
     
     // If it is the cancel segue, do nothing
     @IBAction func cancel(segue:UIStoryboardSegue) {
       // Do Nothing
+        PatientsTable.reloadData()
+        print("HERE2")
     }
 
     
