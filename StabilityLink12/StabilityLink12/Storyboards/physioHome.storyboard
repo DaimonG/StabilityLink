@@ -65,21 +65,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qQ-Sw-Ds6">
-                                <rect key="frame" x="126.5" y="114" width="122" height="30"/>
-                                <state key="normal" title="Load Patient Data"/>
-                                <connections>
-                                    <action selector="loadData:" destination="ut0-92-MH8" eventType="touchUpInside" id="XeI-Dd-0EQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aYT-h5-W4a" firstAttribute="top" secondItem="mxe-gZ-qZb" secondAttribute="bottom" constant="50" id="2hG-W2-nF7"/>
                             <constraint firstItem="mxe-gZ-qZb" firstAttribute="trailing" secondItem="j6R-X1-kVX" secondAttribute="trailing" id="5vY-ih-ISe"/>
-                            <constraint firstItem="5qQ-Sw-Ds6" firstAttribute="centerX" secondItem="4G0-fN-lyQ" secondAttribute="centerX" id="ANm-hk-bB5"/>
                             <constraint firstItem="aYT-h5-W4a" firstAttribute="leading" secondItem="j6R-X1-kVX" secondAttribute="leading" constant="50" id="Bvq-Wj-G0j"/>
-                            <constraint firstItem="5qQ-Sw-Ds6" firstAttribute="top" secondItem="Mmr-i8-Hi2" secondAttribute="bottom" constant="8" id="KDm-7A-ymH"/>
                             <constraint firstItem="j6R-X1-kVX" firstAttribute="trailing" secondItem="aYT-h5-W4a" secondAttribute="trailing" constant="50" id="V61-kq-deN"/>
                             <constraint firstItem="j6R-X1-kVX" firstAttribute="bottom" secondItem="aYT-h5-W4a" secondAttribute="bottom" constant="50" id="ZCa-qd-rFu"/>
                             <constraint firstItem="Mmr-i8-Hi2" firstAttribute="top" secondItem="j6R-X1-kVX" secondAttribute="top" constant="85" id="dYL-HS-PFg"/>

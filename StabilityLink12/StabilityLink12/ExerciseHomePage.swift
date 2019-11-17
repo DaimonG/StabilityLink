@@ -19,79 +19,50 @@ class ExerciseListTable {
     
 }
 
+var newRoutine:[Exercise] = []
 
-
-
-
-
+var currentRoutine = "test"
 
 class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate
 {
+    @IBOutlet weak var errorlabel: UILabel!
     
     var size = 0
     var count = 0
-    var ExerciseArray:[ExerciseListTable] = []
-    var RoutineName = "Month"
     
-    var RoutineNameList:[String] = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     
     @IBOutlet weak var ExerciseTable: UITableView!
     
-    @IBOutlet weak var RoutinesName: UITextField!
     
+    @IBOutlet weak var routineName: UITextField!
     
-    @IBOutlet weak var Month: UILabel!
-    
-   
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Month.text = RoutineName
+        routineName.placeholder = "Enter New Routine Name"
+        print("View Loading",currentRoutine)
+       
+        print(currentRoutine)
         self.ExerciseTable.tableFooterView = UIView() // was commented
-        
-        
         ExerciseTable.delegate = self
         ExerciseTable.dataSource = self
+        errorlabel.alpha = 0
         
     }
     
-    @IBAction func Mouthplus(_ sender: Any) {
-        if count == 12 {
-            count = 0
-            RoutineName = RoutineNameList[count]
-            Month.text = RoutineName
-            count = count + 1
-        }
-        else {
-            RoutineName = RoutineNameList[count]
-            Month.text = RoutineName
-            count = count + 1
-        }
-    }
-    
-    @IBAction func MouthMinus(_ sender: Any) {
-        if count == 0
+    func validateFields() -> String? {
+        if(routineName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "")
         {
-            count = 0
-            RoutineName = RoutineNameList[count]
-            Month.text = RoutineName
+            return "please enter routine name and save it"
         }
-        else
-        {
-            RoutineName = RoutineNameList[count]
-            Month.text = RoutineName
-            count = count - 1
-        }
-        
-        
+        return nil
     }
-    
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        size = ExerciseArray.count
-        print(size)
-        return ExerciseArray.count
+        size = newRoutine.count
+        return size
     }
     
     
@@ -101,12 +72,15 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         let cell:UITableViewCell = self.ExerciseTable.dequeueReusableCell(withIdentifier: "ExerciseCell") as UITableViewCell!
         
     
-        cell.textLabel?.text = ExerciseArray[indexPath.row].name
+        cell.textLabel?.text = newRoutine[indexPath.row].exerciseName
+        print("hello")
         
         return cell
     }
     
-    
+    /*
+     * If a cell is tapped
+     */
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
@@ -119,19 +93,14 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        
-        
-        
-        
-        
-        
-        if segue.destination is StartExercise
+
+      /*  if segue.destination is StartExercise
         {
             let destination = segue.destination as? StartExercise
             let index = ExerciseTable.indexPathForSelectedRow?.row
-            destination?.StartExerciseList = ExerciseArray[index!]
+            destination?.StartExerciseList = newRoutine[index!]
             
-        }
+        }*/
     }
     
     
@@ -140,15 +109,21 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         return true
     }
     
-    
+    /*
+     * Delete a cell
+     */
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath ) {
         if editingStyle == .delete{
-            ExerciseArray.remove(at: indexPath.row)
+            newRoutine.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
         }
     }
+    
+    /*
+     *
+     */
     @IBAction func back(segue:UIStoryboardSegue)
     {
         
@@ -158,29 +133,53 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
-    @IBAction func finish(segue:UIStoryboardSegue) {
+    func showError(_ message:String)
+    {
+        errorlabel.text = message
+        errorlabel.alpha = 1
+       
+    }
+    func transitiontoexercise() {
+        currentRoutine = routineName.text!
+        print("i ma here", currentRoutine)
+        let Homepagecontroller = storyboard?.instantiateViewController(withIdentifier: "ExercisePage") as? ExerciseNameList
+        
+        view.window?.rootViewController = Homepagecontroller
+        view.window?.makeKeyAndVisible()
+        
+    }
+    
+    @IBAction func ListTapped(_ sender: Any) {
+        let error = validateFields()
+        if error != nil{
+            showError(error!)
+        }
+        else{
+            self.transitiontoexercise()
+        }
+    }
+    @IBAction func ToCreateRoutine(segue:UIStoryboardSegue)
+    {
+        print("RETURNED 100")
+        print("View Loaded")
+        
+        ExerciseTable.reloadData()
+    }
+    
+   /* @IBAction func finish(segue:UIStoryboardSegue) {
         // Extracts data from the add patient screen
         let newExerciseList = segue.source as! ExerciseList
         
         
         let newExercise = ExerciseListTable()
-        newExercise.name = newExerciseList.name
-        newExercise.describution = newExerciseList.Des
+      //  newExercise.name = newExerciseList.name
+        //newExercise.describution = newExerciseList.Des
         newExercise.reps = newExerciseList.stringRepsNumber
         newExercise.sets = newExerciseList.stringSetNumber
-        
-        
-        
-        
-        
+    
         ExerciseArray.append(newExercise)
-        
-        
-        
-        
-        
         ExerciseTable.reloadData()
-    }
+    }*/
     
     
     

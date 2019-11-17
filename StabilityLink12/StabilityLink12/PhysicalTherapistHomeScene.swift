@@ -9,7 +9,9 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import FirebaseFirestore// GLOBAL VARIABLES
+import FirebaseFirestore
+
+// GLOBAL VARIABLES
 
 // Patients Class
 class Patients {
@@ -29,8 +31,11 @@ class Routines {
 
 // The Exercise Class
 class Exercise {
-    var reps = 0
-    var sets = 0
+    var exerciseName = ""
+    var description = ""
+    var patientDone = ""
+    var physioReps = ""
+    var physioSet = ""
 }
 
 // Array of patients

@@ -26,11 +26,11 @@
 		ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77CB93237F352D008F6615 /* LoginPage.swift */; };
 		ED77CB99237F3DC4008F6615 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED77CB98237F3DC4008F6615 /* GoogleService-Info.plist */; };
 		EDAFE935236FA3A900A7AA2B /* ExerciseNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */; };
-		EDAFE93B236FA5DB00A7AA2B /* LegRaise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE936236FA5DA00A7AA2B /* LegRaise.png */; };
-		EDAFE93C236FA5DB00A7AA2B /* ArmRaise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE937236FA5DA00A7AA2B /* ArmRaise.png */; };
-		EDAFE93D236FA5DB00A7AA2B /* ShoulderSqueeze.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE938236FA5DB00A7AA2B /* ShoulderSqueeze.png */; };
-		EDAFE93E236FA5DB00A7AA2B /* KneeBend.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE939236FA5DB00A7AA2B /* KneeBend.png */; };
-		EDAFE93F236FA5DB00A7AA2B /* CalfRaise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE93A236FA5DB00A7AA2B /* CalfRaise.png */; };
+		EDAFE93B236FA5DB00A7AA2B /* Leg Raise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE936236FA5DA00A7AA2B /* Leg Raise.png */; };
+		EDAFE93C236FA5DB00A7AA2B /* Arm Raise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE937236FA5DA00A7AA2B /* Arm Raise.png */; };
+		EDAFE93D236FA5DB00A7AA2B /* Shoulder Squeeze.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE938236FA5DB00A7AA2B /* Shoulder Squeeze.png */; };
+		EDAFE93E236FA5DB00A7AA2B /* Knee Bend.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE939236FA5DB00A7AA2B /* Knee Bend.png */; };
+		EDAFE93F236FA5DB00A7AA2B /* Calf Raise.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAFE93A236FA5DB00A7AA2B /* Calf Raise.png */; };
 		EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAFE941236FC32A00A7AA2B /* PhysioAddRoutine.swift */; };
 		EDD35D22236FFA5200065ACA /* StartExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D21236FFA5200065ACA /* StartExercise.swift */; };
 		EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */; };
@@ -84,11 +84,11 @@
 		ED77CB93237F352D008F6615 /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		ED77CB98237F3DC4008F6615 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "StabilityLink12/googlefile/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseNameList.swift; sourceTree = "<group>"; };
-		EDAFE936236FA5DA00A7AA2B /* LegRaise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LegRaise.png; sourceTree = "<group>"; };
-		EDAFE937236FA5DA00A7AA2B /* ArmRaise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArmRaise.png; sourceTree = "<group>"; };
-		EDAFE938236FA5DB00A7AA2B /* ShoulderSqueeze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShoulderSqueeze.png; sourceTree = "<group>"; };
-		EDAFE939236FA5DB00A7AA2B /* KneeBend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KneeBend.png; sourceTree = "<group>"; };
-		EDAFE93A236FA5DB00A7AA2B /* CalfRaise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalfRaise.png; sourceTree = "<group>"; };
+		EDAFE936236FA5DA00A7AA2B /* Leg Raise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leg Raise.png"; sourceTree = "<group>"; };
+		EDAFE937236FA5DA00A7AA2B /* Arm Raise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arm Raise.png"; sourceTree = "<group>"; };
+		EDAFE938236FA5DB00A7AA2B /* Shoulder Squeeze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shoulder Squeeze.png"; sourceTree = "<group>"; };
+		EDAFE939236FA5DB00A7AA2B /* Knee Bend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knee Bend.png"; sourceTree = "<group>"; };
+		EDAFE93A236FA5DB00A7AA2B /* Calf Raise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calf Raise.png"; sourceTree = "<group>"; };
 		EDAFE941236FC32A00A7AA2B /* PhysioAddRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddRoutine.swift; sourceTree = "<group>"; };
 		EDD35D21236FFA5200065ACA /* StartExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExercise.swift; sourceTree = "<group>"; };
 		EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHomePage.swift; sourceTree = "<group>"; };
@@ -187,11 +187,11 @@
 				34FFC32A2369FCE30083351D /* Assets.xcassets */,
 				34FFC32C2369FCE30083351D /* LaunchScreen.storyboard */,
 				34FFC32F2369FCE30083351D /* Info.plist */,
-				EDAFE937236FA5DA00A7AA2B /* ArmRaise.png */,
-				EDAFE93A236FA5DB00A7AA2B /* CalfRaise.png */,
-				EDAFE939236FA5DB00A7AA2B /* KneeBend.png */,
-				EDAFE936236FA5DA00A7AA2B /* LegRaise.png */,
-				EDAFE938236FA5DB00A7AA2B /* ShoulderSqueeze.png */,
+				EDAFE937236FA5DA00A7AA2B /* Arm Raise.png */,
+				EDAFE93A236FA5DB00A7AA2B /* Calf Raise.png */,
+				EDAFE939236FA5DB00A7AA2B /* Knee Bend.png */,
+				EDAFE936236FA5DA00A7AA2B /* Leg Raise.png */,
+				EDAFE938236FA5DB00A7AA2B /* Shoulder Squeeze.png */,
 				EDD35D21236FFA5200065ACA /* StartExercise.swift */,
 				EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */,
 				EDD35D25236FFB6100065ACA /* ExerciseList.swift */,
@@ -399,10 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD88ED1F2378BB49005F3B34 /* physioViewData.storyboard in Resources */,
-				EDAFE93D236FA5DB00A7AA2B /* ShoulderSqueeze.png in Resources */,
-				EDAFE93E236FA5DB00A7AA2B /* KneeBend.png in Resources */,
-				EDAFE93F236FA5DB00A7AA2B /* CalfRaise.png in Resources */,
-				EDAFE93C236FA5DB00A7AA2B /* ArmRaise.png in Resources */,
+				EDAFE93D236FA5DB00A7AA2B /* Shoulder Squeeze.png in Resources */,
+				EDAFE93E236FA5DB00A7AA2B /* Knee Bend.png in Resources */,
+				EDAFE93F236FA5DB00A7AA2B /* Calf Raise.png in Resources */,
+				EDAFE93C236FA5DB00A7AA2B /* Arm Raise.png in Resources */,
 				FD88ED232378BB76005F3B34 /* patientViewData.storyboard in Resources */,
 				FD88ED192378BAB6005F3B34 /* physioAddPatient.storyboard in Resources */,
 				34FFC32E2369FCE30083351D /* LaunchScreen.storyboard in Resources */,
@@ -411,7 +411,7 @@
 				34FFC3292369FCE20083351D /* Main.storyboard in Resources */,
 				ED77CB99237F3DC4008F6615 /* GoogleService-Info.plist in Resources */,
 				FD88ED212378BB62005F3B34 /* patientExecuteRoutine.storyboard in Resources */,
-				EDAFE93B236FA5DB00A7AA2B /* LegRaise.png in Resources */,
+				EDAFE93B236FA5DB00A7AA2B /* Leg Raise.png in Resources */,
 				FD88ED332378CE48005F3B34 /* home.storyboard in Resources */,
 				FD88ED152378BA5E005F3B34 /* patientHome.storyboard in Resources */,
 				FD88ED172378BA6F005F3B34 /* physioHome.storyboard in Resources */,

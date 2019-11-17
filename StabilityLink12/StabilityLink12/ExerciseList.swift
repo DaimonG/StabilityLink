@@ -8,23 +8,33 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class ExerciseList: UIViewController {
     var stringSetNumber = "0"
     var stringRepsNumber = "0"
     var setnumber = 0
     var repsnumber = 0
-    var name = nameofexercise[ExerciseIndex]
-    var Des = Description[ExerciseIndex]
+    var ref:DatabaseReference?
+    var physioSet = ""
+    var physioReps = ""
+    var exerciseName = ""
+    var patientDone = ""
+    //var name = nameofexercise[ExerciseIndex]
+    //var Des = Description[ExerciseIndex]
     
     var nextexerciseindex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = Database.database().reference()
         // Uncomment the following line to preserve selection between presentations
-        ExerciseImage.image = UIImage(named: (nameofexercise[ExerciseIndex] + ".png") )
-        ExerciseDescribution.image = UIImage(named: (Description[ExerciseIndex] + ".png") )
+        
+        
+        ExerciseImage.image = UIImage(named: ("\(exerciseID)" + ".png") )
+        ExerciseDescribution.image = UIImage(named: ("Old" + "\(exerciseID)" + ".png") )
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -34,7 +44,6 @@ class ExerciseList: UIViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         performSegue(withIdentifier: "ToExercise", sender: self)
-        
     }
     
     @IBOutlet weak var ExerciseImage: UIImageView!
@@ -42,6 +51,7 @@ class ExerciseList: UIViewController {
     
     @IBOutlet weak var ExerciseSetNumber: UILabel!
     @IBOutlet weak var ExerciseReps: UILabel!
+    
     @IBAction func SetMinus(_ sender: Any) {
         if setnumber==0{
             ExerciseSetNumber.text = String(0)
@@ -57,14 +67,12 @@ class ExerciseList: UIViewController {
         setnumber = setnumber + 1
         ExerciseSetNumber.text = String(setnumber)
         stringSetNumber = String(setnumber)
-        
     }
+    
     @IBAction func RepsMinus(_ sender: Any) {
         if repsnumber==0{
             ExerciseReps.text = String(repsnumber)
             repsnumber = 0
-            
-            
         }
         else{
             repsnumber = repsnumber - 1
@@ -72,17 +80,68 @@ class ExerciseList: UIViewController {
         }
         stringRepsNumber = String(repsnumber)
     }
+    
     @IBAction func RepsPlus(_ sender: Any) {
-        
-        
         repsnumber = repsnumber + 1
         ExerciseReps.text = String(repsnumber)
         stringRepsNumber = String(repsnumber)
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
+               
+                   print("SAVED")
+                          
+                          // Reference database
+                          let db = Firestore.firestore()
+                          let exercises = db.collection("exercises")
+                          
+                          exercises.whereField("name", isEqualTo: exerciseID).getDocuments() { (snapshot, err) in
+                              if let err = err {
+                                  print("Unable to find exercise!")
+                              }
+                              else {
+                                  for document in snapshot!.documents{
+                                      print("Found document")
+                                      self.physioSet = String(self.setnumber)
+                                      self.physioReps = String(self.repsnumber)
+                                      self.exerciseName = document.get("name") as! String
+                                      self.patientDone = document.get("patientDone") as! String
+                                      
+                                      // create exercise item and set values
+                                      let newExercise = Exercise()
+                                      newExercise.exerciseName = self.exerciseName
+                                      newExercise.physioSet = self.physioSet
+                                      newExercise.physioReps = self.physioReps
+                                      newExercise.patientDone = self.patientDone
+                                      print(newExercise.exerciseName)
+                                      newRoutine.append(newExercise)
+                                       
+                                       print(currentPatient)
+                                       print(currentRoutine)
+                                      print(newRoutine)
+                                   
+                                  }
+                               let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps]
+                               let childupdates = ["/users/\(currentPatient)/routines/\(currentRoutine)/\(self.exerciseName)": post]
+                               self.ref?.updateChildValues(childupdates)
+                               
+                              }
+                          }
+               
+        
+        self.performSegue(withIdentifier: "ToCreateRoutine", sender: nil)
         
     }
     
-    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        print("Segue Triggered")
+       
+       
+    }*/
+ 
     // MARK: - Table view data source
+    
     
     
     

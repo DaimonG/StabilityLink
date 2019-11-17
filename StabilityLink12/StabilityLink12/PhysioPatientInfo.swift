@@ -26,6 +26,7 @@ var TemDescribution:[String] = []
 var TemName:[String] = []
 var temReps:[String] = []
 
+var currentPatient = ""
 
 class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     var TemExerciseArray:[TempExerciseListTable] = []
@@ -55,6 +56,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         PatientFirstName.text = tPatient?.firstName
         PatientLastName.text = tPatient?.lastName
         PatientAge.text = tPatient?.age
+        currentPatient = (tPatient?.UID)!
         
         //patientRoutines = tPatient?.routines
         
@@ -83,16 +85,16 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         
         let newRoutine = RoutinesNameList()
         let newArray = TempExerciseListTable()
-        newRoutine.ClassRoutiensName = newRoutineList.RoutineName
+        //newRoutine.ClassRoutiensName = newRoutineList.RoutineName
         TempSize = newRoutineList.size
         RoutinesArray.append(newRoutine)
         RoutinesTable.reloadData()
         var i = 0
         while i < TempSize{
-            newArray.name = newRoutineList.ExerciseArray[i].name
-            newArray.describution = newRoutineList.ExerciseArray[i].describution
-            newArray.reps = newRoutineList.ExerciseArray[i].reps
-            newArray.sets = newRoutineList.ExerciseArray[i].sets
+            //newArray.name = newRoutineList.ExerciseArray[i].name
+            //newArray.describution = newRoutineList.ExerciseArray[i].describution
+            //newArray.reps = newRoutineList.ExerciseArray[i].reps
+            //newArray.sets = newRoutineList.ExerciseArray[i].sets
             TemName.append(newArray.name)
             TemDescribution.append(newArray.describution)
             temReps.append(newArray.reps)
