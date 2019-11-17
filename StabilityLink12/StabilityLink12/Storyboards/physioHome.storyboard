@@ -27,13 +27,13 @@
         <!--PhysicalTherapistHome-->
         <scene sceneID="2P6-pp-8nc">
             <objects>
-                <viewController title="PhysicalTherapistHome" id="ut0-92-MH8" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PhysicalTherapistHome" modalPresentationStyle="fullScreen" id="ut0-92-MH8" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-fN-lyQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-gZ-qZb">
-                                <rect key="frame" x="0.0" y="197" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="217" width="375" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="eJR-Ho-zUZ"/>
@@ -50,7 +50,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYT-h5-W4a" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="50" y="547" width="275" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BsT-Rd-vOg"/>
                                 </constraints>
@@ -101,7 +101,7 @@
         <!--Title-->
         <scene sceneID="2US-xg-n9c">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="YQN-xv-gpJ" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoPage" modalPresentationStyle="fullScreen" id="YQN-xv-gpJ" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ecq-B1-ViF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +189,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OwK-Zo-X7v"/>
                                 </constraints>
-                                <state key="normal" title="Add Patient"/>
+                                <state key="normal" title="Add Routine"/>
                                 <connections>
                                     <segue destination="39G-G3-P2l" kind="show" id="x0W-nq-Hxl"/>
                                 </connections>
@@ -256,6 +256,7 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nQe-md-KF6"/>
         <segue reference="a8o-zj-9IW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,8 @@ import FirebaseAuth
 import Firebase
 import FirebaseFirestore
 
+
+var tempRoutineName = ""
 class ExerciseList: UIViewController {
     var stringSetNumber = "0"
     var stringRepsNumber = "0"
@@ -101,6 +103,7 @@ class ExerciseList: UIViewController {
                                   print("Unable to find exercise!")
                               }
                               else {
+                                newRoutine.removeAll()
                                   for document in snapshot!.documents{
                                       print("Found document")
                                       self.physioSet = String(self.setnumber)
@@ -115,7 +118,7 @@ class ExerciseList: UIViewController {
                                       newExercise.physioReps = self.physioReps
                                       newExercise.patientDone = self.patientDone
                                       print(newExercise.exerciseName)
-                                      newRoutine.append(newExercise)
+                                      //newRoutine.append(newExercise)
                                        
                                        print(currentPatient)
                                        print(currentRoutine)
@@ -125,11 +128,12 @@ class ExerciseList: UIViewController {
                                let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps]
                                let childupdates = ["/users/\(currentPatient)/routines/\(currentRoutine)/\(self.exerciseName)": post]
                                self.ref?.updateChildValues(childupdates)
-                               
+                               newRoutine.removeAll()
                               }
                           }
                
         
+        print("About to Seguie")
         self.performSegue(withIdentifier: "ToCreateRoutine", sender: nil)
         
     }

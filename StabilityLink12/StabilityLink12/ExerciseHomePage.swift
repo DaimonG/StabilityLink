@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 
 // The Exercise Class
@@ -21,43 +24,61 @@ class ExerciseListTable {
 
 var newRoutine:[Exercise] = []
 
-var currentRoutine = "test"
 
 class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate
 {
-    @IBOutlet weak var errorlabel: UILabel!
+  
     
     var size = 0
     var count = 0
     
     
     @IBOutlet weak var ExerciseTable: UITableView!
+    var ref:DatabaseReference?
     
+    @IBOutlet weak var errorLabel: UILabel!
     
-    @IBOutlet weak var routineName: UITextField!
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        routineName.placeholder = "Enter New Routine Name"
+        newRoutine.removeAll()
+        
         print("View Loading",currentRoutine)
        
-        print(currentRoutine)
+        print("current routine: ", currentRoutine)
+        print("current patient: ", currentPatient)
+        errorLabel.alpha = 0
+        self.ExerciseTable.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
         self.ExerciseTable.tableFooterView = UIView() // was commented
+        
         ExerciseTable.delegate = self
         ExerciseTable.dataSource = self
-        errorlabel.alpha = 0
         
-    }
-    
-    func validateFields() -> String? {
-        if(routineName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "")
-        {
-            return "please enter routine name and save it"
+        self.ref = Database.database().reference()
+        
+        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).observe(DataEventType.value, with: { (snapshot) in
+            newRoutine.removeAll()
+            
+        for routine in snapshot.children.allObjects as![DataSnapshot]{
+            let snap = routine.value as?[String:String]
+            print("iamsnap",snap)
+            
+            let name = snap?["exercisename"]
+            print("Exercise Name: ", name)
+            
+            let newExercise = Exercise()
+            
+            newExercise.exerciseName = name!
+            
+            newRoutine.append(newExercise)
+            self.ExerciseTable.reloadData()
         }
-        return nil
-    }
+    })
+}
+    
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -71,9 +92,8 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         let cell:UITableViewCell = self.ExerciseTable.dequeueReusableCell(withIdentifier: "ExerciseCell") as UITableViewCell!
         
-    
         cell.textLabel?.text = newRoutine[indexPath.row].exerciseName
-        print("hello")
+        print("hello1")
         
         return cell
     }
@@ -84,8 +104,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        performSegue(withIdentifier: "ToExercise", sender: self)
-        
+        errorLabel.alpha = 1
     }
     
     
@@ -94,18 +113,12 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
 
-      /*  if segue.destination is StartExercise
-        {
-            let destination = segue.destination as? StartExercise
-            let index = ExerciseTable.indexPathForSelectedRow?.row
-            destination?.StartExerciseList = newRoutine[index!]
-            
-        }*/
     }
     
     
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
         return true
     }
     
@@ -128,62 +141,29 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     {
         
     }
-    @IBAction func backExercise(segue:UIStoryboardSegue)
+    /*
+    @IBAction func backInfoPage(_ sender: Any)
     {
+        let infoStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
+        if #available(iOS 13.0, *) {
+            let infoview = infoStoryboard.instantiateViewController(identifier: "InfoPage")
+            self.view.window?.rootViewController = infoview
+            self.view.window?.makeKeyAndVisible()
+        }
         
-    }
-    
-    func showError(_ message:String)
-    {
-        errorlabel.text = message
-        errorlabel.alpha = 1
        
-    }
-    func transitiontoexercise() {
-        currentRoutine = routineName.text!
-        print("i ma here", currentRoutine)
-        let Homepagecontroller = storyboard?.instantiateViewController(withIdentifier: "ExercisePage") as? ExerciseNameList
         
-        view.window?.rootViewController = Homepagecontroller
-        view.window?.makeKeyAndVisible()
         
     }
+ */
     
-    @IBAction func ListTapped(_ sender: Any) {
-        let error = validateFields()
-        if error != nil{
-            showError(error!)
-        }
-        else{
-            self.transitiontoexercise()
-        }
-    }
     @IBAction func ToCreateRoutine(segue:UIStoryboardSegue)
     {
         print("RETURNED 100")
         print("View Loaded")
         
-        ExerciseTable.reloadData()
+       
     }
-    
-   /* @IBAction func finish(segue:UIStoryboardSegue) {
-        // Extracts data from the add patient screen
-        let newExerciseList = segue.source as! ExerciseList
-        
-        
-        let newExercise = ExerciseListTable()
-      //  newExercise.name = newExerciseList.name
-        //newExercise.describution = newExerciseList.Des
-        newExercise.reps = newExerciseList.stringRepsNumber
-        newExercise.sets = newExerciseList.stringSetNumber
-    
-        ExerciseArray.append(newExercise)
-        ExerciseTable.reloadData()
-    }*/
-    
-    
-    
-    
     
 }
 
