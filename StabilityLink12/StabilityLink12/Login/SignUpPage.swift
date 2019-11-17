@@ -149,6 +149,7 @@ class SignUpPage: UIViewController {
                     let post = [ "firstname" : firstname, "lastname" : lastname ,"email": email,"role" : self.current_role, "age" : age , "username" : username] as [String: Any]
                     let childupdates = ["/users/\(newuserid)" : post]
                     self.ref?.updateChildValues(childupdates)
+                    
                    
                    
                     //transition to home screen

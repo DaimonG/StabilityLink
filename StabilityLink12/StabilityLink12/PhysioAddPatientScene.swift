@@ -15,14 +15,14 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
 
     // Set to an empty string
     var userEmail:String = ""
-    
+    var ref:DatabaseReference?
     // Linking 3 Text Fields
     @IBOutlet weak var emailAddress: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ref = Database.database().reference()
         // setting UI elements
         emailAddress.delegate = self
         emailAddress.placeholder = "Enter Patient Email"
@@ -46,6 +46,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
             var userid = ""
             var firstName = ""
             var lastName = ""
+            var age = ""
             
             // reference database
             let db = Firestore.firestore()
@@ -64,12 +65,15 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                         userid = document.get("uid") as! String
                         firstName = document.get("firstname") as! String
                         lastName = document.get("lastname") as! String
+                        age = document.get("age") as! String
                         
                         // create a patient object and set values
                         let newPatient = Patients()
                         newPatient.firstName = firstName
                         newPatient.UID = userid
                         newPatient.lastName = lastName
+                        newPatient.age = age
+                        
                         print("About to append")
                         // add the new patient to the patients array
                         allPatients.append(newPatient)
@@ -78,25 +82,25 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                     
                     // must find the current users id and push the new patient to this document
                     let currentid = (Auth.auth().currentUser?.uid)!
-                    users.whereField("uid", isEqualTo:  currentid).getDocuments() { (snapshot, error) in
+                    var docid = ""
+                    users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
                         if let error = error {
-                            print("Couldnt find current user: \(error)")                        }
-                        else {
+                            print("error finding current id")
+                        }
+                        else{
                             for document in snapshot!.documents{
-                                var currentPatients = document.get("data") as! Dictionary<String, Any>// get the current map
-                                print(currentPatients)
-                                
-                               // currentPatients.updateValue(userid, forKey: firstName) // add to the map
-                                currentPatients.updateValue(userid, forKey: firstName)
-                                let nsCurrentPatients = currentPatients as! NSDictionary
-                                print(currentPatients)
-                                
-                                document.reference.updateData(["data" : currentPatients]) // push to database
+                                docid = document.documentID
                             }
-                        }// end else
-                    } // end find current user
+                        }
+                    }
+                    let post = ["firstname" : firstName,"lastname" : lastName, "age" : age, "uid" : userid]
+                    let childupdates = ["/users/\(currentid)/patientDoc/\(userid)" : post]
+                    self.ref?.updateChildValues(childupdates)
+                    //users.document(docid).collection("patients").addDocument(data: ["firstname" : firstName, "lastname" : lastName, "uid" : userid])
+                    
                 } // end else
-            }// end querry
+                   
+            } // end querry
         } // end of done segue
     }
     

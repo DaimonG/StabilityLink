@@ -56,7 +56,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         PatientLastName.text = tPatient?.lastName
         PatientAge.text = tPatient?.age
         
-        patientRoutines = tPatient?.routines
+        //patientRoutines = tPatient?.routines
         
         self.RoutinesTable.register(UITableViewCell.self, forCellReuseIdentifier: "RoutineCell")
         

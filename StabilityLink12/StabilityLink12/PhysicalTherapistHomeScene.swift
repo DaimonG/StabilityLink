@@ -17,7 +17,7 @@ class Patients {
     var lastName = ""
     var age = ""
     var UID = ""
-    var routines:[String] = []
+    
 }
 
 // The Routines Class
@@ -48,13 +48,15 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     
     var cellReuseIdentifier = "cell"
     
-   
+    
+    var ref:DatabaseReference?
     /*
      * Function to load the view
      */
     override func viewDidLoad() {
         super.viewDidLoad()
         headerLabel.text = "All Patients:"
+        
         // Register the table view cell class and its reuse id
         self.PatientsTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
 
@@ -64,49 +66,37 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
         // This view controller itself will provide the delegate methods and row data for the table view.
         PatientsTable.delegate = self
         PatientsTable.dataSource = self
+        self.ref = Database.database().reference()
+        let currentid = (Auth.auth().currentUser?.uid)!
+        print(currentid)
+        self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
+            
+            
+            for patientdata in snapshot.children.allObjects as![DataSnapshot] {
+                let snap = patientdata.value as?[String: String]
+                let firstname = snap?["firstname"]
+                let lastname = snap?["lastname"]
+                let age = snap?["age"]
+                let uid = snap?["uid"]
+                
+                print(firstname)
+                
+                let newPatient = Patients()
+                newPatient.firstName = firstname!
+                newPatient.lastName = lastname!
+                newPatient.age = age!
+                newPatient.UID = uid!
+                
+                allPatients.append(newPatient)
+                print(allPatients)
+                self.PatientsTable.reloadData()
+            }
+            
+        })
+     
     }
 
-    @IBAction func loadData(_ sender: Any) {
-        // start by emptying the array
-        allPatients = []
-        print("ENTER LOAD DATA")
-        print(allPatients)
-        // now copy all contents from the database back to the array
-        
-        // reference database
-        let db = Firestore.firestore() // reference database as a firestore
-        let users = db.collection("users") // reference users collection
-        
-        // get the current user id
-        let currentid = (Auth.auth().currentUser?.uid)!
-        users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
-            if let error = error {
-                print("Unable to get current UID: \(error)")
-            }
-            else{
-                for document in snapshot!.documents{
-                    let currentPatients = document.get("data") as! NSDictionary // get the data map from the document
-                    print(currentPatients)
-                    // loop through the map and extract each entry and also create a new object and append to the array
-                    for (key, value) in currentPatients {
-                        print("LOOP")
-                        var firstname = key as! String
-                        var uid = value as! String
-                        
-                        let newPatient = Patients()
-                        
-                        newPatient.firstName = firstname
-                        newPatient.UID = uid
-                        
-                        allPatients.append(newPatient)
-                        print(allPatients)
-                    } // end for loop
-                } // end document extraction
-            }// end else
-        }
-        
-        PatientsTable.reloadData()
-    }
+   
     /*
      * Function to count how many patients the physiotherapist has in total
      */
