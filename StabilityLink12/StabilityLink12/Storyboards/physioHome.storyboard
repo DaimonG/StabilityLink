@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tHL-BA-aBK">
             <objects>
-                <navigationController storyboardIdentifier="PhysicalTherapistHome" id="X9L-en-YDG" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PhysicalTherapistHome" modalPresentationStyle="fullScreen" id="X9L-en-YDG" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x9D-zM-VSa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -234,12 +234,76 @@
                         <outlet property="PatientLastName" destination="PDh-tk-pbN" id="UT7-XY-EbO"/>
                         <outlet property="RoutinesTable" destination="ySv-vI-s9l" id="tl9-GO-gph"/>
                         <segue destination="ut0-92-MH8" kind="presentation" identifier="backToPhysioHome" id="a8o-zj-9IW"/>
+                        <segue destination="3tq-ws-5v8" kind="presentation" identifier="ToRoutineInformation" id="az2-ne-nq5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8M-4W-0AB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1ZG-uD-PZm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="663.768115942029" y="1343.9732142857142"/>
+        </scene>
+        <!--Physio Routine Information-->
+        <scene sceneID="qLf-zm-FdD">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3tq-ws-5v8" customClass="PhysioRoutineInformation" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7TI-oq-SQu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a9p-wA-8Fv">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="ASg-hI-Idl"/>
+                                    <constraint firstAttribute="width" constant="375" id="F5v-JZ-jSy"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7ey-dh-1dA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7ey-dh-1dA" id="uX1-Fp-Xax">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRN-Ll-nsR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="G1U-IZ-5n0"/>
+                                    <constraint firstAttribute="height" constant="44" id="i0Q-DD-Upf"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="1IE-V0-eyo">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="hmv-Gj-5ZG">
+                                            <connections>
+                                                <segue destination="RXK-9c-Dg6" kind="unwind" unwindAction="TemExerciseToInforPageWithSegue:" id="Hdi-tz-bF5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pyg-oP-RiT" firstAttribute="trailing" secondItem="a9p-wA-8Fv" secondAttribute="trailing" id="7kO-QQ-A7e"/>
+                            <constraint firstItem="a9p-wA-8Fv" firstAttribute="top" secondItem="BRN-Ll-nsR" secondAttribute="bottom" constant="225" id="JmO-i8-qOr"/>
+                            <constraint firstItem="BRN-Ll-nsR" firstAttribute="centerX" secondItem="7TI-oq-SQu" secondAttribute="centerX" id="Lux-r5-Zv1"/>
+                            <constraint firstItem="a9p-wA-8Fv" firstAttribute="leading" secondItem="Pyg-oP-RiT" secondAttribute="leading" id="Qoc-2u-p3R"/>
+                            <constraint firstItem="BRN-Ll-nsR" firstAttribute="top" secondItem="Pyg-oP-RiT" secondAttribute="top" id="bX2-Pb-iXH"/>
+                            <constraint firstItem="a9p-wA-8Fv" firstAttribute="centerX" secondItem="7TI-oq-SQu" secondAttribute="centerX" id="tRI-4c-eN3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pyg-oP-RiT"/>
+                    </view>
+                    <connections>
+                        <outlet property="ExerciseTable" destination="a9p-wA-8Fv" id="7jH-lZ-nRM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6LF-4K-CBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RXK-9c-Dg6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1800.8" y="1342.5787106446778"/>
         </scene>
         <!--physioCreateRoutine-->
         <scene sceneID="hKG-6e-Sux">
@@ -256,7 +320,6 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nQe-md-KF6"/>
         <segue reference="a8o-zj-9IW"/>
     </inferredMetricsTieBreakers>
 </document>

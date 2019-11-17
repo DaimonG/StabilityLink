@@ -125,8 +125,21 @@ class ExerciseList: UIViewController {
                                       print(newRoutine)
                                    
                                   }
-                               let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps]
-                               let childupdates = ["/users/\(currentPatient)/routines/\(currentRoutine)/\(self.exerciseName)": post]
+                                
+                                
+                                
+                                // Posting a exercise
+                            /*
+                            let post1 = ["routinename" : currentRoutine]
+                                let childupdates1 = ["/users/\(currentPatient)/routines/\(currentRoutine)" : post1]
+                                self.ref?.updateChildValues(childupdates1)
+                                
+                              */
+                            
+                             let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps]
+                            
+                               let childupdates =  ["/users/\(currentPatient)/routines/\(currentRoutine)/\(self.exerciseName)": post]
+                                
                                self.ref?.updateChildValues(childupdates)
                                newRoutine.removeAll()
                               }

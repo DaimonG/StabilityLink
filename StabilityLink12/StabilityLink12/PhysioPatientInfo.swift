@@ -6,6 +6,9 @@
 //  Copyright © 2019 Matthew Chute. All rights reserved.
 //
 import UIKit
+import Firebase
+import Firebase
+import FirebaseFirestore
 class TempExerciseListTable {
     var reps = ""
     var sets = ""
@@ -28,6 +31,10 @@ var temReps:[String] = []
 
 var currentPatient = ""
 
+var allPatientRoutines:[Routines] = []
+
+var selectedRoutine = ""
+
 class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     var TemExerciseArray:[TempExerciseListTable] = []
     // Connecting UI Elements
@@ -43,11 +50,13 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
 
     var totalRoutines = 0
     
-    var patientRoutines:[String]? = []
+    var patientRoutines:[Routines]? = []
+    var patientKeys:[String] = []
+    
     
     // Patient Object that is optional
     var tPatient: Patients?
-    
+    var ref:DatabaseReference?
     
     override func viewDidLoad() {
         
@@ -69,7 +78,37 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         RoutinesTable.delegate = self
         RoutinesTable.dataSource = self
         // Do any additional setup after loading the view.
+        self.ref = Database.database().reference()
+        self.ref?.child("users").child(currentPatient).child("routines").observe(.value, with: { (snapshot) in
+            allPatientRoutines.removeAll()
+            
+            if let data = snapshot.value as? [String: Any]{
+                print(data)
+
+                   
+                self.patientKeys = Array(data.keys)
+                print(self.patientKeys)
+                    
+                for x in self.patientKeys{
+                    let routinename = Routines()
+                    routinename.name = x
+                    print("\n", routinename.name)
+                    allPatientRoutines.append(routinename)
+                    self.RoutinesTable.reloadData()
+                }
+                    
+            }
+                
+               
+                
+               
+                
+            
+            
+        })
+        
     }
+    
     @IBAction func exitInfoPage(segue:UIStoryboardSegue)
     {
         
@@ -115,23 +154,26 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return RoutinesArray.count
+        return allPatientRoutines.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:"RoutineCell", for: indexPath)
         
-        cell.textLabel?.text = RoutinesArray[indexPath.row].ClassRoutiensName
+        cell.textLabel?.text = allPatientRoutines[indexPath.row].name
         return cell
         
     }
    
   
     
-    
+    /*
+     * When the cell is tapped
+     */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        
-        performSegue(withIdentifier: "ToTempExercise", sender: self)
+        selectedRoutine = allPatientRoutines[indexPath.row].name
+        self.performSegue(withIdentifier: "ToRoutineInformation", sender: nil)
+        print(selectedRoutine)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{

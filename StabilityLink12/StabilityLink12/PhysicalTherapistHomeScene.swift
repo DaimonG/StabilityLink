@@ -27,6 +27,7 @@ class Routines {
     // Stuff
     var exerciseList:[Exercise] = []
     var totalExercise = 0
+    var name = ""
 }
 
 // The Exercise Class

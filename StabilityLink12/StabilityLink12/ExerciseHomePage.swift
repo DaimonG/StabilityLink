@@ -62,7 +62,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
             newRoutine.removeAll()
             
         for routine in snapshot.children.allObjects as![DataSnapshot]{
-            let snap = routine.value as?[String:String]
+            let snap = routine.value as?[String : String]
             print("iamsnap",snap)
             
             let name = snap?["exercisename"]
@@ -108,6 +108,14 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     
+    @IBAction func finishAndSave(_ sender: Any) {
+        // push a routine name to the routine that was just created
+       /* let post1 = ["routinename" : currentRoutine]
+        let childupdates1 = ["/users/\(currentPatient)/routines/\(currentRoutine)" : post1]
+        self.ref?.updateChildValues(childupdates1)*/
+        
+        self.performSegue(withIdentifier: "DoneToPhysioHome", sender: nil)
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)

@@ -18,6 +18,7 @@
 		34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC337236A13E40083351D /* PatientRoutine.swift */; };
 		34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC339236A14710083351D /* PatientRoutine1.swift */; };
 		7452C02E2381807F00F91DE0 /* NewRoutineName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C02D2381807F00F91DE0 /* NewRoutineName.swift */; };
+		7452C0342381C33900F91DE0 /* PhysioRoutineInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */; };
 		748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */; };
 		748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */; };
 		748CFB78236A155E00CC7068 /* PhysioPatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB77236A155E00CC7068 /* PhysioPatientInfo.swift */; };
@@ -75,6 +76,7 @@
 		34FFC337236A13E40083351D /* PatientRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine.swift; sourceTree = "<group>"; };
 		34FFC339236A14710083351D /* PatientRoutine1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine1.swift; sourceTree = "<group>"; };
 		7452C02D2381807F00F91DE0 /* NewRoutineName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutineName.swift; sourceTree = "<group>"; };
+		7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioRoutineInformation.swift; sourceTree = "<group>"; };
 		748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTherapistHomeScene.swift; sourceTree = "<group>"; };
 		748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddPatientScene.swift; sourceTree = "<group>"; };
 		748CFB77236A155E00CC7068 /* PhysioPatientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioPatientInfo.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
 				FD88ED222378BB76005F3B34 /* patientViewData.storyboard */,
 				FD88ED162378BA6F005F3B34 /* physioHome.storyboard */,
+				7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */,
 				FD88ED182378BAB6005F3B34 /* physioAddPatient.storyboard */,
 				FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */,
 				7452C02D2381807F00F91DE0 /* NewRoutineName.swift */,
@@ -489,6 +492,7 @@
 				ED77CB94237F352D008F6615 /* Utilities.swift in Sources */,
 				EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */,
 				34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */,
+				7452C0342381C33900F91DE0 /* PhysioRoutineInformation.swift in Sources */,
 				FDD224A2237B7BDD003B404D /* BaseViewController.swift in Sources */,
 				34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */,
 				EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */,

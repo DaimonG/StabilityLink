@@ -249,7 +249,7 @@
                                 </constraints>
                                 <state key="normal" title="Finish and Save Routine"/>
                                 <connections>
-                                    <segue destination="y0E-9G-8Jr" kind="presentation" id="ksy-IL-VSl"/>
+                                    <action selector="finishAndSave:" destination="OWI-KU-L9n" eventType="touchUpInside" id="lvY-Hl-FOO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save the routine before viewing!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIM-gx-Gu4">
@@ -291,6 +291,7 @@
                     <connections>
                         <outlet property="ExerciseTable" destination="e9q-3f-ECe" id="zyU-4a-dgr"/>
                         <outlet property="errorLabel" destination="lIM-gx-Gu4" id="qNN-cF-Og8"/>
+                        <segue destination="y0E-9G-8Jr" kind="presentation" identifier="DoneToPhysioHome" id="mRI-9Z-YSi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHG-R9-LHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
