@@ -47,7 +47,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var headerLabel: UILabel!
     
     var cellReuseIdentifier = "cell"
-    
+    var firstName = ""
+    var lastName = ""
     
     var ref:DatabaseReference?
     /*
@@ -56,7 +57,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         headerLabel.text = "All Patients:"
-        
+        allPatients.removeAll()
+       
         // Register the table view cell class and its reuse id
         self.PatientsTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
 
@@ -78,6 +80,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
                 let lastname = snap?["lastname"]
                 let age = snap?["age"]
                 let uid = snap?["uid"]
+                self.firstName = firstname!
+                self.lastName = lastname!
                 
                 print(firstname)
                 
@@ -88,9 +92,23 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
                 newPatient.UID = uid!
                 
                 allPatients.append(newPatient)
-                print(allPatients)
                 self.PatientsTable.reloadData()
+                //print(allPatients)
             }
+            /*
+            func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell
+               {
+                   // create a new cell if needed or reuse an old one
+                    let cell:UITableViewCell = self.PatientsTable.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier) as UITableViewCell!
+
+                   // gets the text of patient objects
+                cell.textLabel?.text = allPatients[indexPath.row].firstName + " " + allPatients[indexPath.row].lastName
+                 self.PatientsTable.reloadData()
+
+                      return cell
+               }
+
+            */
             
         })
      
@@ -115,6 +133,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
 
         // gets the text of patient objects
         cell.textLabel?.text = allPatients[indexPath.row].firstName + " " + allPatients[indexPath.row].lastName
+        //cell.textLabel?.text = firstName + " " + lastName
+        
 
            return cell
     }
@@ -164,16 +184,18 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     // First we must extract values from the other view controller
      @IBAction func done(segue:UIStoryboardSegue) {
         // Reload the table
-        PatientsTable.reloadData()
+        //PatientsTable.reloadData()
         print("HERE")
     }
     
     // If it is the cancel segue, do nothing
     @IBAction func cancel(segue:UIStoryboardSegue) {
       // Do Nothing
-        PatientsTable.reloadData()
+      //PatientsTable.reloadData()
         print("HERE2")
     }
-
+    @IBAction func backphysiohomepage(segue:UIStoryboardSegue){
+        print("daddy")
+    }
     
 }

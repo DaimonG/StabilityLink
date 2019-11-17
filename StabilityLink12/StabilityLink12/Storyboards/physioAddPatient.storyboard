@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ABy-a5-Pfv">
             <objects>
-                <navigationController id="zbs-8H-jNu" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="zbs-8H-jNu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pt4-Z8-DbF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +27,7 @@
         <!--Physio Add Patient Scene-->
         <scene sceneID="Eva-9f-bil">
             <objects>
-                <viewController id="Y6d-bv-bwZ" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Y6d-bv-bwZ" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wC6-gP-cBN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

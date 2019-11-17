@@ -29,11 +29,11 @@
             <objects>
                 <viewController title="PhysicalTherapistHome" id="ut0-92-MH8" customClass="PhysicalTherapistHomeScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-fN-lyQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-gZ-qZb">
-                                <rect key="frame" x="0.0" y="217" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="197" width="375" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="eJR-Ho-zUZ"/>
@@ -50,7 +50,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYT-h5-W4a" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="50" y="567" width="275" height="50"/>
+                                <rect key="frame" x="50" y="547" width="275" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BsT-Rd-vOg"/>
                                 </constraints>
@@ -60,13 +60,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmr-i8-Hi2">
-                                <rect key="frame" x="166.5" y="129" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="85" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qQ-Sw-Ds6">
-                                <rect key="frame" x="126.5" y="158" width="122" height="30"/>
+                                <rect key="frame" x="126.5" y="114" width="122" height="30"/>
                                 <state key="normal" title="Load Patient Data"/>
                                 <connections>
                                     <action selector="loadData:" destination="ut0-92-MH8" eventType="touchUpInside" id="XeI-Dd-0EQ"/>
@@ -110,13 +110,13 @@
         <!--Title-->
         <scene sceneID="2US-xg-n9c">
             <objects>
-                <viewController id="YQN-xv-gpJ" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="YQN-xv-gpJ" customClass="PhysioPatientInfo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ecq-B1-ViF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqs-Wr-vjS">
-                                <rect key="frame" x="213" y="231" width="83" height="21"/>
+                                <rect key="frame" x="213" y="219" width="83" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ScX-CO-KD4"/>
                                     <constraint firstAttribute="width" constant="83" id="wj2-JB-asj"/>
@@ -126,24 +126,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-VZ-VCY">
-                                <rect key="frame" x="0.0" y="5" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="5" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Patient Details" id="eVS-JV-2bW">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="bZ7-56-99T">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MWw-lU-qZz">
-                                                <rect key="frame" x="16" y="13" width="34" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="SAQ-5h-1Im">
                                             <connections>
-                                                <segue destination="ut0-92-MH8" kind="presentation" id="roS-TG-HxB"/>
+                                                <segue destination="1ZG-uD-PZm" kind="unwind" unwindAction="backphysiohomepageWithSegue:" id="nZC-xk-Vra"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDh-tk-pbN">
-                                <rect key="frame" x="213" y="260" width="82" height="21"/>
+                                <rect key="frame" x="213" y="248" width="82" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="5hr-Fy-Tpv"/>
                                     <constraint firstAttribute="height" constant="21" id="YmO-A0-dI1"/>
@@ -153,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0O-PP-BC4">
-                                <rect key="frame" x="213" y="289" width="83" height="21"/>
+                                <rect key="frame" x="213" y="277" width="83" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Cs6-BL-RAw"/>
                                     <constraint firstAttribute="width" constant="83" id="zxk-cZ-K7T"/>
@@ -163,32 +158,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basic Headshot" translatesAutoresizingMaskIntoConstraints="NO" id="lHs-Xa-fBk">
-                                <rect key="frame" x="67.5" y="94" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="82" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="6FV-96-dkX"/>
                                     <constraint firstAttribute="width" constant="240" id="gOI-6a-qwT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygi-Ix-ane">
-                                <rect key="frame" x="100" y="231" width="88" height="21"/>
+                                <rect key="frame" x="100" y="219" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8H-iS-GAm">
-                                <rect key="frame" x="100" y="260" width="91" height="21"/>
+                                <rect key="frame" x="100" y="248" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amg-ss-bkR">
-                                <rect key="frame" x="127" y="288" width="35" height="21"/>
+                                <rect key="frame" x="127" y="276" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySv-vI-s9l">
-                                <rect key="frame" x="0.0" y="323" width="375" height="224"/>
+                                <rect key="frame" x="0.0" y="343" width="375" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="224" id="Zfz-La-ZV6"/>
@@ -199,7 +194,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpx-bc-9t7" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="75" y="572" width="225" height="50"/>
+                                <rect key="frame" x="75" y="592" width="225" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OwK-Zo-X7v"/>
                                 </constraints>
@@ -247,16 +242,20 @@
                         <outlet property="PatientFirstName" destination="Iqs-Wr-vjS" id="6yh-pY-LMl"/>
                         <outlet property="PatientLastName" destination="PDh-tk-pbN" id="UT7-XY-EbO"/>
                         <outlet property="RoutinesTable" destination="ySv-vI-s9l" id="tl9-GO-gph"/>
+                        <segue destination="ut0-92-MH8" kind="presentation" identifier="backToPhysioHome" id="a8o-zj-9IW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8M-4W-0AB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1ZG-uD-PZm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="663.768115942029" y="1343.9732142857142"/>
         </scene>
         <!--physioCreateRoutine-->
         <scene sceneID="hKG-6e-Sux">
             <objects>
-                <viewControllerPlaceholder storyboardName="physioCreateRoutine" id="39G-G3-P2l" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="physioCreateRoutine" id="39G-G3-P2l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OgO-fs-KWI"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pf-Sc-nuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="670" y="1817"/>
@@ -266,6 +265,6 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RhD-7c-cdZ"/>
+        <segue reference="a8o-zj-9IW"/>
     </inferredMetricsTieBreakers>
 </document>

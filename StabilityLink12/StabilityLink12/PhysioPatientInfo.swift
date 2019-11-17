@@ -124,6 +124,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         
     }
    
+  
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){

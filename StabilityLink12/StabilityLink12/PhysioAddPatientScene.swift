@@ -76,8 +76,8 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                         
                         print("About to append")
                         // add the new patient to the patients array
-                        allPatients.append(newPatient)
-                        print(allPatients)
+                       // allPatients.append(newPatient)
+                       // print(allPatients)
                     } // end of new patient document
                     
                     // must find the current users id and push the new patient to this document
@@ -101,6 +101,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                 } // end else
                    
             } // end querry
+            allPatients.removeAll()
         } // end of done segue
     }
     
