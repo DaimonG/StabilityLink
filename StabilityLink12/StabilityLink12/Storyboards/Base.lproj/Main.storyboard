@@ -33,10 +33,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-n6-XAA">
-                                <rect key="frame" x="40" y="722" width="334" height="100"/>
+                                <rect key="frame" x="20" y="88" width="374" height="624"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_and_title" translatesAutoresizingMaskIntoConstraints="NO" id="HSI-8k-e8q">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="504.00000000000006"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMZ-st-HCq">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <rect key="frame" x="0.0" y="524" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Nc5-9K-lCS"/>
                                         </constraints>
@@ -46,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKl-Sv-HBB">
-                                        <rect key="frame" x="0.0" y="60" width="334" height="40"/>
+                                        <rect key="frame" x="0.0" y="584" width="374" height="40"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <segue destination="TQt-AF-Agz" kind="show" id="JY7-oO-L4H"/>
@@ -60,9 +63,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="V7P-n6-XAA" firstAttribute="leading" secondItem="O45-b2-DVU" secondAttribute="leading" constant="40" id="Lui-7D-UqE"/>
-                            <constraint firstItem="O45-b2-DVU" firstAttribute="trailing" secondItem="V7P-n6-XAA" secondAttribute="trailing" constant="40" id="WId-ap-Rel"/>
-                            <constraint firstItem="O45-b2-DVU" firstAttribute="bottom" secondItem="V7P-n6-XAA" secondAttribute="bottom" constant="40" id="ezL-h8-WKa"/>
+                            <constraint firstItem="V7P-n6-XAA" firstAttribute="leading" secondItem="O45-b2-DVU" secondAttribute="leading" constant="20" id="FMY-Ce-0u0"/>
+                            <constraint firstItem="O45-b2-DVU" firstAttribute="bottom" secondItem="V7P-n6-XAA" secondAttribute="bottom" constant="150" id="Lre-QI-sXf"/>
+                            <constraint firstItem="V7P-n6-XAA" firstAttribute="top" secondItem="O45-b2-DVU" secondAttribute="top" id="WLB-qQ-gRb"/>
+                            <constraint firstItem="O45-b2-DVU" firstAttribute="trailing" secondItem="V7P-n6-XAA" secondAttribute="trailing" constant="20" id="cp9-gV-h1Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O45-b2-DVU"/>
                     </view>
@@ -140,13 +144,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-lr-MOO">
                                 <rect key="frame" x="0.0" y="88" width="414" height="125.5"/>
                                 <items>
-                                    <navigationItem title="Sign Up" id="iny-rY-YQ3">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="SQi-mG-zdr">
-                                            <connections>
-                                                <segue destination="G49-GQ-6yd" kind="show" id="ypQ-ko-0JK"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Sign Up" id="iny-rY-YQ3"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Role" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvP-Cn-Vfy">
@@ -314,7 +312,7 @@
             <point key="canvasLocation" x="-3" y="-1629"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QLV-nv-3Lk"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="logo_and_title" width="400" height="253"/>
+    </resources>
 </document>
