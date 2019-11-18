@@ -40,6 +40,9 @@
 		EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D25236FFB6100065ACA /* ExerciseList.swift */; };
 		EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2723700F5200065ACA /* TempExercise.swift */; };
 		EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */; };
+		FD75957B23835E8400B28658 /* StabilityLink12UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75957A23835E8400B28658 /* StabilityLink12UITests.swift */; };
+		FD75958323835EC200B28658 /* PhysioSanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75958223835EC200B28658 /* PhysioSanity.swift */; };
+		FD75958523835ED300B28658 /* PatientSanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75958423835ED300B28658 /* PatientSanity.swift */; };
 		FD88ED112378BA2B005F3B34 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED102378BA2B005F3B34 /* onboarding.storyboard */; };
 		FD88ED132378BA49005F3B34 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED122378BA49005F3B34 /* login.storyboard */; };
 		FD88ED152378BA5E005F3B34 /* patientHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED142378BA5E005F3B34 /* patientHome.storyboard */; };
@@ -63,6 +66,16 @@
 		FDD224A4237B7FAF003B404D /* SLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD224A3237B7FAF003B404D /* SLTextField.swift */; };
 		FDD224A6237B7FC2003B404D /* SLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD224A5237B7FC2003B404D /* SLButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD75957D23835E8400B28658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FFC3162369FCE20083351D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34FFC31D2369FCE20083351D;
+			remoteInfo = StabilityLink12;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		347DE126236FA00B003F33EF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -102,6 +115,11 @@
 		EDD35D2723700F5200065ACA /* TempExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExercise.swift; sourceTree = "<group>"; };
 		EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExerciseDetail.swift; sourceTree = "<group>"; };
 		F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StabilityLink12.release.xcconfig"; path = "Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12.release.xcconfig"; sourceTree = "<group>"; };
+		FD75957823835E8400B28658 /* StabilityLink12UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StabilityLink12UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD75957A23835E8400B28658 /* StabilityLink12UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabilityLink12UITests.swift; sourceTree = "<group>"; };
+		FD75957C23835E8400B28658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD75958223835EC200B28658 /* PhysioSanity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioSanity.swift; sourceTree = "<group>"; };
+		FD75958423835ED300B28658 /* PatientSanity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSanity.swift; sourceTree = "<group>"; };
 		FD88ED102378BA2B005F3B34 /* onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = onboarding.storyboard; sourceTree = "<group>"; };
 		FD88ED122378BA49005F3B34 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		FD88ED142378BA5E005F3B34 /* patientHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientHome.storyboard; sourceTree = "<group>"; };
@@ -135,6 +153,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD75957523835E8400B28658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -151,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				34FFC3202369FCE20083351D /* StabilityLink12 */,
+				FD75957923835E8400B28658 /* StabilityLink12UITests */,
 				34FFC31F2369FCE20083351D /* Products */,
 				32FE33F74C53DE9BCD64BEB1 /* Pods */,
 				ABB6B61F424496E71580F3AE /* Frameworks */,
@@ -161,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				34FFC31E2369FCE20083351D /* StabilityLink12.app */,
+				FD75957823835E8400B28658 /* StabilityLink12UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +252,17 @@
 				ED77CB90237F3529008F6615 /* Utilities.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FD75957923835E8400B28658 /* StabilityLink12UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD75958423835ED300B28658 /* PatientSanity.swift */,
+				FD75958223835EC200B28658 /* PhysioSanity.swift */,
+				FD75957A23835E8400B28658 /* StabilityLink12UITests.swift */,
+				FD75957C23835E8400B28658 /* Info.plist */,
+			);
+			path = StabilityLink12UITests;
 			sourceTree = "<group>";
 		};
 		FD88ED0F2378BA00005F3B34 /* Storyboards */ = {
@@ -369,18 +407,41 @@
 			productReference = 34FFC31E2369FCE20083351D /* StabilityLink12.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FD75957723835E8400B28658 /* StabilityLink12UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD75958123835E8D00B28658 /* Build configuration list for PBXNativeTarget "StabilityLink12UITests" */;
+			buildPhases = (
+				FD75957423835E8400B28658 /* Sources */,
+				FD75957523835E8400B28658 /* Frameworks */,
+				FD75957623835E8400B28658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD75957E23835E8400B28658 /* PBXTargetDependency */,
+			);
+			name = StabilityLink12UITests;
+			productName = StabilityLink12UITests;
+			productReference = FD75957823835E8400B28658 /* StabilityLink12UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		34FFC3162369FCE20083351D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Matthew Chute";
 				TargetAttributes = {
 					34FFC31D2369FCE20083351D = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1030;
+					};
+					FD75957723835E8400B28658 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 34FFC31D2369FCE20083351D;
 					};
 				};
 			};
@@ -398,6 +459,7 @@
 			projectRoot = "";
 			targets = (
 				34FFC31D2369FCE20083351D /* StabilityLink12 */,
+				FD75957723835E8400B28658 /* StabilityLink12UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +488,13 @@
 				FD88ED172378BA6F005F3B34 /* physioHome.storyboard in Resources */,
 				FD88ED132378BA49005F3B34 /* login.storyboard in Resources */,
 				FD88ED112378BA2B005F3B34 /* onboarding.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD75957623835E8400B28658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +585,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD75957423835E8400B28658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD75957B23835E8400B28658 /* StabilityLink12UITests.swift in Sources */,
+				FD75958523835ED300B28658 /* PatientSanity.swift in Sources */,
+				FD75958323835EC200B28658 /* PhysioSanity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD75957E23835E8400B28658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34FFC31D2369FCE20083351D /* StabilityLink12 */;
+			targetProxy = FD75957D23835E8400B28658 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34FFC3272369FCE20083351D /* Main.storyboard */ = {
@@ -696,6 +783,48 @@
 			};
 			name = Release;
 		};
+		FD75957F23835E8500B28658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3B6ANFRZG;
+				INFOPLIST_FILE = StabilityLink12UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alexsapps1234.StabilityLink12UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StabilityLink12;
+			};
+			name = Debug;
+		};
+		FD75958023835E8500B28658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3B6ANFRZG;
+				INFOPLIST_FILE = StabilityLink12UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alexsapps1234.StabilityLink12UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StabilityLink12;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -713,6 +842,15 @@
 			buildConfigurations = (
 				34FFC3332369FCE30083351D /* Debug */,
 				34FFC3342369FCE30083351D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD75958123835E8D00B28658 /* Build configuration list for PBXNativeTarget "StabilityLink12UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD75957F23835E8500B28658 /* Debug */,
+				FD75958023835E8500B28658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
