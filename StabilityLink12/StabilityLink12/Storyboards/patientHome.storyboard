@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5XB-Bm-YvX">
             <objects>
-                <navigationController storyboardIdentifier="PatientHome" id="vfp-JS-ME1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PatientHome" modalPresentationStyle="fullScreen" id="vfp-JS-ME1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6H-Xk-e9L">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,17 +29,17 @@
             <objects>
                 <viewController id="nn8-pU-d16" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JT1-XR-0lp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-yH-6g3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_button" translatesAutoresizingMaskIntoConstraints="NO" id="LQT-cZ-sbP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258.00000000000006"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-9F-5DA">
-                                        <rect key="frame" x="0.0" y="269.33333333333337" width="414" height="269.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="View Routines"/>
                                         <connections>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCS-uR-Qcs">
-                                        <rect key="frame" x="0.0" y="538.66666666666663" width="414" height="269.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="View Data (stub)"/>
                                         <connections>
@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kam-QW-eGx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="127" width="414" height="735"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nbK-3r-42K" customClass="PatientRoutineCell" customModule="StabilityLink12" customModuleProvider="target">
@@ -90,33 +90,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nbK-3r-42K" id="bm0-FD-HXk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-Dx-x2n">
-                                                    <rect key="frame" x="146.66666666666666" y="19.666666666666671" width="120.99999999999997" height="51"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Routines"/>
-                                                    <connections>
-                                                        <segue destination="tlf-Id-Yk3" kind="presentation" id="1m1-7F-qOn"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEA-fm-1Hn">
-                                                    <rect key="frame" x="30" y="21" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="ALQ-xE-xSc"/>
-                                                        <constraint firstAttribute="height" constant="50" id="GHA-3a-6Ql"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button" image="home_button"/>
-                                                    <connections>
-                                                        <segue destination="nn8-pU-d16" kind="show" id="iSL-T6-ZNX"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="BEA-fm-1Hn" firstAttribute="top" secondItem="bm0-FD-HXk" secondAttribute="topMargin" constant="10" id="44K-cw-q0s"/>
-                                                <constraint firstItem="GcI-Dx-x2n" firstAttribute="centerX" secondItem="bm0-FD-HXk" secondAttribute="centerX" id="N1L-D1-IYJ"/>
-                                                <constraint firstItem="BEA-fm-1Hn" firstAttribute="leading" secondItem="bm0-FD-HXk" secondAttribute="leadingMargin" constant="10" id="euw-eA-jsT"/>
-                                                <constraint firstItem="GcI-Dx-x2n" firstAttribute="centerY" secondItem="bm0-FD-HXk" secondAttribute="centerY" id="mz9-iS-fAK"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="RoutineButton" destination="bm0-FD-HXk" id="fLB-qC-3Ka"/>
@@ -124,13 +97,40 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-ue-f4V">
+                                <rect key="frame" x="0.0" y="44" width="100" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="IFz-i9-6cg"/>
+                                    <constraint firstAttribute="width" constant="100" id="pxi-Hq-1Qi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="home_button"/>
+                                <connections>
+                                    <segue destination="vfp-JS-ME1" kind="presentation" id="ZPj-AW-CYb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-jc-62S">
+                                <rect key="frame" x="147" y="62" width="121" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="EbA-uz-8qe"/>
+                                    <constraint firstAttribute="height" constant="39" id="qAH-8A-4yM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Dva-gU-ryF" firstAttribute="bottom" secondItem="kam-QW-eGx" secondAttribute="bottom" id="e8X-dH-Pvl"/>
-                            <constraint firstItem="kam-QW-eGx" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="hsX-zJ-Uvu"/>
-                            <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" id="qH8-L5-9WD"/>
-                            <constraint firstItem="Dva-gU-ryF" firstAttribute="trailing" secondItem="kam-QW-eGx" secondAttribute="trailing" id="vTY-Gc-bIY"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="bottom" secondItem="Dva-gU-ryF" secondAttribute="bottom" id="3nG-Nv-oB2"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="5XU-iw-fxP"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="ZG2-jc-62S" secondAttribute="bottom" constant="26" id="9oz-ES-AJq"/>
+                            <constraint firstItem="ZG2-jc-62S" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" constant="18" id="Sie-2G-o9C"/>
+                            <constraint firstItem="ZG2-jc-62S" firstAttribute="leading" secondItem="doM-ue-f4V" secondAttribute="trailing" constant="47" id="Xuv-DM-xmR"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="doM-ue-f4V" secondAttribute="bottom" constant="7" id="bGx-JB-L1B"/>
+                            <constraint firstItem="Dva-gU-ryF" firstAttribute="trailing" secondItem="ZG2-jc-62S" secondAttribute="trailing" constant="146" id="dtJ-tO-0wF"/>
+                            <constraint firstItem="doM-ue-f4V" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="frG-uw-iM0"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="trailing" secondItem="Dva-gU-ryF" secondAttribute="trailing" id="gG5-az-rno"/>
+                            <constraint firstItem="doM-ue-f4V" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" id="lWW-zA-3Ry"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dva-gU-ryF"/>
                     </view>
@@ -159,7 +159,4 @@
     <resources>
         <image name="home_button" width="400" height="347"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="iSL-T6-ZNX"/>
-    </inferredMetricsTieBreakers>
 </document>
