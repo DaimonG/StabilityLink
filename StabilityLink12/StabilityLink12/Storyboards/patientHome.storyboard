@@ -134,6 +134,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dva-gU-ryF"/>
                     </view>
+                    <connections>
+                        <outlet property="PatientRoutines" destination="kam-QW-eGx" id="2Uj-1V-tmf"/>
+                        <segue destination="tlf-Id-Yk3" kind="presentation" identifier="ToRoutineDetails" id="5nK-jJ-3FD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCB-Pf-uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

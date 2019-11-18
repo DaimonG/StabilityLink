@@ -7,13 +7,48 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class PatientViewExercise: UIViewController {
-
+    @IBOutlet weak var ExerciseImage: UIImageView!
+    
+    @IBOutlet weak var ExerciseDescribution: UIImageView!
+    
+    
+    @IBOutlet weak var ExerciseSetNumber: UILabel!
+    
+    @IBOutlet weak var ExerciseReps: UILabel!
+    
+    // Reference Database
+    
+    var ref:DatabaseReference?
+    
+    var setNumber = ""
+    var repNumber = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        var setNumber = ""
+        var repNumber = ""
+        
+        ExerciseImage.image = UIImage(named: ("\(patientTapsExercise)" + ".png"))
+        
+        ExerciseDescribution.image = UIImage(named: ("Old" + "\(patientTapsExercise)" + ".png"))
+        
+        self.ref = Database.database().reference()
+        let currentid = (Auth.auth().currentUser?.uid)!
+        
+        self.ref?.child("users").child(currentid).child("routines").child(patientRoutineTapped).child(patientTapsExercise).observe(.value, with: {(snapshot) in
+                
+            if let data = snapshot.value as? [String: Any]{
+                print(data)
+                self.ExerciseSetNumber.text = data["physioset"] as! String
+                self.ExerciseReps.text = data["physioreps"] as! String
+            }
+        })
     }
     
 

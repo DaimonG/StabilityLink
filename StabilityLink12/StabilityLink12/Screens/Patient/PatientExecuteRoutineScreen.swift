@@ -7,16 +7,75 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
-class PatientExecuteRoutineScreen: UIViewController {
+var patientAssignedExercises:[Exercise] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+var patientTapsExercise = ""
 
-        // Do any additional setup after loading the view.
-    }
+class PatientExecuteRoutineScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var PatientExerciseList: UITableView!
+    
+   var ref:DatabaseReference?
+    
+   override func viewDidLoad() {
+       super.viewDidLoad()
+
+       self.PatientExerciseList.register(UITableViewCell.self, forCellReuseIdentifier: "WorkoutCell")
+       self.PatientExerciseList.tableFooterView = UIView()
+       
+       PatientExerciseList.delegate = self
+       PatientExerciseList.dataSource = self
+       self.ref = Database.database().reference()
+        var currentid = (Auth.auth().currentUser?.uid)!
+       self.ref?.child("users").child(currentid).child("routines").child(patientRoutineTapped).observe(DataEventType.value, with: { (snapshot) in
+           patientAssignedExercises.removeAll()
+           for routine in snapshot.children.allObjects as![DataSnapshot]{
+               let snap = routine.value as? [String : String]
+               print("routine snap", snap)
+               
+               let name = snap?["exercisename"]
+               print(name)
+               
+               let newExercise = Exercise()
+               newExercise.exerciseName = name!
+               
+               patientAssignedExercises.append(newExercise)
+               self.PatientExerciseList.reloadData()
+           }
+       })
+       
+       
+       
+   }
+   
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return patientAssignedExercises.count
+   }
+   
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath)
+       let dessert = patientAssignedExercises[indexPath.row].exerciseName
+       cell.textLabel?.text = dessert
+       return cell
+   }
+   
+   /*
+    * When a cell is tapped
+    */
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        patientTapsExercise = patientAssignedExercises[indexPath.row].exerciseName
+       print("Tapped: ", patientTapsExercise)
+    self.performSegue(withIdentifier: "ToExerciseDetails", sender: nil)
+        
+   }
+
     
 
+    
     /*
     // MARK: - Navigation
 
