@@ -42,31 +42,69 @@ class PhysioSanityTest: XCTestCase {
     func testLoginSuccessful(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        
-        
-        let useremail = "test1@gmail.com"
+        let useremail = "pt@test.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
-        app.typeText("\n")
         app.textFields["Password"].tap()
         app.typeText(userpassword)
-        app.buttons["Log In"].tap()
+        app.buttons["Login"].tap()
         
     }
     
     func testHomepageButton(){
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "pt@test.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        app.buttons["Physio"].tap()
         
     }
     
     func testViewPatients(){
-        
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "pt@test.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        app.buttons["Physio"].tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Patient One"]/*[[".cells.staticTexts[\"Patient One\"]",".staticTexts[\"Patient One\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
     
     func testAddPatient(){
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "pt@test.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        app.buttons["Physio"].tap()
+        
+        app.buttons["Add Patient"].tap()
+        app.textFields["Enter Patient Email"].tap()
+        app.typeText("pdp1@test.com")
+        app.navigationBars["Add New Patient"].buttons["Done"].tap()
         
     }
     
     func testDisplayPatientData(){
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "pt@test.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        app.buttons["Physio"].tap()
         
     }
 
