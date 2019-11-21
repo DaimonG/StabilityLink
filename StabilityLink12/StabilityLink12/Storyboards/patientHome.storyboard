@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5XB-Bm-YvX">
             <objects>
-                <navigationController storyboardIdentifier="PatientHome" modalPresentationStyle="fullScreen" id="vfp-JS-ME1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PatientHome" id="vfp-JS-ME1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6H-Xk-e9L">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +29,7 @@
         <!--View Controller-->
         <scene sceneID="k0g-kM-owQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nn8-pU-d16" sceneMemberID="viewController">
+                <viewController id="nn8-pU-d16" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JT1-XR-0lp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +77,7 @@
         <!--Patient Routine Table Screen-->
         <scene sceneID="Wlv-ub-pTa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="leZ-0Z-IBK" customClass="PatientRoutineTableScreen" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="leZ-0Z-IBK" customClass="PatientRoutineTableScreen" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWk-oV-08b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +90,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nbK-3r-42K" id="bm0-FD-HXk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -115,7 +117,7 @@
                                     <constraint firstAttribute="height" constant="39" id="qAH-8A-4yM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

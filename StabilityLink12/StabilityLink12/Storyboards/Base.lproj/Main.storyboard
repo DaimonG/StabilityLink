@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IBb-Ja-bo9">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IBb-Ja-bo9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kbS-os-PqF">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="IBb-Ja-bo9" sceneMemberID="viewController">
+                <navigationController id="IBb-Ja-bo9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UG3-tg-t0R">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +29,7 @@
         <!--Home Page-->
         <scene sceneID="fYm-Fl-ZEb">
             <objects>
-                <viewController storyboardIdentifier="homepageboard" modalPresentationStyle="fullScreen" id="G49-GQ-6yd" customClass="HomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homepageboard" id="G49-GQ-6yd" customClass="HomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hxq-Mp-DxT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,13 +85,13 @@
         <!--Sign Up Page-->
         <scene sceneID="f2B-bk-9FP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="qcb-Wy-ntU" customClass="SignUpPage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qcb-Wy-ntU" customClass="SignUpPage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WVv-21-eGi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="NKi-th-hUa">
-                                <rect key="frame" x="40" y="413.5" width="334" height="358"/>
+                                <rect key="frame" x="40" y="332" width="334" height="358"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="72W-mo-eyI">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -142,45 +144,45 @@
                                 </constraints>
                             </stackView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-lr-MOO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="125.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Sign Up" id="iny-rY-YQ3"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Role" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvP-Cn-Vfy">
-                                <rect key="frame" x="140" y="246.5" width="135" height="21"/>
+                                <rect key="frame" x="140" y="165" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSQ-KO-MVx">
-                                <rect key="frame" x="59" y="317.5" width="46" height="30"/>
+                                <rect key="frame" x="59" y="236" width="46" height="30"/>
                                 <state key="normal" title="Physio"/>
                                 <connections>
                                     <action selector="PhysicoTapped:" destination="qcb-Wy-ntU" eventType="touchUpInside" id="TJ6-PE-ny8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVy-jR-zh0">
-                                <rect key="frame" x="292" y="317.5" width="48" height="30"/>
+                                <rect key="frame" x="292" y="236" width="48" height="30"/>
                                 <state key="normal" title="Patient"/>
                                 <connections>
                                     <action selector="PatientTapped:" destination="qcb-Wy-ntU" eventType="touchUpInside" id="MVO-ZM-Gis"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiG-UR-mEh">
-                                <rect key="frame" x="40" y="791.5" width="334" height="20.5"/>
+                                <rect key="frame" x="40" y="710" width="334" height="102"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.11187545829999999" blue="0.1074841978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue5-xI-liA">
-                                <rect key="frame" x="59" y="365.5" width="38" height="21"/>
+                                <rect key="frame" x="59" y="284" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ac-OY-zvU">
-                                <rect key="frame" x="115" y="365.5" width="106" height="21"/>
+                                <rect key="frame" x="115" y="284" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -238,7 +240,7 @@
         <!--Login Page-->
         <scene sceneID="syk-rp-ZqH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="TQt-AF-Agz" customClass="LoginPage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TQt-AF-Agz" customClass="LoginPage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYR-39-n3Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

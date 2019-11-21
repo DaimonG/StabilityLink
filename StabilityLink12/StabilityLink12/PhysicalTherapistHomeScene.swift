@@ -78,6 +78,7 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
         let currentid = (Auth.auth().currentUser?.uid)!
         print(currentid)
         self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
+            allPatients.removeAll()
             
             
             for patientdata in snapshot.children.allObjects as![DataSnapshot] {
