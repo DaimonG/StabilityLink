@@ -68,6 +68,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
             
         // find user that matches entered email address
         users.whereField("email", isEqualTo: userEmail).getDocuments() { (querrySnapshot, err) in
+            allPatients.removeAll()
             
             let querrySnapshot = querrySnapshot
             if let err = err {
@@ -87,14 +88,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                     lastName = document.get("lastname") as! String
                     age = document.get("age") as! String
                     rolename = document.get("role") as! String
-                    // create a patient object and set values
-                    let newPatient = Patients()
-                    newPatient.firstName = firstName
-                    newPatient.UID = userid
-                    newPatient.lastName = lastName
-                    newPatient.age = age
-                    
-                    print("About to append")
+                
                     // add the new patient to the patients array
                     // allPatients.append(newPatient)
                     // print(allPatients)
@@ -109,6 +103,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                 var flag:[Bool] = [false]
                 print("firsttestflag",flag[0])
                 self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
+                allPatients.removeAll()
                 if snapshot.exists(){
                         
                     
@@ -169,9 +164,11 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                         self.ref?.updateChildValues(childupdates)
                         let homeStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
                         let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
+                        allPatients.removeAll()
                         self.view.window?.rootViewController = homeViewController
                         self.view.window?.makeKeyAndVisible()
                     }
+                    allPatients.removeAll()
                     
                 })
                
@@ -185,6 +182,16 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
 
         
     
+    @IBAction func canceltapped(_ sender: Any) {
+        allPatients.removeAll()
+        let homeStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
+        let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
+        allPatients.removeAll()
+        self.view.window?.rootViewController = homeViewController
+        self.view.window?.makeKeyAndVisible()
+        
+        
+    }
     
     
     // Hide Keyboard Function

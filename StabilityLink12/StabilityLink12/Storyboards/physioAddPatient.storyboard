@@ -40,7 +40,7 @@
                                     <navigationItem title="Add New Patient" id="2Of-RD-OyN">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="0EJ-bq-y2C">
                                             <connections>
-                                                <segue destination="Y1g-io-zKU" kind="unwind" unwindAction="cancelWithSegue:" id="T8Z-Ao-Ctc"/>
+                                                <action selector="canceltapped:" destination="Y6d-bv-bwZ" id="UVA-iY-mjs"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Done" id="h7D-bv-oet">
@@ -106,7 +106,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7t-uU-jpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Y1g-io-zKU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1807.2" y="599.55022488755628"/>
         </scene>
