@@ -81,7 +81,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j6R-X1-kVX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="D33-pl-zZC"/>
+                    <navigationItem key="navigationItem" id="D33-pl-zZC">
+                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="75n-ZT-bkB">
+                            <connections>
+                                <action selector="signouttapped:" destination="ut0-92-MH8" id="eLp-IP-wFb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="PatientsTable" destination="mxe-gZ-qZb" id="24A-UH-z2v"/>
                         <outlet property="headerLabel" destination="Mmr-i8-Hi2" id="JN8-RE-Uyq"/>
