@@ -52,11 +52,15 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     
     var patientRoutines:[Routines]? = []
     var patientKeys:[String] = []
+    var routinesname:[String] = []
     
     
     // Patient Object that is optional
     var tPatient: Patients?
     var ref:DatabaseReference?
+    var handle1:DatabaseHandle?
+   
+ 
     
     override func viewDidLoad() {
         
@@ -78,12 +82,15 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         RoutinesTable.delegate = self
         RoutinesTable.dataSource = self
         // Do any additional setup after loading the view.
+        
         self.ref = Database.database().reference()
-        self.ref?.child("users").child(currentPatient).child("routines").observe(.value, with: { (snapshot) in
             allPatientRoutines.removeAll()
+         self.ref?.child("users").child(currentPatient).child("routines").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
             
+          
+            print("aaaaaaaaaaa")
             if let data = snapshot.value as? [String: Any]{
-                print(data)
+                
 
                    
                 self.patientKeys = Array(data.keys)
@@ -96,6 +103,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
                     allPatientRoutines.append(routinename)
                     self.RoutinesTable.reloadData()
                 }
+                self.removehandle()
                     
             }
                 
@@ -108,6 +116,58 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         })
         
     }
+    func removehandle(){
+        guard  let handle = handle1 else {
+            return
+        }
+        self.ref?.child("users").removeObserver(withHandle: handle)
+    }
+    
+
+    
+    func removepatient(){
+       
+        let physioid = (Auth.auth().currentUser?.uid)!
+       
+        self.ref?.child("users").child(physioid).child("patientDoc").child(currentPatient).removeValue()
+        
+       
+    
+        let loginStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
+        let loginViewController = loginStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
+        self.view.window?.rootViewController = loginViewController
+        self.view.window?.makeKeyAndVisible()
+     
+      
+    
+            
+        
+    }
+    
+    //check again if the patient already be removed
+  
+    
+    ///Remove Patient Function
+    @IBAction func removetapped(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Warning", message:"Are you sure you want to remove this patient?", preferredStyle:.alert)
+        
+        let btnok = UIAlertAction(title: "Sure", style: .default) {(UIAlertAction) -> Void in
+           
+            
+            self.removepatient()
+        }
+        let btncancel = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) -> Void in
+           
+            
+            
+        }
+        alert.addAction(btnok)
+        alert.addAction(btncancel)
+        self.present(alert,animated: true,completion: nil)
+    }
+ 
+    
     
     @IBAction func exitInfoPage(segue:UIStoryboardSegue)
     {
@@ -154,6 +214,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return allPatientRoutines.count
     }
     
@@ -173,7 +234,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         selectedRoutine = allPatientRoutines[indexPath.row].name
         self.performSegue(withIdentifier: "ToRoutineInformation", sender: nil)
-        print(selectedRoutine)
+        
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
@@ -182,13 +243,62 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     /*
      * Delete Table Cell Function
      */
+    
+    //delete routines
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath )
     {
+        
+        
         if editingStyle == .delete{
+        
+           
+            
+             ref?.child("users").child(currentPatient).child("routines").child(allPatientRoutines[indexPath.row].name).removeValue(completionBlock: { (error, ref) in
+                    if error != nil{
+                        print("Failed to delete routines",error)
+                        return
+                    }
+              
+                
+    
+                else{
+                    allPatientRoutines.remove(at: indexPath.row)
+                    
+                    tableView.beginUpdates()
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                    tableView.endUpdates()
+                }
+                    
+                    
+                    
+                    
+                    
+                })
+            
+            
+            
+ 
+            
+            
+           
+            
+            
+            
+        /*
+         if editingStyle == .delete{
             RoutinesArray.remove(at: indexPath.row)
-            tableView.beginUpdates()
-            tableView.deleteRows(at: [indexPath], with: .automatic)
-            tableView.endUpdates()
+        print("indexpathrow",indexPath.row)
+        tableView.beginUpdates()
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
+       */
+        
+            
+            
+            
+            
+ 
+ 
         }
     }
 }

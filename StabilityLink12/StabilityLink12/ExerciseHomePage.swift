@@ -58,8 +58,9 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         self.ref = Database.database().reference()
         
-        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).observe(DataEventType.value, with: { (snapshot) in
+        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).observe( DataEventType.value, with: { (snapshot) in
             newRoutine.removeAll()
+            
             
         for routine in snapshot.children.allObjects as![DataSnapshot]{
             let snap = routine.value as?[String : String]

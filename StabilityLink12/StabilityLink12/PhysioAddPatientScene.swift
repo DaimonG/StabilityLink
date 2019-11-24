@@ -16,6 +16,8 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
     // Set to an empty string
     var userEmail = ""
     var ref:DatabaseReference?
+    var handle1: DatabaseHandle?
+    var handle2: DatabaseHandle?
     // Linking 3 Text Fields
     @IBOutlet weak var emailAddress: UITextField!
     
@@ -39,6 +41,17 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
         errorlabel.text = message
         errorlabel.alpha = 1
         
+    }
+    
+    func removehandle(){
+        guard let handle = handle1 else{
+            print("i am not remove the handle1")
+            return
+        }
+        print("remove the handle1")
+        self.ref?.child("users").removeObserver(withHandle: handle)
+        
+     
     }
     
     
@@ -69,7 +82,6 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
         // find user that matches entered email address
         users.whereField("email", isEqualTo: userEmail).getDocuments() { (querrySnapshot, err) in
             allPatients.removeAll()
-            
             let querrySnapshot = querrySnapshot
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -101,26 +113,25 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                 let currentid = (Auth.auth().currentUser?.uid)!
                 var docid = ""
                 var flag:[Bool] = [false]
-                print("firsttestflag",flag[0])
-                self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
+               
+               self.ref?.child("users").child(currentid).child("patientDoc").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
                 allPatients.removeAll()
                 if snapshot.exists(){
-                        
-                    
+                    self.removehandle()
+                    print("nidsnoidnsandoisadniosandoiadinosa")
                     for routine in snapshot.children.allObjects as![DataSnapshot]{
                         let snap = routine.value as?[String:String]
                         
                         let id = snap?["uid"] as! String
-                        print("userid",userid)
-                        print("id",id)
+                        
                         if(id == userid)
                         {
-                            print("i am test the flag")
+                            
                             flag[0] = true
                         }
-                        print("flag[0]",flag[0])
+                
                         if flag[0]{
-                            print("i am test")
+                
                             return self.errorinfo("You have been already added this patient")
                         }
                         
@@ -135,17 +146,24 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                                 }
                             }
                         }
-                        
+                        /*
                             let post = ["firstname" : firstName,"lastname" : lastName, "age" : age, "uid" : userid]
                             let childupdates = ["/users/\(currentid)/patientDoc/\(userid)" : post]
-                            self.ref?.updateChildValues(childupdates)
+                        self.ref?.updateChildValues(childupdates)
+                        */
+                        print("i am here")
+                        let post = ["firstname" : firstName,"lastname" : lastName, "age" : age, "uid" : userid]
+                        self.ref?.child("users").child(currentid).child("patientDoc").child(userid).setValue(post)
+                       
                             let homeStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
+                        self.ref?.child("users").child(currentid).removeAllObservers()
                             let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
                             self.view.window?.rootViewController = homeViewController
                             self.view.window?.makeKeyAndVisible()
                         //users.document(docid).collection("patients").addDocument(data: ["firstname" : firstName, "lastname" : lastName, "uid" : userid])
                         
                     }
+                    self.removehandle()
                     }
                     else{
                         users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
@@ -158,13 +176,19 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                                 }
                             }
                         }
-                        
+                        /*
                         let post = ["firstname" : firstName,"lastname" : lastName, "age" : age, "uid" : userid]
                         let childupdates = ["/users/\(currentid)/patientDoc/\(userid)" : post]
                         self.ref?.updateChildValues(childupdates)
+                        */
+                        print("dsadsadsadsadsasddsadsadas")
+                        let post = ["firstname" : firstName,"lastname" : lastName, "age" : age, "uid" : userid]
+                        self.ref?.child("users").child(currentid).child("patientDoc").child(userid).setValue(post)
+                        self.removehandle()
                         let homeStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
                         let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
-                        allPatients.removeAll()
+                        //allPatients.removeAll()
+                        self.ref?.child("users").child(currentid).removeAllObservers()
                         self.view.window?.rootViewController = homeViewController
                         self.view.window?.makeKeyAndVisible()
                     }

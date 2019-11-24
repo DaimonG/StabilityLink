@@ -57,6 +57,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
     var lastName = ""
     
     var ref:DatabaseReference?
+    var handlereload :DatabaseHandle?
+    var handleremove :DatabaseHandle?
     /*
      * Function to load the view
      */
@@ -76,9 +78,10 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
         PatientsTable.dataSource = self
         self.ref = Database.database().reference()
         let currentid = (Auth.auth().currentUser?.uid)!
-        print(currentid)
-        self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
+        
+        handlereload = self.ref?.child("users").child(currentid).child("patientDoc").observe(DataEventType.value, with: { (snapshot) in
             allPatients.removeAll()
+            
             
             
             for patientdata in snapshot.children.allObjects as![DataSnapshot] {
@@ -89,8 +92,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
                 let uid = snap?["uid"]
                 self.firstName = firstname!
                 self.lastName = lastname!
-                
-                print(firstname)
+                print("???")
+             
                 
                 let newPatient = Patients()
                 newPatient.firstName = firstname!
@@ -99,6 +102,8 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
                 newPatient.UID = uid!
                 
                 allPatients.append(newPatient)
+             
+                self.removehandle()
                 self.PatientsTable.reloadData()
                 //print(allPatients)
             }
@@ -119,6 +124,17 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
             
         })
      
+    }
+    //remove handle
+    func removehandle(){
+        guard let handle = handlereload else{
+            print("i am not remove the handle")
+            return
+        }
+        print("remove the handlereload")
+        self.ref?.child("users").removeObserver(withHandle: handle)
+        
+       
     }
     
     //bool function if users want to sign out
@@ -225,6 +241,11 @@ class PhysicalTherapistHomeScene: UIViewController, UITableViewDelegate, UITable
      */
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath ) {
         if editingStyle == .delete{
+            let physioid = (Auth.auth().currentUser?.uid)!
+           
+        self.ref?.child("users").child(physioid).child("patientDoc").child(allPatients[indexPath.row].UID).setValue(nil)
+            
+        
             allPatients.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)

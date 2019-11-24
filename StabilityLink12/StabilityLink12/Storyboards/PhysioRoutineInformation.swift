@@ -26,7 +26,7 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
         ExerciseTable.delegate = self
         ExerciseTable.dataSource = self
         self.ref = Database.database().reference()
-        self.ref?.child("users").child(currentPatient).child("routines").child(selectedRoutine).observe(DataEventType.value, with: { (snapshot) in
+        self.ref?.child("users").child(currentPatient).child("routines").child(selectedRoutine).observeSingleEvent(of:DataEventType.value, with: { (snapshot) in
             routineExercises.removeAll()
             for routine in snapshot.children.allObjects as![DataSnapshot]{
                 let snap = routine.value as? [String : String]
