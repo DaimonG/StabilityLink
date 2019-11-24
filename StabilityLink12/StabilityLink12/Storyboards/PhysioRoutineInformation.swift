@@ -58,6 +58,56 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
+    
+    //delete cell
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
+        return true
+    }
+    /*
+     * Delete Table Cell Function
+     */
+    
+    //delete routines
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath )
+    {
+        
+        
+        if editingStyle == .delete{
+            
+            
+            
+                    ref?.child("users").child(currentPatient).child("routines").child(selectedRoutine).child(routineExercises[indexPath.row].exerciseName).removeValue()
+                    routineExercises.remove(at: indexPath.row)
+                    
+                    tableView.beginUpdates()
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                    tableView.endUpdates()
+            
+                
+                
+                
+                
+                
+         
+            
+            /*
+             if editingStyle == .delete{
+             RoutinesArray.remove(at: indexPath.row)
+             print("indexpathrow",indexPath.row)
+             tableView.beginUpdates()
+             tableView.deleteRows(at: [indexPath], with: .automatic)
+             tableView.endUpdates()
+             */
+            
+            
+            
+            
+            
+            
+            
+        }
+    }
+    
     /*
      * When a cell is tapped
      */

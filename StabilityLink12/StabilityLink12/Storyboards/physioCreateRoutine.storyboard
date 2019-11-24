@@ -278,11 +278,6 @@
                         <viewLayoutGuide key="safeArea" id="Jxe-Av-Jwc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Routine" id="W9I-AN-avj">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Mhb-8r-gON">
-                            <connections>
-                                <segue destination="wEb-5U-w2p" kind="presentation" id="D6x-VN-Mqo"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Exercise" id="Bh3-Rc-JYb">
                             <connections>
                                 <segue destination="5Wp-f8-ZP4" kind="presentation" id="Gp7-qB-4jJ"/>

@@ -43,7 +43,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newRoutine.removeAll()
+        
         
         print("View Loading",currentRoutine)
        
@@ -58,9 +58,10 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         self.ref = Database.database().reference()
         
-        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).observe( DataEventType.value, with: { (snapshot) in
-            newRoutine.removeAll()
+        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).observe(DataEventType.value, with: { (snapshot) in
             
+            
+            newRoutine.removeAll()
             
         for routine in snapshot.children.allObjects as![DataSnapshot]{
             let snap = routine.value as?[String : String]
@@ -94,7 +95,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
         let cell:UITableViewCell = self.ExerciseTable.dequeueReusableCell(withIdentifier: "ExerciseCell") as UITableViewCell!
         
         cell.textLabel?.text = newRoutine[indexPath.row].exerciseName
-        print("hello1")
+        
         
         return cell
     }
@@ -136,6 +137,7 @@ class ExerciseHomePage: UIViewController, UITableViewDelegate, UITableViewDataSo
      */
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath ) {
         if editingStyle == .delete{
+        self.ref?.child("users").child(currentPatient).child("routines").child(currentRoutine).child(newRoutine[indexPath.row].exerciseName).removeValue()
             newRoutine.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)

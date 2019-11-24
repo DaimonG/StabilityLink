@@ -275,15 +275,6 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
                     
                 })
             
-            
-            
- 
-            
-            
-           
-            
-            
-            
         /*
          if editingStyle == .delete{
             RoutinesArray.remove(at: indexPath.row)
