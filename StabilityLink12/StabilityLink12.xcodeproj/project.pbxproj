@@ -41,6 +41,7 @@
 		EDD35D26236FFB6100065ACA /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D25236FFB6100065ACA /* ExerciseList.swift */; };
 		EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2723700F5200065ACA /* TempExercise.swift */; };
 		EDD35D2A23701F9B00065ACA /* TempExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */; };
+		FD2AF666238DF225005982EF /* SLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2AF665238DF225005982EF /* SLLabel.swift */; };
 		FD75957B23835E8400B28658 /* StabilityLink12UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75957A23835E8400B28658 /* StabilityLink12UITests.swift */; };
 		FD75958323835EC200B28658 /* PhysioSanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75958223835EC200B28658 /* PhysioSanity.swift */; };
 		FD75958523835ED300B28658 /* PatientSanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75958423835ED300B28658 /* PatientSanity.swift */; };
@@ -117,6 +118,7 @@
 		EDD35D2723700F5200065ACA /* TempExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExercise.swift; sourceTree = "<group>"; };
 		EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExerciseDetail.swift; sourceTree = "<group>"; };
 		F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StabilityLink12.release.xcconfig"; path = "Target Support Files/Pods-StabilityLink12/Pods-StabilityLink12.release.xcconfig"; sourceTree = "<group>"; };
+		FD2AF665238DF225005982EF /* SLLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabel.swift; sourceTree = "<group>"; };
 		FD75957823835E8400B28658 /* StabilityLink12UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StabilityLink12UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD75957A23835E8400B28658 /* StabilityLink12UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabilityLink12UITests.swift; sourceTree = "<group>"; };
 		FD75957C23835E8400B28658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				FDD224A1237B7BDD003B404D /* BaseViewController.swift */,
 				FDD224A3237B7FAF003B404D /* SLTextField.swift */,
 				FDD224A5237B7FC2003B404D /* SLButton.swift */,
+				FD2AF665238DF225005982EF /* SLLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */,
 				FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */,
 				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
+				FD2AF666238DF225005982EF /* SLLabel.swift in Sources */,
 				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
 				FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
@@ -747,7 +751,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1C93C378BDD45D373C997D6 /* Pods-StabilityLink12.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3B6ANFRZG;
@@ -769,7 +773,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3CAC7186B032EC353728E61 /* Pods-StabilityLink12.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3B6ANFRZG;
