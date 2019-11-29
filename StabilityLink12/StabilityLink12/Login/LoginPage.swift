@@ -54,11 +54,39 @@ class LoginPage: UIViewController {
                 self.Errortext.alpha = 1
             }
             else{
-                
-                let loginStoryboard = UIStoryboard(name: "home", bundle: nil)
-                let loginViewController = loginStoryboard.instantiateViewController(withIdentifier: "BaseViewController")
-                self.view.window?.rootViewController = loginViewController
-                self.view.window?.makeKeyAndVisible()            }
+                //get current user id
+                let userID = Auth.auth().currentUser?.uid
+                let db = Firestore.firestore()
+                db.collection("users").whereField("uid", isEqualTo: userID).getDocuments { (snapshot, error) in
+                    if error != nil{
+                        print(error)
+                    }
+                    else{
+                        for document in (snapshot?.documents)!{
+                            if let role = document.data()["role"] as? String{
+                                //if current id role is patient
+                                //else physio
+                                if role == "patient"
+                                {
+                                    let loginStoryboard = UIStoryboard(name: "patientHome", bundle: nil)
+                                    let loginViewController = loginStoryboard.instantiateViewController(withIdentifier: "PatientHome")
+                                    self.view.window?.rootViewController = loginViewController
+                                    self.view.window?.makeKeyAndVisible()
+                                    
+                                }
+                                else
+                                {
+                                    let loginStoryboard = UIStoryboard(name: "physioHome", bundle: nil)
+                                    let loginViewController = loginStoryboard.instantiateViewController(withIdentifier: "PhysicalTherapistHome")
+                                    self.view.window?.rootViewController = loginViewController
+                                    self.view.window?.makeKeyAndVisible()
+                                }
+                                
+                            }
+                            
+                        }
+                    }
+                }          }
         }
     }
     

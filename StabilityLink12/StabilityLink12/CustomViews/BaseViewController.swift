@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class BaseViewController: UIViewController {
     @IBOutlet var button: UIView!
     
@@ -22,6 +23,9 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = Colors.slDarkGrey        
         // Do any additional setup after loading the view.
+       
+            
+        /*
         
         //set firebase reference
         let userID = Auth.auth().currentUser?.uid
@@ -94,8 +98,9 @@ class BaseViewController: UIViewController {
             
             
             
-        }
+        }*/
         
     }
+ 
     
 }
