@@ -12,8 +12,8 @@ import FirebaseAuth
 
 class PhysioViewStatistics: UIViewController {
 
-    var xValue:[String] = []
-    var yValue:[String] = []
+    var xValue:[String] = [] // exercise names
+    var yValue:[String] = [] // number of times done (String)
     var ref:DatabaseReference?
     var exerName = ""
     var TimesCount = ""

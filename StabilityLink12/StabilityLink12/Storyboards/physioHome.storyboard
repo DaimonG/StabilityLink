@@ -375,7 +375,6 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u9b-Zj-aBm"/>
         <segue reference="ofg-JU-Yax"/>
         <segue reference="a8o-zj-9IW"/>
     </inferredMetricsTieBreakers>
