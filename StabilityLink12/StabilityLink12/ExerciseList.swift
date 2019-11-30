@@ -133,7 +133,7 @@ class ExerciseList: UIViewController {
                                 
                               */
                             
-                             let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps]
+                                let post = ["exercisename" : self.exerciseName, "patientdone":self.patientDone,"physioset" : self.physioSet, "physioreps" : self.physioReps, "patientfeedback": "Good"]
                             
                                let childupdates =  ["/users/\(currentPatient)/routines/\(currentRoutine)/\(self.exerciseName)": post]
                                 

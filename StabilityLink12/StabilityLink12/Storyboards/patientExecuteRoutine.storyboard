@@ -147,6 +147,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-CH-8CV">
                                                         <rect key="frame" x="0.0" y="107" width="138" height="107"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <segue destination="hh1-aa-LLv" kind="presentation" id="Bo5-bW-OU6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -199,11 +202,87 @@
             </objects>
             <point key="canvasLocation" x="108.69565217391305" y="817.63392857142856"/>
         </scene>
+        <!--Patient Give Feedback-->
+        <scene sceneID="m6C-pG-Xb6">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="hh1-aa-LLv" customClass="PatientGiveFeedback" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIY-M0-92J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-Bn-bmz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Wzx-Hf-3Jy"/>
+                                    <constraint firstAttribute="width" constant="414" id="dFK-JP-9mk"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Provide Feedback" id="UXX-CV-WfM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="i1F-4U-0Ac">
+                                            <connections>
+                                                <segue destination="pnH-tt-Plh" kind="presentation" id="tNH-rD-28W"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-Ja-m5y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-Wn-Kob" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="254.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="HardButtonPressed:" destination="hh1-aa-LLv" eventType="touchUpInside" id="Zf5-TT-w8O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-r1-P58" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="259.66666666666669" width="414" height="254.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="GoodButtonPressed:" destination="hh1-aa-LLv" eventType="touchUpInside" id="Xn2-OJ-gom"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkE-Ej-9Ps" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="519.33333333333337" width="414" height="254.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="EasyButtonPressed:" destination="hh1-aa-LLv" eventType="touchUpInside" id="JGm-HE-q7W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="wle-PW-L3R"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1N4-Bn-bmz" firstAttribute="centerX" secondItem="nIY-M0-92J" secondAttribute="centerX" id="59l-d1-9qL"/>
+                            <constraint firstItem="H2K-Ja-m5y" firstAttribute="bottom" secondItem="zla-5c-4Hd" secondAttribute="bottom" id="MmI-6I-3NA"/>
+                            <constraint firstItem="H2K-Ja-m5y" firstAttribute="top" secondItem="1N4-Bn-bmz" secondAttribute="bottom" id="eDq-P3-oqx"/>
+                            <constraint firstItem="1N4-Bn-bmz" firstAttribute="top" secondItem="zla-5c-4Hd" secondAttribute="top" id="f3e-KJ-EmQ"/>
+                            <constraint firstItem="H2K-Ja-m5y" firstAttribute="centerX" secondItem="nIY-M0-92J" secondAttribute="centerX" id="y92-Vm-94e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zla-5c-4Hd"/>
+                    </view>
+                    <connections>
+                        <outlet property="EasyButton" destination="YkE-Ej-9Ps" id="ZLA-We-hjm"/>
+                        <outlet property="GoodButton" destination="TNt-r1-P58" id="vIW-qF-6lX"/>
+                        <outlet property="HardButton" destination="FVk-Wn-Kob" id="6y7-HN-aBj"/>
+                        <segue destination="pnH-tt-Plh" kind="presentation" identifier="SavingFeedback" id="ly7-lx-F5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEi-Qd-0Xt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="1629.9107142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_button" width="218" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="haG-Ca-XkX"/>
         <segue reference="WTa-9B-dWo"/>
     </inferredMetricsTieBreakers>
 </document>

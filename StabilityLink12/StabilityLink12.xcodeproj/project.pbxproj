@@ -20,6 +20,8 @@
 		7452C02E2381807F00F91DE0 /* NewRoutineName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C02D2381807F00F91DE0 /* NewRoutineName.swift */; };
 		7452C0342381C33900F91DE0 /* PhysioRoutineInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */; };
 		746523122391E89C00E9168B /* PhysioViewStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523112391E89C00E9168B /* PhysioViewStatistics.swift */; };
+		746523142391F46D00E9168B /* PatientGiveFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523132391F46D00E9168B /* PatientGiveFeedback.swift */; };
+		746523162392005000E9168B /* PhysioViewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523152392005000E9168B /* PhysioViewExercise.swift */; };
 		746BD88123835DF0002BBDF9 /* PatientViewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */; };
 		748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */; };
 		748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */; };
@@ -95,6 +97,8 @@
 		7452C02D2381807F00F91DE0 /* NewRoutineName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutineName.swift; sourceTree = "<group>"; };
 		7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioRoutineInformation.swift; sourceTree = "<group>"; };
 		746523112391E89C00E9168B /* PhysioViewStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewStatistics.swift; sourceTree = "<group>"; };
+		746523132391F46D00E9168B /* PatientGiveFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientGiveFeedback.swift; sourceTree = "<group>"; };
+		746523152392005000E9168B /* PhysioViewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewExercise.swift; sourceTree = "<group>"; };
 		746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewExercise.swift; sourceTree = "<group>"; };
 		748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTherapistHomeScene.swift; sourceTree = "<group>"; };
 		748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddPatientScene.swift; sourceTree = "<group>"; };
@@ -280,9 +284,11 @@
 				FD88ED122378BA49005F3B34 /* login.storyboard */,
 				FD88ED142378BA5E005F3B34 /* patientHome.storyboard */,
 				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
+				746523132391F46D00E9168B /* PatientGiveFeedback.swift */,
 				746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */,
 				FD88ED222378BB76005F3B34 /* patientViewData.storyboard */,
 				FD88ED162378BA6F005F3B34 /* physioHome.storyboard */,
+				746523152392005000E9168B /* PhysioViewExercise.swift */,
 				746523112391E89C00E9168B /* PhysioViewStatistics.swift */,
 				7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */,
 				FD88ED182378BAB6005F3B34 /* physioAddPatient.storyboard */,
@@ -558,11 +564,13 @@
 			files = (
 				ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */,
 				746BD88123835DF0002BBDF9 /* PatientViewExercise.swift in Sources */,
+				746523162392005000E9168B /* PhysioViewExercise.swift in Sources */,
 				FD88ED3F237A49E3005F3B34 /* NewRoutineExerciseTable.swift in Sources */,
 				34FFC336236A127D0083351D /* PatientHome.swift in Sources */,
 				FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */,
 				FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */,
 				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
+				746523142391F46D00E9168B /* PatientGiveFeedback.swift in Sources */,
 				FD2AF666238DF225005982EF /* SLLabel.swift in Sources */,
 				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
 				FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */,

@@ -13,6 +13,8 @@ import FirebaseFirestore
 
 var routineExercises:[Exercise] = []
 
+var physioTapsExercise = ""
+
 class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var ViewStats: UIButton!
@@ -68,6 +70,7 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{
         return true
     }
+    
     /*
      * Delete Table Cell Function
      */
@@ -75,26 +78,14 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
     //delete routines
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath )
     {
-        
-        
         if editingStyle == .delete{
-            
-            
-            
-                    ref?.child("users").child(currentPatient).child("routines").child(selectedRoutine).child(routineExercises[indexPath.row].exerciseName).removeValue()
+            ref?.child("users").child(currentPatient).child("routines").child(selectedRoutine).child(routineExercises[indexPath.row].exerciseName).removeValue()
                     routineExercises.remove(at: indexPath.row)
                     
                     tableView.beginUpdates()
                     tableView.deleteRows(at: [indexPath], with: .automatic)
                     tableView.endUpdates()
-            
-                
-                
-                
-                
-                
-         
-            
+
             /*
              if editingStyle == .delete{
              RoutinesArray.remove(at: indexPath.row)
@@ -103,21 +94,18 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
              tableView.deleteRows(at: [indexPath], with: .automatic)
              tableView.endUpdates()
              */
-            
-            
-            
-            
-            
-            
-            
         }
     }
     
     /*
      * When a cell is tapped
      */
-    func tableView(_ tableView: UITableView, disSelectRowAt indexPath: IndexPath){
-        print("CELL TAPPED")
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+        print("CELL TAPPED!!!!")
+        physioTapsExercise = routineExercises[indexPath.row].exerciseName
+        
+        self.performSegue(withIdentifier: "ViewExercise", sender: nil)
     }
 
 

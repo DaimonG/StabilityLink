@@ -69,10 +69,7 @@ class PatientViewExercise: UIViewController {
         let currentid = (Auth.auth().currentUser?.uid)!
         var stringcount = (String(intcount))
        print("intcount",intcount)
-        let post = ["patientdone" : stringcount,"exercisename" : patientTapsExercise, "physioreps" : repNumber, "physioset" : setNumber]
-        let childupdates = ["/users/\(currentid)/routines/\(patientRoutineTapped)/\(patientTapsExercise)" : post]
-        print("childupdate",childupdates)
-        self.ref?.updateChildValues(childupdates)
+        self.ref?.child("users").child(currentid).child("routines").child(patientRoutineTapped).child(patientTapsExercise).updateChildValues(["patientdone" : stringcount])
         
         self.performSegue(withIdentifier: "DoneExercise", sender: nil)
     }
