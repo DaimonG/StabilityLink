@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5XB-Bm-YvX">
+            <objects>
+                <navigationController storyboardIdentifier="PatientHome" id="vfp-JS-ME1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6H-Xk-e9L">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nn8-pU-d16" kind="relationship" relationship="rootViewController" id="TPs-CD-6Z2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJR-Qo-RPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="-73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k0g-kM-owQ">
+            <objects>
+                <viewController id="nn8-pU-d16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JT1-XR-0lp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCS-uR-Qcs">
+                                <rect key="frame" x="50" y="542" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m0a-qQ-gIM"/>
+                                </constraints>
+                                <state key="normal" title="View Data"/>
+                                <connections>
+                                    <segue destination="OaF-l3-1fO" kind="presentation" id="XCE-DF-Prh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-9F-5DA">
+                                <rect key="frame" x="50" y="442" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pyG-mT-qIH"/>
+                                </constraints>
+                                <state key="normal" title="View Routines"/>
+                                <connections>
+                                    <segue destination="leZ-0Z-IBK" kind="presentation" id="pBR-XR-GVH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ANL-jf-zps" firstAttribute="bottom" secondItem="UCS-uR-Qcs" secondAttribute="bottom" constant="75" id="Adt-zT-f2n"/>
+                            <constraint firstItem="UCS-uR-Qcs" firstAttribute="leading" secondItem="ANL-jf-zps" secondAttribute="leading" constant="50" id="Rlj-i2-DCW"/>
+                            <constraint firstItem="ANL-jf-zps" firstAttribute="trailing" secondItem="UCS-uR-Qcs" secondAttribute="trailing" constant="50" id="eg3-tq-tg4"/>
+                            <constraint firstItem="UCS-uR-Qcs" firstAttribute="top" secondItem="k2L-9F-5DA" secondAttribute="bottom" constant="50" id="hN7-Fb-Yie"/>
+                            <constraint firstItem="ANL-jf-zps" firstAttribute="trailing" secondItem="k2L-9F-5DA" secondAttribute="trailing" constant="50" id="jXZ-Qs-0c3"/>
+                            <constraint firstItem="k2L-9F-5DA" firstAttribute="leading" secondItem="ANL-jf-zps" secondAttribute="leading" constant="50" id="xZo-PV-HP7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ANL-jf-zps"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8MR-Ps-a7v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQI-Ra-ekP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-72"/>
+        </scene>
+        <!--Patient Routine Table Screen-->
+        <scene sceneID="Wlv-ub-pTa">
+            <objects>
+                <viewController id="leZ-0Z-IBK" customClass="PatientRoutineTableScreen" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWk-oV-08b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kam-QW-eGx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nbK-3r-42K" customClass="PatientRoutineCell" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nbK-3r-42K" id="bm0-FD-HXk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-Dx-x2n">
+                                                    <rect key="frame" x="139" y="30" width="97" height="30"/>
+                                                    <state key="normal" title="Routine Name"/>
+                                                    <connections>
+                                                        <segue destination="tlf-Id-Yk3" kind="presentation" id="1m1-7F-qOn"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GcI-Dx-x2n" firstAttribute="centerX" secondItem="bm0-FD-HXk" secondAttribute="centerX" id="N1L-D1-IYJ"/>
+                                                <constraint firstItem="GcI-Dx-x2n" firstAttribute="centerY" secondItem="bm0-FD-HXk" secondAttribute="centerY" id="mz9-iS-fAK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="RoutineButton" destination="bm0-FD-HXk" id="fLB-qC-3Ka"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dva-gU-ryF" firstAttribute="bottom" secondItem="kam-QW-eGx" secondAttribute="bottom" id="e8X-dH-Pvl"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="hsX-zJ-Uvu"/>
+                            <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" id="qH8-L5-9WD"/>
+                            <constraint firstItem="Dva-gU-ryF" firstAttribute="trailing" secondItem="kam-QW-eGx" secondAttribute="trailing" id="vTY-Gc-bIY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dva-gU-ryF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCB-Pf-uwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="-68"/>
+        </scene>
+        <!--patientExecuteRoutine-->
+        <scene sceneID="WOp-Id-Vnp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="patientExecuteRoutine" id="tlf-Id-Yk3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3I4-Kz-CPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="-69"/>
+        </scene>
+        <!--patientViewData-->
+        <scene sceneID="Va5-iU-dJF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="patientViewData" id="OaF-l3-1fO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2v-Wu-oxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="381"/>
+        </scene>
+    </scenes>
+</document>

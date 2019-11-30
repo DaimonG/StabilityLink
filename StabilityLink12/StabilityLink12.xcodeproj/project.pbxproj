@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		298307B1DA2521627FC3BB28 /* Pods_StabilityLink12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64FDA609B662FE7C58B156E /* Pods_StabilityLink12.framework */; };
+		3453B7DD2392F665004E2DE0 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453B7DC2392F665004E2DE0 /* VideoHelper.swift */; };
 		347DE127236FA00B003F33EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DE126236FA00B003F33EF /* CheckBox.swift */; };
 		34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3212369FCE20083351D /* AppDelegate.swift */; };
 		34FFC3262369FCE20083351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3252369FCE20083351D /* ViewController.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3453B7DC2392F665004E2DE0 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoHelper.swift; path = "../../../../../Xcode/RWVideoNinja-Final/RWVideoNinja/VideoHelper.swift"; sourceTree = "<group>"; };
 		347DE126236FA00B003F33EF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		34FFC31E2369FCE20083351D /* StabilityLink12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StabilityLink12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC3212369FCE20083351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				FD88ED102378BA2B005F3B34 /* onboarding.storyboard */,
 				FD88ED122378BA49005F3B34 /* login.storyboard */,
 				FD88ED142378BA5E005F3B34 /* patientHome.storyboard */,
+				3453B7DC2392F665004E2DE0 /* VideoHelper.swift */,
 				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
 				746523132391F46D00E9168B /* PatientGiveFeedback.swift */,
 				746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */,
@@ -564,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3453B7DD2392F665004E2DE0 /* VideoHelper.swift in Sources */,
 				ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */,
 				746BD88123835DF0002BBDF9 /* PatientViewExercise.swift in Sources */,
 				746523162392005000E9168B /* PhysioViewExercise.swift in Sources */,

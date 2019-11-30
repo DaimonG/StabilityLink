@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zbs-8H-jNu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ABy-a5-Pfv">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="zbs-8H-jNu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pt4-Z8-DbF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6d-bv-bwZ" kind="relationship" relationship="rootViewController" id="oj5-xi-ZTY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxu-vU-WVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="600"/>
+        </scene>
+        <!--Physio Add Patient Scene-->
+        <scene sceneID="Eva-9f-bil">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6d-bv-bwZ" customClass="PhysioAddPatientScene" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wC6-gP-cBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTg-Yi-7da">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Add New Patient" id="2Of-RD-OyN">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="0EJ-bq-y2C">
+                                            <connections>
+                                                <segue destination="Y1g-io-zKU" kind="unwind" unwindAction="cancelWithSegue:" id="T8Z-Ao-Ctc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="waY-ul-WWz">
+                                            <connections>
+                                                <segue destination="Y1g-io-zKU" kind="unwind" identifier="doneSegue" unwindAction="doneWithSegue:" id="ijC-y1-ign"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sy6-Ch-rnu">
+                                <rect key="frame" x="80.5" y="435" width="214" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="gsX-AY-ivp"/>
+                                    <constraint firstAttribute="height" constant="34" id="jVY-W0-MfW"/>
+                                </constraints>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter some basic information of your new patient. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-2R-bvr">
+                                <rect key="frame" x="49" y="111" width="277.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basic Headshot" translatesAutoresizingMaskIntoConstraints="NO" id="L1Y-PD-UBh">
+                                <rect key="frame" x="45" y="210" width="285" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="9xz-vl-W87"/>
+                                    <constraint firstAttribute="height" constant="187" id="TtL-H4-54K"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sy6-Ch-rnu" firstAttribute="top" secondItem="L1Y-PD-UBh" secondAttribute="bottom" constant="38" id="1RB-Kn-Ttj"/>
+                            <constraint firstItem="L1Y-PD-UBh" firstAttribute="centerX" secondItem="wC6-gP-cBN" secondAttribute="centerX" id="TSd-SY-sNP"/>
+                            <constraint firstItem="CTg-Yi-7da" firstAttribute="top" secondItem="xWK-XL-SlX" secondAttribute="top" id="XAY-uj-vPd"/>
+                            <constraint firstItem="GhQ-2R-bvr" firstAttribute="top" secondItem="CTg-Yi-7da" secondAttribute="bottom" constant="23" id="fXn-vS-tZV"/>
+                            <constraint firstItem="L1Y-PD-UBh" firstAttribute="top" secondItem="GhQ-2R-bvr" secondAttribute="bottom" constant="58" id="fw3-eE-S6v"/>
+                            <constraint firstItem="GhQ-2R-bvr" firstAttribute="centerX" secondItem="wC6-gP-cBN" secondAttribute="centerX" id="haL-HQ-ssD"/>
+                            <constraint firstItem="CTg-Yi-7da" firstAttribute="leading" secondItem="wC6-gP-cBN" secondAttribute="leading" id="iBH-OT-eXK"/>
+                            <constraint firstItem="CTg-Yi-7da" firstAttribute="top" secondItem="xWK-XL-SlX" secondAttribute="top" id="j5R-lF-Gdi"/>
+                            <constraint firstAttribute="trailing" secondItem="CTg-Yi-7da" secondAttribute="trailing" id="s5G-4M-UI7"/>
+                            <constraint firstItem="sy6-Ch-rnu" firstAttribute="centerX" secondItem="wC6-gP-cBN" secondAttribute="centerX" id="v0l-Uq-YZH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xWK-XL-SlX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rrz-5M-CyC"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="sy6-Ch-rnu" id="Map-c3-255"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7t-uU-jpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Y1g-io-zKU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Basic Headshot" width="400" height="400"/>
+    </resources>
+</document>
