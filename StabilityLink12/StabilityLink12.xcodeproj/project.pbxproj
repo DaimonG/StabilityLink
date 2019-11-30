@@ -22,6 +22,8 @@
 		746523122391E89C00E9168B /* PhysioViewStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523112391E89C00E9168B /* PhysioViewStatistics.swift */; };
 		746523142391F46D00E9168B /* PatientGiveFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523132391F46D00E9168B /* PatientGiveFeedback.swift */; };
 		746523162392005000E9168B /* PhysioViewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523152392005000E9168B /* PhysioViewExercise.swift */; };
+		7465231823921B8900E9168B /* PhysioViewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7465231723921B8900E9168B /* PhysioViewVideo.swift */; };
+		7465231A23921F1C00E9168B /* PatientSendVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7465231923921F1C00E9168B /* PatientSendVideo.swift */; };
 		746BD88123835DF0002BBDF9 /* PatientViewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */; };
 		748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */; };
 		748CFB76236A143000CC7068 /* PhysioAddPatientScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */; };
@@ -56,7 +58,6 @@
 		FD88ED1D2378BB2E005F3B34 /* physioCreateRoutine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */; };
 		FD88ED1F2378BB49005F3B34 /* physioViewData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED1E2378BB49005F3B34 /* physioViewData.storyboard */; };
 		FD88ED212378BB62005F3B34 /* patientExecuteRoutine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */; };
-		FD88ED232378BB76005F3B34 /* patientViewData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED222378BB76005F3B34 /* patientViewData.storyboard */; };
 		FD88ED2A2378C394005F3B34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED292378C394005F3B34 /* Constants.swift */; };
 		FD88ED312378CAAB005F3B34 /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */; };
 		FD88ED332378CE48005F3B34 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88ED322378CE48005F3B34 /* home.storyboard */; };
@@ -99,6 +100,8 @@
 		746523112391E89C00E9168B /* PhysioViewStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewStatistics.swift; sourceTree = "<group>"; };
 		746523132391F46D00E9168B /* PatientGiveFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientGiveFeedback.swift; sourceTree = "<group>"; };
 		746523152392005000E9168B /* PhysioViewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewExercise.swift; sourceTree = "<group>"; };
+		7465231723921B8900E9168B /* PhysioViewVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewVideo.swift; sourceTree = "<group>"; };
+		7465231923921F1C00E9168B /* PatientSendVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSendVideo.swift; sourceTree = "<group>"; };
 		746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewExercise.swift; sourceTree = "<group>"; };
 		748CFB73236A139C00CC7068 /* PhysicalTherapistHomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTherapistHomeScene.swift; sourceTree = "<group>"; };
 		748CFB75236A143000CC7068 /* PhysioAddPatientScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioAddPatientScene.swift; sourceTree = "<group>"; };
@@ -138,7 +141,6 @@
 		FD88ED1C2378BB2E005F3B34 /* physioCreateRoutine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioCreateRoutine.storyboard; sourceTree = "<group>"; };
 		FD88ED1E2378BB49005F3B34 /* physioViewData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = physioViewData.storyboard; sourceTree = "<group>"; };
 		FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientExecuteRoutine.storyboard; sourceTree = "<group>"; };
-		FD88ED222378BB76005F3B34 /* patientViewData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = patientViewData.storyboard; sourceTree = "<group>"; };
 		FD88ED292378C394005F3B34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FD88ED302378CAAB005F3B34 /* AuthorizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreen.swift; sourceTree = "<group>"; };
 		FD88ED322378CE48005F3B34 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
@@ -286,8 +288,9 @@
 				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
 				746523132391F46D00E9168B /* PatientGiveFeedback.swift */,
 				746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */,
-				FD88ED222378BB76005F3B34 /* patientViewData.storyboard */,
+				7465231923921F1C00E9168B /* PatientSendVideo.swift */,
 				FD88ED162378BA6F005F3B34 /* physioHome.storyboard */,
+				7465231723921B8900E9168B /* PhysioViewVideo.swift */,
 				746523152392005000E9168B /* PhysioViewExercise.swift */,
 				746523112391E89C00E9168B /* PhysioViewStatistics.swift */,
 				7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */,
@@ -489,7 +492,6 @@
 				EDAFE93E236FA5DB00A7AA2B /* Knee Bend.png in Resources */,
 				EDAFE93F236FA5DB00A7AA2B /* Calf Raise.png in Resources */,
 				EDAFE93C236FA5DB00A7AA2B /* Arm Raise.png in Resources */,
-				FD88ED232378BB76005F3B34 /* patientViewData.storyboard in Resources */,
 				FD88ED192378BAB6005F3B34 /* physioAddPatient.storyboard in Resources */,
 				34FFC32E2369FCE30083351D /* LaunchScreen.storyboard in Resources */,
 				34FFC32B2369FCE30083351D /* Assets.xcassets in Resources */,
@@ -575,6 +577,7 @@
 				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
 				FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
+				7465231A23921F1C00E9168B /* PatientSendVideo.swift in Sources */,
 				FDD224A6237B7FC2003B404D /* SLButton.swift in Sources */,
 				FDD224A4237B7FAF003B404D /* SLTextField.swift in Sources */,
 				EDD35D24236FFAA100065ACA /* ExerciseHomePage.swift in Sources */,
@@ -589,6 +592,7 @@
 				EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */,
 				ED77CB96237F352D008F6615 /* SignUpPage.swift in Sources */,
 				ED0B197D23878316001C364A /* PatientHomePage.swift in Sources */,
+				7465231823921B8900E9168B /* PhysioViewVideo.swift in Sources */,
 				748CFB78236A155E00CC7068 /* PhysioPatientInfo.swift in Sources */,
 				748CFB74236A139C00CC7068 /* PhysicalTherapistHomeScene.swift in Sources */,
 				FD88ED45237A4ABB005F3B34 /* PhysioRoutineCell.swift in Sources */,
@@ -766,7 +770,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3B6ANFRZG;
+				DEVELOPMENT_TEAM = RWUH9B2M89;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -788,7 +792,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3B6ANFRZG;
+				DEVELOPMENT_TEAM = RWUH9B2M89;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

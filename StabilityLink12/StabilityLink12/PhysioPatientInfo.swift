@@ -47,7 +47,8 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var RoutinesTable: UITableView!
     
-
+    @IBOutlet weak var VideoButton: SLButton!
+    
     var totalRoutines = 0
     
     var patientRoutines:[Routines]? = []
@@ -59,7 +60,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     var tPatient: Patients?
     var ref:DatabaseReference?
     var handle1:DatabaseHandle?
-   
+    
  
     
     override func viewDidLoad() {
@@ -71,6 +72,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         PatientAge.text = tPatient?.age
         currentPatient = (tPatient?.UID)!
         
+        VideoButton.setTitle("Video", for: .normal)
         //patientRoutines = tPatient?.routines
         
         self.RoutinesTable.register(UITableViewCell.self, forCellReuseIdentifier: "RoutineCell")
@@ -235,6 +237,10 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         selectedRoutine = allPatientRoutines[indexPath.row].name
         self.performSegue(withIdentifier: "ToRoutineInformation", sender: nil)
         
+    }
+    
+    @IBAction func backphysio(segue:UIStoryboardSegue){
+        print("daddy")
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool{

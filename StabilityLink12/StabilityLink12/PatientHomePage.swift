@@ -56,6 +56,10 @@ class PatientHomePage: UIViewController {
         
         
     }
+    //video page back to patient home page
+    @IBAction func backpatient(segue:UIStoryboardSegue){
+         print("daddy")
+     }
     
     
 
