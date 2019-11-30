@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		298307B1DA2521627FC3BB28 /* Pods_StabilityLink12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64FDA609B662FE7C58B156E /* Pods_StabilityLink12.framework */; };
-		3453B7DD2392F665004E2DE0 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453B7DC2392F665004E2DE0 /* VideoHelper.swift */; };
+		34145868239305E200521F35 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34145867239305E200521F35 /* VideoHelper.swift */; };
 		347DE127236FA00B003F33EF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DE126236FA00B003F33EF /* CheckBox.swift */; };
+		3497B7C9239320ED006F3C86 /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497B7C8239320ED006F3C86 /* RecordVideoViewController.swift */; };
 		34FFC3222369FCE20083351D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3212369FCE20083351D /* AppDelegate.swift */; };
 		34FFC3262369FCE20083351D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC3252369FCE20083351D /* ViewController.swift */; };
 		34FFC3292369FCE20083351D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC3272369FCE20083351D /* Main.storyboard */; };
@@ -85,8 +86,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3453B7DC2392F665004E2DE0 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoHelper.swift; path = "../../../../../Xcode/RWVideoNinja-Final/RWVideoNinja/VideoHelper.swift"; sourceTree = "<group>"; };
+		34145867239305E200521F35 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		347DE126236FA00B003F33EF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		3497B7C8239320ED006F3C86 /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
 		34FFC31E2369FCE20083351D /* StabilityLink12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StabilityLink12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC3212369FCE20083351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FFC3252369FCE20083351D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -287,11 +289,12 @@
 				FD88ED102378BA2B005F3B34 /* onboarding.storyboard */,
 				FD88ED122378BA49005F3B34 /* login.storyboard */,
 				FD88ED142378BA5E005F3B34 /* patientHome.storyboard */,
-				3453B7DC2392F665004E2DE0 /* VideoHelper.swift */,
 				FD88ED202378BB62005F3B34 /* patientExecuteRoutine.storyboard */,
 				746523132391F46D00E9168B /* PatientGiveFeedback.swift */,
 				746BD88023835DF0002BBDF9 /* PatientViewExercise.swift */,
+				3497B7C8239320ED006F3C86 /* RecordVideoViewController.swift */,
 				7465231923921F1C00E9168B /* PatientSendVideo.swift */,
+				34145867239305E200521F35 /* VideoHelper.swift */,
 				FD88ED162378BA6F005F3B34 /* physioHome.storyboard */,
 				7465231723921B8900E9168B /* PhysioViewVideo.swift */,
 				746523152392005000E9168B /* PhysioViewExercise.swift */,
@@ -567,7 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3453B7DD2392F665004E2DE0 /* VideoHelper.swift in Sources */,
+				34145868239305E200521F35 /* VideoHelper.swift in Sources */,
 				ED77CB97237F352D008F6615 /* LoginPage.swift in Sources */,
 				746BD88123835DF0002BBDF9 /* PatientViewExercise.swift in Sources */,
 				746523162392005000E9168B /* PhysioViewExercise.swift in Sources */,
@@ -578,6 +581,7 @@
 				FD88ED352378D91B005F3B34 /* LoginScreen.swift in Sources */,
 				746523142391F46D00E9168B /* PatientGiveFeedback.swift in Sources */,
 				FD2AF666238DF225005982EF /* SLLabel.swift in Sources */,
+				3497B7C9239320ED006F3C86 /* RecordVideoViewController.swift in Sources */,
 				FD88ED392379E3AE005F3B34 /* PatientRoutineCell.swift in Sources */,
 				FD88ED3B237A3165005F3B34 /* PatientExecuteRoutineScreen.swift in Sources */,
 				EDAFE942236FC32A00A7AA2B /* PhysioAddRoutine.swift in Sources */,
@@ -774,14 +778,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RWUH9B2M89;
+				DEVELOPMENT_TEAM = 8NPGZ6A9SD;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.StabilityLink12";
+				PRODUCT_BUNDLE_IDENTIFIER = matthewsl123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -796,14 +800,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RWUH9B2M89;
+				DEVELOPMENT_TEAM = 8NPGZ6A9SD;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.StabilityLink12";
+				PRODUCT_BUNDLE_IDENTIFIER = matthewsl123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

@@ -126,7 +126,7 @@
                                 </constraints>
                                 <state key="normal" title="Record Video"/>
                                 <connections>
-                                    <action selector="record:" destination="B9Y-hl-McB" eventType="touchUpInside" id="x76-6K-YX2"/>
+                                    <segue destination="ERA-5A-U2V" kind="show" id="Jj5-wI-yPk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,6 +141,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aI0-7J-BSP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="370-f0-trS"/>
                     <connections>
                         <outlet property="SelectVideo" destination="n66-Tn-V04" id="tg4-qT-oj6"/>
                         <segue destination="nn8-pU-d16" kind="presentation" identifier="BackToPatientHome" id="nFW-NG-uTN"/>
@@ -230,11 +231,64 @@
             </objects>
             <point key="canvasLocation" x="1594" y="-69"/>
         </scene>
+        <!--Record Video View Controller-->
+        <scene sceneID="nmK-Va-SEP">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ERA-5A-U2V" customClass="RecordVideoViewController" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T24-HJ-JLx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgF-rM-5Cy">
+                                <rect key="frame" x="0.0" y="31" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qDC-as-PJZ"/>
+                                    <constraint firstAttribute="width" constant="414" id="unT-GM-2Og"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Record Video" id="gQ4-mz-KC1">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ux2-SX-vcj">
+                                            <connections>
+                                                <segue destination="B9Y-hl-McB" kind="show" id="ZGO-4X-1X9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8D-WY-EbB" customClass="SLButton" customModule="StabilityLink12">
+                                <rect key="frame" x="102" y="433" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4dM-RY-6ns"/>
+                                    <constraint firstAttribute="width" constant="210" id="OcC-27-oSN"/>
+                                </constraints>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="ERA-5A-U2V" eventType="touchUpInside" id="2z3-L4-gE3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SgF-rM-5Cy" firstAttribute="top" secondItem="T24-HJ-JLx" secondAttribute="top" constant="31" id="Bv1-p3-Blr"/>
+                            <constraint firstItem="SgF-rM-5Cy" firstAttribute="centerX" secondItem="T24-HJ-JLx" secondAttribute="centerX" id="M5U-Yd-YBP"/>
+                            <constraint firstItem="t8D-WY-EbB" firstAttribute="centerX" secondItem="T24-HJ-JLx" secondAttribute="centerX" id="bUG-NF-sg5"/>
+                            <constraint firstItem="t8D-WY-EbB" firstAttribute="centerY" secondItem="T24-HJ-JLx" secondAttribute="centerY" id="oeZ-Dd-F6k"/>
+                            <constraint firstItem="t8D-WY-EbB" firstAttribute="centerX" secondItem="T24-HJ-JLx" secondAttribute="centerX" id="yqS-Mf-qkI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="koz-UC-R6x"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tyY-G6-uLE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrt-Ts-aGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="676"/>
+        </scene>
     </scenes>
     <resources>
         <image name="home_button" width="400" height="347"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ZGO-4X-1X9"/>
         <segue reference="nFW-NG-uTN"/>
     </inferredMetricsTieBreakers>
 </document>
