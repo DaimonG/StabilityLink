@@ -15,6 +15,7 @@ var routineExercises:[Exercise] = []
 
 class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var ViewStats: UIButton!
     @IBOutlet weak var ExerciseTable: UITableView!
     var ref:DatabaseReference?
     override func viewDidLoad() {
@@ -22,6 +23,10 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
 
         self.ExerciseTable.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
         self.ExerciseTable.tableFooterView = UIView()
+        
+        // Set Button Title
+        ViewStats.setTitle("Statistics", for: .normal)
+        
         
         ExerciseTable.delegate = self
         ExerciseTable.dataSource = self

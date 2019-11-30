@@ -23,7 +23,7 @@ class ExerciseList: UIViewController {
     var physioSet = ""
     var physioReps = ""
     var exerciseName = ""
-    var patientDone = ""
+    var patientDone = "0"
     //var name = nameofexercise[ExerciseIndex]
     //var Des = Description[ExerciseIndex]
     
@@ -90,10 +90,7 @@ class ExerciseList: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        
-               
                    print("SAVED")
-                          
                           // Reference database
                           let db = Firestore.firestore()
                           let exercises = db.collection("exercises")
@@ -109,7 +106,7 @@ class ExerciseList: UIViewController {
                                       self.physioSet = String(self.setnumber)
                                       self.physioReps = String(self.repsnumber)
                                       self.exerciseName = document.get("name") as! String
-                                      self.patientDone = document.get("patientDone") as! String
+                                      //self.patientDone = document.get("patientDone") as! String
                                       
                                       // create exercise item and set values
                                       let newExercise = Exercise()

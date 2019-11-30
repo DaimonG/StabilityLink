@@ -118,33 +118,49 @@
                                         <rect key="frame" x="0.0" y="468" width="414" height="214"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-8n-5XY">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="214"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="214"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbU-5n-AUR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="107"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwL-d8-EZN">
-                                                        <rect key="frame" x="0.0" y="107" width="207" height="107"/>
+                                                        <rect key="frame" x="0.0" y="107" width="138" height="107"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Ct-KE-a9o">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="214"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of6-gI-ITZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="107"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="DoneButtonPressed:" destination="pnH-tt-Plh" eventType="touchUpInside" id="oRT-rz-GeR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-CH-8CV">
+                                                        <rect key="frame" x="0.0" y="107" width="138" height="107"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-Rp-9ii">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="214"/>
+                                                <rect key="frame" x="276" y="0.0" width="138" height="214"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-0x-bEO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="107"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyv-Jd-HSy">
-                                                        <rect key="frame" x="0.0" y="107" width="207" height="107"/>
+                                                        <rect key="frame" x="0.0" y="107" width="138" height="107"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -170,10 +186,13 @@
                         <viewLayoutGuide key="safeArea" id="SQa-a1-pSc"/>
                     </view>
                     <connections>
+                        <outlet property="DoneButton" destination="Of6-gI-ITZ" id="fMq-48-7eQ"/>
                         <outlet property="ExerciseDescribution" destination="dC2-ne-e0N" id="trJ-dK-xPL"/>
                         <outlet property="ExerciseImage" destination="WYq-G2-ar9" id="LDq-rv-eR6"/>
                         <outlet property="ExerciseReps" destination="eyv-Jd-HSy" id="pES-Gx-rIa"/>
                         <outlet property="ExerciseSetNumber" destination="RwL-d8-EZN" id="3EV-X6-d0Y"/>
+                        <outlet property="FeedBackButton" destination="dSe-CH-8CV" id="aa5-de-4Xw"/>
+                        <segue destination="1ig-Aa-8lD" kind="presentation" identifier="DoneExercise" id="WTa-9B-dWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFw-dW-nf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -184,4 +203,7 @@
     <resources>
         <image name="back_button" width="218" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WTa-9B-dWo"/>
+    </inferredMetricsTieBreakers>
 </document>
