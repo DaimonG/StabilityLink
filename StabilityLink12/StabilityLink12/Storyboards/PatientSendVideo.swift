@@ -38,7 +38,7 @@ class PatientSendVideo: UIViewController, UIImagePickerControllerDelegate, UINav
         imagecontroller.delegate = self
         imagecontroller.sourceType = UIImagePickerController.SourceType.photoLibrary
         //imagecontroller.mediaTypes = ["public.movie"]
-        imagecontroller.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String]
+        imagecontroller.mediaTypes = [kUTTypeMovie as String]
         imagecontroller.videoQuality = .typeHigh
         imagecontroller.allowsEditing = true
         present(imagecontroller, animated: true, completion: nil)
@@ -65,7 +65,21 @@ class PatientSendVideo: UIViewController, UIImagePickerControllerDelegate, UINav
             
             let storageRef = Storage.storage().reference().child("\(currentid)"+".mov")
             let videoData = NSData(contentsOf: videoUrl as! URL)
-            storageRef.putData(videoData as! Data)
+            //storageRef.putData(videoData as! Data)
+            storageRef.putData(videoData! as Data, metadata: nil){
+                (metadata,error) in
+                if error != nil{
+                    print("Failed upload of video:", error)
+                    return
+                }
+                storageRef.downloadURL { (url, error) in
+                    guard let downloadURL = url else {
+                        print("download url has some problem")
+                        return
+                    }
+                }
+                
+            }
             /*
             if let videoData = NSData(contentsOf: videoUrl as! URL) as Data? {
                 storageRef.putFile(from: videoUrl as! URL, metadata: nil) { (metadata, error) in

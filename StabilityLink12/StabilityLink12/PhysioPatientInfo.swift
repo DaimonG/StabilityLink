@@ -7,8 +7,10 @@
 //
 import UIKit
 import Firebase
-import Firebase
+import FirebaseStorage
 import FirebaseFirestore
+import AVKit
+import AVFoundation
 class TempExerciseListTable {
     var reps = ""
     var sets = ""
@@ -36,6 +38,10 @@ var allPatientRoutines:[Routines] = []
 var selectedRoutine = ""
 
 class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    
+    let avPlayerViewController = AVPlayerViewController()
+    var avPlayer:AVPlayer?
+    
     var TemExerciseArray:[TempExerciseListTable] = []
     // Connecting UI Elements
     @IBOutlet weak var PatientFirstName: UILabel!
@@ -45,6 +51,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var PatientAge: UILabel!
     
     
+    @IBOutlet weak var errorlable: UILabel!
     @IBOutlet weak var RoutinesTable: UITableView!
     
     @IBOutlet weak var VideoButton: SLButton!
@@ -64,8 +71,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
  
     
     override func viewDidLoad() {
-        
-        
+        errorlable.alpha = 0
         super.viewDidLoad()
         PatientFirstName.text = tPatient?.firstName
         PatientLastName.text = tPatient?.lastName
@@ -74,6 +80,15 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
         
         VideoButton.setTitle("Video", for: .normal)
         //patientRoutines = tPatient?.routines
+        
+        // Video Player URL
+        let movieURL:NSURL? = NSURL(string: "gs://cmpt275-6fc69.appspot.com/" + "\(currentPatient)" + ".mov")
+        
+        if let url = movieURL {
+            self.avPlayer = AVPlayer(url: url as URL)
+            self.avPlayerViewController.player = self.avPlayer
+            
+        }
         
         self.RoutinesTable.register(UITableViewCell.self, forCellReuseIdentifier: "RoutineCell")
         
@@ -297,5 +312,43 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
  
  
         }
+    }
+    
+    
+    @IBAction func PlayButtonPressed(_ sender: UIButton) {
+        
+        // Trigger the video to play
+        /*
+         
+        self.present(self.avPlayerViewController, animated: true) {
+            () -> Void in
+            self.avPlayerViewController.player?.play()
+        }*/
+        let storageRef = Storage.storage().reference()
+        let pathReference = storageRef.child(("\(currentPatient)" + ".mov"))
+        
+        pathReference.downloadURL { (URL, error) in
+            if(error != nil)
+            {
+                
+                self.errorlable.alpha = 1
+                self.errorlable.text = "No Video Uploaded!"
+                return
+            }
+            else{
+                if let getURL = URL {
+                    let player = AVPlayer(url : getURL)
+                    let controller = AVPlayerViewController()
+                    controller.player = player
+                    controller.view.frame = self.view.frame
+                    self.view.addSubview(controller.view)
+                    self.addChild(controller)
+                    player.play()
+                }
+               
+                
+            }
+        }
+        
     }
 }
