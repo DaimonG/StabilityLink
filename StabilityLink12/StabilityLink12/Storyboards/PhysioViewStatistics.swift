@@ -9,14 +9,20 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import Charts
 
 class PhysioViewStatistics: UIViewController {
 
+    @IBOutlet weak var barChart: BarChartView!
+    
+    // Initialize variables
     var xValue:[String] = [] // exercise names
     var yValue:[String] = [] // number of times done (String)
+    var yValue_Double:[Double] = [] // number of times done (Double)
     var ref:DatabaseReference?
     var exerName = ""
     var TimesCount = ""
+    weak var axisFormatDelegate: IAxisValueFormatter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +43,32 @@ class PhysioViewStatistics: UIViewController {
             }
         })
         
+        // Cast all values of string into double
+        let yValue_Double = yValue.map { (value) -> Double? in
+            return Double(value)
+        }
+        
+        // Update the chart
+        setChart(dataEntryX: xValue, dataEntryY: yValue_Double as! [Double])
     }
+    
+    func setChart(dataEntryX forX:[String],dataEntryY forY: [Double]) {
+        barChart.noDataText = "You need to provide data for the chart."
+        var dataEntries:[BarChartDataEntry] = []
+        for i in 0..<forX.count{
+           // print(forX[i])
+           // let dataEntry = BarChartDataEntry(x: (forX[i] as NSString).doubleValue, y: Double(unitsSold[i]))
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(forY[i]) , data: xValue as AnyObject?)
+            print(dataEntry)
+            dataEntries.append(dataEntry)
+        }
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Number of Completions")
+        let chartData = BarChartData(dataSet: chartDataSet)
+        barChart.data = chartData
+        let xAxisValue = barChart.xAxis
+        xAxisValue.valueFormatter = axisFormatDelegate
+
+        }
     
 
     /*
@@ -50,4 +81,10 @@ class PhysioViewStatistics: UIViewController {
     }
     */
 
+}
+extension PhysioViewStatistics: IAxisValueFormatter {
+
+    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        return xValue[Int(value)]
+    }
 }
