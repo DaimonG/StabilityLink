@@ -504,20 +504,18 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYr-gN-nof" customClass="BarChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYr-gN-nof" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="316" width="414" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="BJA-rg-86O" firstAttribute="top" secondItem="b17-za-UNi" secondAttribute="top" id="6QR-Qk-kp0"/>
-                            <constraint firstItem="OYr-gN-nof" firstAttribute="leading" secondItem="b17-za-UNi" secondAttribute="leading" id="CcR-yK-cro"/>
                             <constraint firstItem="BJA-rg-86O" firstAttribute="leading" secondItem="b17-za-UNi" secondAttribute="leading" id="eYB-Tn-NpS"/>
                             <constraint firstItem="BJA-rg-86O" firstAttribute="centerX" secondItem="YeJ-fo-dEQ" secondAttribute="centerX" id="ljq-3H-b8K"/>
                             <constraint firstItem="BJA-rg-86O" firstAttribute="trailing" secondItem="b17-za-UNi" secondAttribute="trailing" id="rdt-c0-LlH"/>
-                            <constraint firstItem="OYr-gN-nof" firstAttribute="top" secondItem="BJA-rg-86O" secondAttribute="bottom" constant="150" id="sch-Rb-VHl"/>
-                            <constraint firstItem="b17-za-UNi" firstAttribute="trailing" secondItem="OYr-gN-nof" secondAttribute="trailing" id="uJC-X9-qlp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b17-za-UNi"/>
                     </view>
