@@ -44,8 +44,22 @@ class SignUpPage: UIViewController {
         // Do any additional setup after loading the view.
         setUpElements()
         ref = Database.database().reference()
+        
+        //keyboard function
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
        
     }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        Firstnametext.resignFirstResponder()
+        Passwordtext.resignFirstResponder()
+        Lastnametext.resignFirstResponder()
+        Agetext.resignFirstResponder()
+        Usernametext.resignFirstResponder()
+        Emailtext.resignFirstResponder()
+        
+    }
+    
 
     func setUpElements(){
         errorlabel.alpha = 0
@@ -67,6 +81,28 @@ class SignUpPage: UIViewController {
     @IBAction func PhysicoTapped(_ sender: Any) {
         current_role = "physio"
         rolelable.text = current_role
+    }
+    
+    /*
+     * A function that shows the keyboard
+     * Apart of functionality to not hide text fields when keyboard is shown
+     */
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    /*
+     * A function that hides the keyboard
+     * Apart of functionality to not hide text fields when keyboard is shown
+     */
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
     // check the field and validate that the data is corrent. if everything is corrent, this method returns

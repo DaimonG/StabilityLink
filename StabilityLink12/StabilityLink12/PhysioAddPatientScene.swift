@@ -43,6 +43,12 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
         
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailAddress.resignFirstResponder()
+        
+        
+    }
+    
     func removehandle(){
         guard let handle = handle1 else{
             print("i am not remove the handle1")

@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginPage: UIViewController {
+class LoginPage: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var emailtext: UITextField!
     
@@ -17,11 +17,19 @@ class LoginPage: UIViewController {
     
     @IBOutlet weak var loginbutton: UIButton!
     @IBOutlet weak var Errortext: UILabel!
+    
+    var textF = UITextField()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setupelements()
+        //keyboard function
+        
+    
+        
+        
     }
     func setupelements(){
         Errortext.alpha = 0
@@ -39,6 +47,15 @@ class LoginPage: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+ 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailtext.resignFirstResponder()
+        Passwordtext.resignFirstResponder()
+    }
+    
+            
+        
+  
     
     @IBAction func loginTapped(_ sender: Any) {
         //validate text filed
