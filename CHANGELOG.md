@@ -1,5 +1,19 @@
 # CHANGELOG.md
 
+## 3.0.1
+
+Features:
+
+Fixes:
+  - Fixed bug where user could not dismiss the keyboard when trying to create an account
+
+Depreciations:
+
+Improved Documentation:
+
+Known Issues:
+
+
 ## 3.0.0
 
 Features:
