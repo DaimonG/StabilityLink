@@ -27,6 +27,10 @@ class NewRoutineName: UIViewController {
         }
         return nil
     }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        routineName.resignFirstResponder()
+    
+    }
     
     func transitiontoexercise() {
         currentRoutine = routineName.text!
@@ -50,7 +54,8 @@ class NewRoutineName: UIViewController {
                    showError(error!)
                }
                else{
-                   self.transitiontoexercise()
+                routineName.resignFirstResponder();
+                self.transitiontoexercise()
                }
         
     }
