@@ -38,6 +38,7 @@ class VideoHelper {
     let mediaUI = UIImagePickerController()
     mediaUI.sourceType = sourceType
     mediaUI.mediaTypes = [kUTTypeMovie as String]
+    mediaUI.videoQuality = .typeHigh
     mediaUI.allowsEditing = true
     mediaUI.delegate = delegate
     delegate.present(mediaUI, animated: true, completion: nil)

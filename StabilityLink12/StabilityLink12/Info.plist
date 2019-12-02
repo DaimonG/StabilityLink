@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Open photo library permssion</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Open write-only permission</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Open the folder Permission</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Open Contact Permission</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Using it to take a video</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Open Camera Permission</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>Allow Arbitrary Loads</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>

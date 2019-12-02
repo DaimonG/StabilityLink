@@ -33,8 +33,9 @@ class RecordVideoViewController: UIViewController {
   
   @IBAction func record(_ sender: AnyObject) {
     VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
-  }
-  
+    
+    }
+    
   @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
     let title = (error == nil) ? "Success" : "Error"
     let message = (error == nil) ? "Video was saved" : "Video failed to save"
@@ -59,6 +60,7 @@ extension RecordVideoViewController: UIImagePickerControllerDelegate {
     else { return }
     
     // Handle a movie capture
+        
     UISaveVideoAtPathToSavedPhotosAlbum(url.path, self, #selector(video(_:didFinishSavingWithError:contextInfo:)), nil)
   }
   
