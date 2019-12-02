@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Allow Arbitrary Loads</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -22,6 +24,20 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict/>
+	<key>NSCameraUsageDescription</key>
+	<string>Open the Camera Permission</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Open the Contacts Permission</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Open the Folder Permission</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Open the Microphone Permission</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Open the only-write Permission</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Open the Photo Library Permission</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -36,10 +52,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict/>
-	<key>Allow Arbitrary Loads</key>
-	<true/>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
