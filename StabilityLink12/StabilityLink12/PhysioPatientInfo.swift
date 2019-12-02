@@ -276,7 +276,7 @@ class PhysioPatientInfo: UIViewController, UITableViewDelegate, UITableViewDataS
             
              ref?.child("users").child(currentPatient).child("routines").child(allPatientRoutines[indexPath.row].name).removeValue(completionBlock: { (error, ref) in
                     if error != nil{
-                        print("Failed to delete routines",error)
+                        print("Failed to delete routines",error as Any)
                         return
                     }
               

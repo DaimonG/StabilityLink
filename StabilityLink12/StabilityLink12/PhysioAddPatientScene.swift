@@ -78,7 +78,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
             var firstName = ""
             var lastName = ""
             var age = ""
-            var emailaddress = ""
+            _ = ""
             var rolename = ""
         
             // reference database
@@ -143,7 +143,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                         
                         
                             users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
-                            if let error = error {
+                                if error != nil {
                                 print("error finding current id")
                             }
                             else{
@@ -173,7 +173,7 @@ class PhysioAddPatientScene: UIViewController, UITextFieldDelegate {
                     }
                     else{
                         users.whereField("uid", isEqualTo: currentid).getDocuments() { (snapshot, error) in
-                            if let error = error {
+                            if error != nil {
                                 print("error finding current id")
                             }
                             else{

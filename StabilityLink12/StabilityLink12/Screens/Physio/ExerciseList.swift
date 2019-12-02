@@ -96,7 +96,7 @@ class ExerciseList: UIViewController {
                           let exercises = db.collection("exercises")
                           
                           exercises.whereField("name", isEqualTo: exerciseID).getDocuments() { (snapshot, err) in
-                              if let err = err {
+                            if err != nil {
                                   print("Unable to find exercise!")
                               }
                               else {

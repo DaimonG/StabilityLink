@@ -63,13 +63,13 @@ class SignUpPage: UIViewController {
 
     func setUpElements(){
         errorlabel.alpha = 0
-        Utilities.styleTextField(Firstnametext)
-        Utilities.styleTextField(Lastnametext)
-        Utilities.styleTextField(Agetext)
-        Utilities.styleTextField(Usernametext)
-        Utilities.styleTextField(Emailtext)
-        Utilities.styleTextField(Passwordtext)
-        Utilities.styleFilledButton(Signupbutton)
+        //Utilities.styleTextField(Firstnametext)
+        //Utilities.styleTextField(Lastnametext)
+        //Utilities.styleTextField(Agetext)
+        //Utilities.styleTextField(Usernametext)
+        //Utilities.styleTextField(Emailtext)
+        //Utilities.styleTextField(Passwordtext)
+        //Utilities.styleFilledButton(Signupbutton)
         
     }
     

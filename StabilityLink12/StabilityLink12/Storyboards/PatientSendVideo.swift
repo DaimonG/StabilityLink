@@ -69,36 +69,17 @@ class PatientSendVideo: UIViewController, UIImagePickerControllerDelegate, UINav
             storageRef.putData(videoData! as Data, metadata: nil){
                 (metadata,error) in
                 if error != nil{
-                    print("Failed upload of video:", error)
+                    print("Failed upload of video:", error as Any)
                     return
                 }
                 storageRef.downloadURL { (url, error) in
-                    guard let downloadURL = url else {
+                    guard url != nil else {
                         print("download url has some problem")
                         return
                     }
                 }
                 
             }
-            /*
-            if let videoData = NSData(contentsOf: videoUrl as! URL) as Data? {
-                storageRef.putFile(from: videoUrl as! URL, metadata: nil) { (metadata, error) in
-                        if error != nil{
-                            print("Failed upload of video:", error)
-                            return
-                        }
-                        
-                        storageRef.downloadURL { (url, error) in
-                            guard let downloadURL = url else {
-                                print("download url has some problem")
-                                return
-                            }
-                        }
-
-                    return
-                }
-            }*/
-            
             
         var selectedImageFromPicker : UIImage?
     

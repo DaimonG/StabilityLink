@@ -52,10 +52,10 @@ class PhysioViewExercise: UIViewController {
             
             if let data = snapshot.value as? [String: Any]{
                 print("data",data)
-                self.SetsNumber.text = data["physioset"] as! String
-                self.RepsNumber.text = data["physioreps"] as! String
-                self.FeedbackValue.text = data[
-                "patientfeedback"] as! String
+                self.SetsNumber.text = (data["physioset"] as! String)
+                self.RepsNumber.text = (data["physioreps"] as! String)
+                self.FeedbackValue.text = (data[
+                    "patientfeedback"] as! String)
             }
             
         })

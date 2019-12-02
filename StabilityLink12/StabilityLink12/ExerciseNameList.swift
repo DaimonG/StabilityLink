@@ -29,7 +29,7 @@ class ExerciseNameList: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         exercise.getDocuments{ (snapshot, err) in
             for document in snapshot!.documents {
-                let documentData = document.data()
+                _ = document.data()
                 let newExercise = Exercise()
                 
                 newExercise.exerciseName = document.get("name") as! String

@@ -16,7 +16,6 @@
 		34FFC32E2369FCE30083351D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC32C2369FCE30083351D /* LaunchScreen.storyboard */; };
 		34FFC336236A127D0083351D /* PatientHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC335236A127D0083351D /* PatientHome.swift */; };
 		34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC337236A13E40083351D /* PatientRoutine.swift */; };
-		34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC339236A14710083351D /* PatientRoutine1.swift */; };
 		7452C02E2381807F00F91DE0 /* NewRoutineName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C02D2381807F00F91DE0 /* NewRoutineName.swift */; };
 		7452C0342381C33900F91DE0 /* PhysioRoutineInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */; };
 		746523122391E89C00E9168B /* PhysioViewStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746523112391E89C00E9168B /* PhysioViewStatistics.swift */; };
@@ -94,7 +93,6 @@
 		34FFC32F2369FCE30083351D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FFC335236A127D0083351D /* PatientHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHome.swift; sourceTree = "<group>"; };
 		34FFC337236A13E40083351D /* PatientRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine.swift; sourceTree = "<group>"; };
-		34FFC339236A14710083351D /* PatientRoutine1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRoutine1.swift; sourceTree = "<group>"; };
 		7452C02D2381807F00F91DE0 /* NewRoutineName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutineName.swift; sourceTree = "<group>"; };
 		7452C0332381C33900F91DE0 /* PhysioRoutineInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioRoutineInformation.swift; sourceTree = "<group>"; };
 		746523112391E89C00E9168B /* PhysioViewStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysioViewStatistics.swift; sourceTree = "<group>"; };
@@ -218,13 +216,11 @@
 				FD88ED242378C0E3005F3B34 /* CustomViews */,
 				FD88ED0F2378BA00005F3B34 /* Storyboards */,
 				FD88ED2E2378C635005F3B34 /* Screens */,
-				ED0B197C23878316001C364A /* PatientHomePage.swift */,
 				EDAFE934236FA3A900A7AA2B /* ExerciseNameList.swift */,
 				34FFC3212369FCE20083351D /* AppDelegate.swift */,
 				EDAFE941236FC32A00A7AA2B /* PhysioAddRoutine.swift */,
 				34FFC3252369FCE20083351D /* ViewController.swift */,
 				347DE126236FA00B003F33EF /* CheckBox.swift */,
-				34FFC339236A14710083351D /* PatientRoutine1.swift */,
 				34FFC337236A13E40083351D /* PatientRoutine.swift */,
 				34FFC335236A127D0083351D /* PatientHome.swift */,
 				748CFB77236A155E00CC7068 /* PhysioPatientInfo.swift */,
@@ -238,9 +234,6 @@
 				EDAFE939236FA5DB00A7AA2B /* Knee Bend.png */,
 				EDAFE936236FA5DA00A7AA2B /* Leg Raise.png */,
 				EDAFE938236FA5DB00A7AA2B /* Shoulder Squeeze.png */,
-				EDD35D21236FFA5200065ACA /* StartExercise.swift */,
-				EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */,
-				EDD35D25236FFB6100065ACA /* ExerciseList.swift */,
 				EDD35D2723700F5200065ACA /* TempExercise.swift */,
 				EDD35D2923701F9B00065ACA /* TempExerciseDetail.swift */,
 			);
@@ -374,6 +367,7 @@
 				FD88ED40237A49EE005F3B34 /* Patient */,
 				FD88ED2F2378CA8E005F3B34 /* Authorization */,
 				FD88ED342378D91B005F3B34 /* LoginScreen.swift */,
+				EDD35D23236FFAA100065ACA /* ExerciseHomePage.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -389,8 +383,10 @@
 		FD88ED40237A49EE005F3B34 /* Patient */ = {
 			isa = PBXGroup;
 			children = (
+				ED0B197C23878316001C364A /* PatientHomePage.swift */,
 				FD88ED362379DFA2005F3B34 /* PatientRoutineTableScreen.swift */,
 				FD88ED3A237A3165005F3B34 /* PatientExecuteRoutineScreen.swift */,
+				EDD35D21236FFA5200065ACA /* StartExercise.swift */,
 			);
 			path = Patient;
 			sourceTree = "<group>";
@@ -399,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				FD88ED3E237A49E3005F3B34 /* NewRoutineExerciseTable.swift */,
+				EDD35D25236FFB6100065ACA /* ExerciseList.swift */,
 			);
 			path = Physio;
 			sourceTree = "<group>";
@@ -588,7 +585,6 @@
 				34FFC338236A13E40083351D /* PatientRoutine.swift in Sources */,
 				7452C0342381C33900F91DE0 /* PhysioRoutineInformation.swift in Sources */,
 				FDD224A2237B7BDD003B404D /* BaseViewController.swift in Sources */,
-				34FFC33A236A14710083351D /* PatientRoutine1.swift in Sources */,
 				EDD35D2823700F5200065ACA /* TempExercise.swift in Sources */,
 				ED77CB96237F352D008F6615 /* SignUpPage.swift in Sources */,
 				ED0B197D23878316001C364A /* PatientHomePage.swift in Sources */,
@@ -770,7 +766,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RWUH9B2M89;
+				DEVELOPMENT_TEAM = J3B6ANFRZG;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -792,7 +788,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RWUH9B2M89;
+				DEVELOPMENT_TEAM = J3B6ANFRZG;
 				INFOPLIST_FILE = StabilityLink12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

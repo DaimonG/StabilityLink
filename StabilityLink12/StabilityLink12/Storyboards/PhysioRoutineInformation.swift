@@ -37,10 +37,10 @@ class PhysioRoutineInformation: UIViewController, UITableViewDelegate, UITableVi
             routineExercises.removeAll()
             for routine in snapshot.children.allObjects as![DataSnapshot]{
                 let snap = routine.value as? [String : String]
-                print("routine snap", snap)
+                print("routine snap", snap as Any)
                 
                 let name = snap?["exercisename"]
-                print(name)
+                print(name as Any)
                 
                 let newExercise = Exercise()
                 newExercise.exerciseName = name!

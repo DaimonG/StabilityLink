@@ -33,9 +33,9 @@ class LoginPage: UIViewController,UITextFieldDelegate {
     }
     func setupelements(){
         Errortext.alpha = 0
-        Utilities.styleTextField(emailtext)
-        Utilities.styleTextField(Passwordtext)
-        Utilities.styleFilledButton(loginbutton)
+        //Utilities.styleTextField(emailtext)
+        //Utilities.styleTextField(Passwordtext)
+        //Utilities.styleFilledButton(loginbutton)
     }
 
     /*
@@ -74,9 +74,9 @@ class LoginPage: UIViewController,UITextFieldDelegate {
                 //get current user id
                 let userID = Auth.auth().currentUser?.uid
                 let db = Firestore.firestore()
-                db.collection("users").whereField("uid", isEqualTo: userID).getDocuments { (snapshot, error) in
+                db.collection("users").whereField("uid", isEqualTo: userID as Any).getDocuments { (snapshot, error) in
                     if error != nil{
-                        print(error)
+                        print(error as Any)
                     }
                     else{
                         for document in (snapshot?.documents)!{

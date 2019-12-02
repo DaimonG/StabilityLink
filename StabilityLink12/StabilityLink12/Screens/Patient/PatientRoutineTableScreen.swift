@@ -34,7 +34,7 @@ class PatientRoutineTableScreen: UIViewController, UITableViewDelegate, UITableV
         
         // Begin to load patient routines
         self.ref = Database.database().reference()
-        var currentid = (Auth.auth().currentUser?.uid)!
+        let currentid = (Auth.auth().currentUser?.uid)!
         self.ref?.child("users").child(currentid).child("routines").observe(.value, with: {(snapshot) in
             allAssignedPatientRoutines.removeAll()
             

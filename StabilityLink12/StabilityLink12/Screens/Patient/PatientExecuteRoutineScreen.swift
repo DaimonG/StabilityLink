@@ -30,15 +30,15 @@ class PatientExecuteRoutineScreen: UIViewController, UITableViewDelegate, UITabl
        PatientExerciseList.delegate = self
        PatientExerciseList.dataSource = self
        self.ref = Database.database().reference()
-        var currentid = (Auth.auth().currentUser?.uid)!
+       let currentid = (Auth.auth().currentUser?.uid)!
        self.ref?.child("users").child(currentid).child("routines").child(patientRoutineTapped).observe(DataEventType.value, with: { (snapshot) in
            patientAssignedExercises.removeAll()
            for routine in snapshot.children.allObjects as![DataSnapshot]{
                let snap = routine.value as? [String : String]
-               print("routine snap", snap)
+            print("routine snap", snap as Any)
                
                let name = snap?["exercisename"]
-               print(name)
+            print(name as Any)
                
                let newExercise = Exercise()
                newExercise.exerciseName = name!
