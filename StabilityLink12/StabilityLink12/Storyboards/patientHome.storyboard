@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfp-JS-ME1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +15,7 @@
             <objects>
                 <navigationController storyboardIdentifier="PatientHome" id="vfp-JS-ME1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6H-Xk-e9L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -27,27 +29,27 @@
         <!--Patient Home Page-->
         <scene sceneID="k0g-kM-owQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nn8-pU-d16" customClass="PatientHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nn8-pU-d16" customClass="PatientHomePage" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JT1-XR-0lp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-yH-6g3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_button" translatesAutoresizingMaskIntoConstraints="NO" id="LQT-cZ-sbP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-9F-5DA">
-                                        <rect key="frame" x="0.0" y="272.66666666666663" width="414" height="272.66666666666663"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-9F-5DA" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="215.5" width="375" height="216"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="View Routines"/>
                                         <connections>
                                             <segue destination="leZ-0Z-IBK" kind="presentation" id="pBR-XR-GVH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCS-uR-Qcs">
-                                        <rect key="frame" x="0.0" y="545.33333333333337" width="414" height="272.66666666666663"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCS-uR-Qcs" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="431.5" width="375" height="215.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Send Video"/>
                                         <connections>
@@ -81,16 +83,15 @@
         <!--Patient Send Video-->
         <scene sceneID="aMl-px-Lye">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="B9Y-hl-McB" customClass="PatientSendVideo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B9Y-hl-McB" customClass="PatientSendVideo" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mhi-CL-71X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kod-1Z-pcn">
-                                <rect key="frame" x="0.0" y="31" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="31" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Aeh-L2-23d"/>
-                                    <constraint firstAttribute="width" constant="414" id="BhM-0P-Txj"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Send Video" id="Pa4-uq-V07">
@@ -99,19 +100,14 @@
                                                 <segue destination="pg2-aO-s9q" kind="unwind" unwindAction="backpatientWithSegue:" id="eEa-Zw-RbO"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Send" id="iaU-gq-x4x">
-                                            <connections>
-                                                <action selector="SendButton:" destination="B9Y-hl-McB" id="4AF-Nn-ZxI"/>
-                                            </connections>
-                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n66-Tn-V04" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="102" y="721" width="210" height="45"/>
+                                <rect key="frame" x="87.5" y="496" width="200" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="N2n-j3-AvD"/>
-                                    <constraint firstAttribute="width" constant="210" id="jqp-Oj-K54"/>
+                                    <constraint firstAttribute="width" constant="200" id="Cfy-ft-sSl"/>
+                                    <constraint firstAttribute="height" constant="75" id="S1b-AX-iZW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -119,10 +115,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-rB-I4P" customClass="SLButton" customModule="StabilityLink12" customModuleProvider="target">
-                                <rect key="frame" x="102" y="601" width="210" height="30"/>
+                                <rect key="frame" x="87.5" y="331" width="200" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9iO-S2-hhR"/>
-                                    <constraint firstAttribute="width" constant="210" id="x7j-iI-k7B"/>
+                                    <constraint firstAttribute="height" constant="75" id="1ss-ZS-iOJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="btS-GY-PdL"/>
                                 </constraints>
                                 <state key="normal" title="Record Video"/>
                                 <connections>
@@ -130,11 +126,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aI0-7J-BSP" firstAttribute="bottom" secondItem="n66-Tn-V04" secondAttribute="bottom" constant="96" id="1lP-Pa-vgk"/>
                             <constraint firstItem="SfR-rB-I4P" firstAttribute="centerX" secondItem="Mhi-CL-71X" secondAttribute="centerX" id="5nz-Td-b2c"/>
                             <constraint firstItem="kod-1Z-pcn" firstAttribute="top" secondItem="Mhi-CL-71X" secondAttribute="top" constant="31" id="7MV-jW-wVO"/>
+                            <constraint firstItem="kod-1Z-pcn" firstAttribute="trailing" secondItem="aI0-7J-BSP" secondAttribute="trailing" id="AAt-gI-Idb"/>
+                            <constraint firstItem="kod-1Z-pcn" firstAttribute="leading" secondItem="Mhi-CL-71X" secondAttribute="leading" id="cbs-jd-NtH"/>
                             <constraint firstItem="kod-1Z-pcn" firstAttribute="centerX" secondItem="Mhi-CL-71X" secondAttribute="centerX" id="dh5-3Q-RpG"/>
                             <constraint firstItem="n66-Tn-V04" firstAttribute="centerX" secondItem="Mhi-CL-71X" secondAttribute="centerX" id="ixt-XM-GJy"/>
                             <constraint firstItem="n66-Tn-V04" firstAttribute="top" secondItem="SfR-rB-I4P" secondAttribute="bottom" constant="90" id="za6-2y-2v0"/>
@@ -156,18 +154,18 @@
             <objects>
                 <viewController id="leZ-0Z-IBK" customClass="PatientRoutineTableScreen" customModule="StabilityLink12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWk-oV-08b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kam-QW-eGx">
-                                <rect key="frame" x="0.0" y="83" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nbK-3r-42K" customClass="PatientRoutineCell" customModule="StabilityLink12" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nbK-3r-42K" id="bm0-FD-HXk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -177,7 +175,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-ue-f4V">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="76"/>
+                                <rect key="frame" x="0.0" y="20" width="100" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="IFz-i9-6cg"/>
                                     <constraint firstAttribute="width" constant="100" id="pxi-Hq-1Qi"/>
@@ -187,10 +185,10 @@
                                     <segue destination="vfp-JS-ME1" kind="presentation" id="ZPj-AW-CYb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-jc-62S">
-                                <rect key="frame" x="147" y="18" width="121" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-jc-62S" customClass="SLLabel" customModule="StabilityLink12" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="38" width="150" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="EbA-uz-8qe"/>
+                                    <constraint firstAttribute="width" constant="150" id="1oV-1o-3xw"/>
                                     <constraint firstAttribute="height" constant="39" id="qAH-8A-4yM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -203,10 +201,9 @@
                             <constraint firstItem="kam-QW-eGx" firstAttribute="bottom" secondItem="Dva-gU-ryF" secondAttribute="bottom" id="3nG-Nv-oB2"/>
                             <constraint firstItem="kam-QW-eGx" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="5XU-iw-fxP"/>
                             <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="ZG2-jc-62S" secondAttribute="bottom" constant="26" id="9oz-ES-AJq"/>
+                            <constraint firstItem="ZG2-jc-62S" firstAttribute="centerX" secondItem="tWk-oV-08b" secondAttribute="centerX" id="H7Y-K0-1Wq"/>
                             <constraint firstItem="ZG2-jc-62S" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" constant="18" id="Sie-2G-o9C"/>
-                            <constraint firstItem="ZG2-jc-62S" firstAttribute="leading" secondItem="doM-ue-f4V" secondAttribute="trailing" constant="47" id="Xuv-DM-xmR"/>
                             <constraint firstItem="kam-QW-eGx" firstAttribute="top" secondItem="doM-ue-f4V" secondAttribute="bottom" constant="7" id="bGx-JB-L1B"/>
-                            <constraint firstItem="Dva-gU-ryF" firstAttribute="trailing" secondItem="ZG2-jc-62S" secondAttribute="trailing" constant="146" id="dtJ-tO-0wF"/>
                             <constraint firstItem="doM-ue-f4V" firstAttribute="leading" secondItem="Dva-gU-ryF" secondAttribute="leading" id="frG-uw-iM0"/>
                             <constraint firstItem="kam-QW-eGx" firstAttribute="trailing" secondItem="Dva-gU-ryF" secondAttribute="trailing" id="gG5-az-rno"/>
                             <constraint firstItem="doM-ue-f4V" firstAttribute="top" secondItem="Dva-gU-ryF" secondAttribute="top" id="lWW-zA-3Ry"/>

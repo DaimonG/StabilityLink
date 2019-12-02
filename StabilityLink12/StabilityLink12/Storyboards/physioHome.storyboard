@@ -61,7 +61,7 @@
                                     <segue destination="xZ9-uI-0rl" kind="presentation" id="M3M-4S-rb2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmr-i8-Hi2" customClass="SLLabel" customModule="StabilityLink12" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmr-i8-Hi2" customClass="SLLabel" customModule="StabilityLink12" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="105" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GjP-7w-9OP"/>
@@ -552,7 +552,6 @@
         <image name="Basic Headshot" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nQe-md-KF6"/>
         <segue reference="az2-ne-nq5"/>
         <segue reference="a8o-zj-9IW"/>
     </inferredMetricsTieBreakers>
