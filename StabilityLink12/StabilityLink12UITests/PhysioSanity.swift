@@ -42,7 +42,7 @@ class PhysioSanityTest: XCTestCase {
     func testLoginSuccessful(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        let useremail = "pt@test.com"
+        let useremail = "bin1@gmail.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
         app.textFields["Password"].tap()
@@ -54,39 +54,35 @@ class PhysioSanityTest: XCTestCase {
     func testHomepageButton(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        let useremail = "pt@test.com"
+        let useremail = "bin1@gmail.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
         app.textFields["Password"].tap()
         app.typeText(userpassword)
         app.buttons["Login"].tap()
-        app.buttons["Physio"].tap()
         
     }
     
     func testViewPatients(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        let useremail = "pt@test.com"
+        let useremail = "bin1@gmail.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
         app.textFields["Password"].tap()
         app.typeText(userpassword)
         app.buttons["Login"].tap()
-        app.buttons["Physio"].tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Patient One"]/*[[".cells.staticTexts[\"Patient One\"]",".staticTexts[\"Patient One\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
     
     func testAddPatient(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        let useremail = "pt@test.com"
+        let useremail = "bin1@gmail.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
         app.textFields["Password"].tap()
         app.typeText(userpassword)
         app.buttons["Login"].tap()
-        app.buttons["Physio"].tap()
         
         app.buttons["Add Patient"].tap()
         app.textFields["Enter Patient Email"].tap()
@@ -98,14 +94,57 @@ class PhysioSanityTest: XCTestCase {
     func testDisplayPatientData(){
         app.buttons["Log In"].tap()
         app.textFields["Email"].tap()
-        let useremail = "pt@test.com"
+        let useremail = "bin1@gmail.com"
         let userpassword = "abc123!!!"
         app.typeText(useremail)
         app.textFields["Password"].tap()
         app.typeText(userpassword)
         app.buttons["Login"].tap()
-        app.buttons["Physio"].tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["bin2 xiong2"]/*[[".cells.staticTexts[\"bin2 xiong2\"]",".staticTexts[\"bin2 xiong2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
         
     }
 
+    func testViewPatientStatistics(){
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "bin1@gmail.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["bin2 xiong2"]/*[[".cells.staticTexts[\"bin2 xiong2\"]",".staticTexts[\"bin2 xiong2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["test1"]/*[[".cells.staticTexts[\"test1\"]",".staticTexts[\"test1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Arm Raise"]/*[[".cells.staticTexts[\"Arm Raise\"]",".staticTexts[\"Arm Raise\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["Reps:"].tap()
+        
+        let backButton = app.navigationBars.buttons["Back"]
+        backButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Calf Raise"]/*[[".cells.staticTexts[\"Calf Raise\"]",".staticTexts[\"Calf Raise\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        backButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Knee Bend"]/*[[".cells.staticTexts[\"Knee Bend\"]",".staticTexts[\"Knee Bend\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        backButton.tap()
+        app.buttons["Statistics"].tap()
+        app.otherElements["Bar Chart. 1 dataset. Number of Completions"].tap()
+        app.navigationBars["Statistics"].buttons["Back"].tap()
+        app.navigationBars["Title"].buttons["Back"].tap()
+    }
+    
+    func testRemovePatient(){
+        app.buttons["Log In"].tap()
+        app.textFields["Email"].tap()
+        let useremail = "bin1@gmail.com"
+        let userpassword = "abc123!!!"
+        app.typeText(useremail)
+        app.textFields["Password"].tap()
+        app.typeText(userpassword)
+        app.buttons["Login"].tap()
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["bin2 xiong2"]/*[[".cells.staticTexts[\"bin2 xiong2\"]",".staticTexts[\"bin2 xiong2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        
+        
+    }
 }
