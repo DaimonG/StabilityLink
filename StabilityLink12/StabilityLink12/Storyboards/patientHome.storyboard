@@ -288,6 +288,7 @@
         <image name="home_button" width="400" height="347"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Jj5-wI-yPk"/>
         <segue reference="ZGO-4X-1X9"/>
         <segue reference="nFW-NG-uTN"/>
     </inferredMetricsTieBreakers>
